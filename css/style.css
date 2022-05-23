@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+  }
+  :root{
+      --dark-brown: #5C3F16;
+      --dark-green: #476948;
+      --light-text: #F0F0EB;
+      --script: gioviale, sans-serif;
+      --sans-serif: parisplus-std, sans-serif;
+  }
+
+/* The navigation menu */
+
+li {
+    display: inline;
+}
+
+.nav-logo{
+    width: 10rem;
+    height: auto;
+    align-items: center;
+}
+
+.web-nav {
+    overflow: hidden;
+    background-color: #F0F0EB;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Navigation links */
+  .web-nav a {
+    float: left;
+    font-size: 16px;
+    color: var(--dark-brown);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-brown);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .web-nav a:hover, .subnav:hover .subnavbtn {
+    background-color: #889B7F;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #889B7F;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;x½
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+.top-bar {
+    width: 20rem;
+    height: 2rem;
+    margin-top: -2.4rem;
+    border-bottom-left-radius: 60px;
+    border: solid 1px var(--dark-brown);
+    border-top: 0px;
+    border-right: 0px;
+    display: none;
+    align-items: center;
+}
+
+.top-bar-phone{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+    height: auto;
+}
+.top-bar div{
+    height: 1rem;
+    width: 1px;
+    background-color: black;
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+}
+
+.top-bar-flag{
+    margin: 1rem;
+    width: 2.2rem;
+    height: auto;
+}
+
+/* ------ her stopper Navigation styling ------ */
+
+.referencer {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--dark-green);
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rem;
+    color: var(--light-text);
+    font-family: var(--sans-serif);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-contact{
+    margin-top: 4rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    height: 18rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-time{
+    height: 12rem;
+    margin-top: 0.5rem;
+    margin-left: -1.4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-some-icons{
+    height: 12rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-opening{
+    margin-top: 2.4rem;
+    margin-inline: 1rem;
+}
+
+.footer-underscore{
+    border-bottom: 1px solid;
+}
+
+footer h2{
+    padding-block: 0.5rem;
+}
+
+footer p{
+    font-size: 1.1rem;
+    line-height: 2.4;
+    font-style: italic;
+}
+
+/* ------ MEDIA QUERY ------ */
+
+@media only screen and (min-width: 1650px) {
+    /* Aktiverer Top-bar med telefon-nummer og sprog */
+    .top-bar {
+        display: flex;
+    }
+    /* Skjuler only-flags div */
+    .only-flags {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .web-nav {
+        display: flex;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .nav-logo{
+        width: 17rem;
+        height: auto;
+        align-items: center;
+    }
+        
+    /* Footer */
+
+    footer{
+        height: 38rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20rem;
+    }
+
+    .footer-contact{
+        margin-top: 4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* .adress {
+        margin-left: 5rem;
+    }
+
+    .footer-time{
+        height: 12rem;
+        margin-top: 0.5rem;
+        margin-left: -1.4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-some-icons{
+        height: 12rem;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer-opening{
+        margin-top: 2.4rem;
+        margin-inline: 1rem;
+    }
+
+    .footer-underscore{
+        border-bottom: 1px solid;
+    }
+
+    footer h2{
+        padding-block: 0.5rem;
+    }
+
+    footer p{
+        font-size: 1.1rem;
+        line-height: 2.4;
+        font-style: italic;
+} */
+}
