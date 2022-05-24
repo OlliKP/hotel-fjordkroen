@@ -10,23 +10,44 @@
     <meta name="keywords" content="Restaurant, Hotel, Præstø Fjord, Service, Kvalitet, Tappernøje, Selskabslokaler, Konfirmation, Bryllyp, Vordingborg, Næstved">
     <meta name="description" content="indsæt description her">
     <!--Fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/cnl7zhv.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
 </head>
 
 <body>
     <!-- Mobile Navigation Bar-->
     <ul class="mobile-nav">
         <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
+        <div class="flags-and-burger">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+            <button class="burger-menu" onclick="myFunction()">
+                <div class="burger-linje"></div><div class="burger-linje"></div><div class="burger-linje"></div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="mobile-main-page" href="index.html">Forside</a>
+                <a class="mobile-main-page arrow-div" href="restaurant.html">Restaurant<div><img class="arrow" src="img/arrow.png" alt="en pil ned som åbner undersiderne"></div></a>
+                <a class="mobile-sub-page" href="menukort.html">Menukort</a>
+                <a class="mobile-sub-page" href="vinkort.html">Vinkort</a>
+                <a class="mobile-main-page top-border" href="vaerelser.html">Værelser</a>
+                <a class="mobile-main-page" href="kro-ophold.html">Kro-Ophold</a>
+                <a class="mobile-main-page" href="selskaber.html">Selskaber</a>
+                <a class="mobile-main-page arrow-button" href="">Om Os<button class="subnavbtn"><img class="arrow" src="img/arrow.png" alt="en pil ned som åbner undersiderne"><i class="fa fa-caret-down"></i></button></a>
+                <a class="mobile-sub-page" href="praktiske-oplysninger.html">Praktiske Oplysninger</a>
+                <a class="mobile-sub-page" href="lokale-seværdigheder.html">Lokale Seværdigheder</a>
+                <a class="mobile-sub-page" href="faq.html">FAQ</a>
+                <div class="dropdown-phone"><img src="img/icon-phone.png" alt=""><p> Tlf: +45 12 34 56 78</p></div>
+            </div>
     </ul>
     <!-- Web Navigation Bar-->
     <ul class="web-nav"> 
         <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
         <ul class="subnav">
-            <button class="subnavbtn">Restaurant <i class="fa fa-caret-down"></i></button>
+            <button class="subnavbtn">Restaurant<i class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
               <a href="menukort.html">Menukort</a>
               <a href="vinkort.html">Vinkort</a>
-            </ul>
+        </ul>
         <li class="web-nav-li"><a href="vaerelser.html">Værelser</a></li>
         <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
         <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
@@ -52,15 +73,16 @@
         </div>
     </ul>
 
+<section><h1>hej</h1></section>
+
     <!-- mobile refferencer-->
-
-    <!-- <div><img src="img/mobile-nav.png" class="referencer" alt="den her skal væk"></div>
-    <div><img src="img/mobile-footer.png" class="referencer" alt="den her skal væk"></div> -->
-
+    <!-- <div><img src="img/mobile-nav.png" class="referencer" alt="den her skal væk"></div> -->
+    <!-- <div><img src="img/mobile-footer.png" class="referencer" alt="den her skal væk"></div> -->
+    <!-- <img class="referencer" src="img/dropdown-menu.png" alt=""> -->
     <!-- web referencer-->
 
-    <div><img src="img/Navbar.png" class="referencer" alt="den her skal væk"></div>
-    <div><img src="img/footer.png" class="referencer" alt="den her skal væk"></div>
+    <!-- <div><img src="img/Navbar.png" class="referencer" alt="den her skal væk"></div>
+    <div><img src="img/footer.png" class="referencer" alt="den her skal væk"></div> -->
 
     <footer>
         <div class="footer-contact">
@@ -100,5 +122,7 @@
         </div>
 
     </footer>
+
+<script src="javascript/main.js"></script>
 </body>
 </html>

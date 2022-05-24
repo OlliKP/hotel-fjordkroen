@@ -1,25 +1,152 @@
 *{
     margin: 0px;
-  }
-  :root{
-      --dark-brown: #5C3F16;
-      --dark-green: #476948;
-      --light-text: #F0F0EB;
-      --script: gioviale, sans-serif;
-      --sans-serif: parisplus-std, sans-serif;
-  }
+    font-family: parisplus-clair;
+}
 
-/* The navigation menu */
+:root{
+    --dark-brown: #5C3F16;
+    --dark-green: #476948;
+    --light-text: #F0F0EB;
+    --light-green: #889B7F;
+    --script: gioviale, sans-serif;
+    --sans-serif: parisplus-std, sans-serif;
+    --sans-serif-regular: parisplus-std, sans-serif;
+}
+
+/* Nav-Bar */
 
 li {
     display: inline;
 }
 
 .nav-logo{
-    width: 10rem;
+    width: 8.5rem;
     height: auto;
+    margin-left: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+/* Mobile Nav-Bar */
+
+.mobile-nav{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-text);
+    margin-bottom: 2rem;
+    height: 3.5rem;
+    width: 100vw;
+    position: fixed;
+}
+
+.flags-and-burger{
+    display: flex;
+    vertical-align: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    position: relative;
+    margin-left: auto;
+}
+
+.burger-linje{
+    background-color: var(--dark-brown);
+    width: 35px;
+    height: 3px;
+    margin: 0.4rem;
+    margin-right: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.burger-menu {
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light-text);
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    margin-top: 7rem;
+    padding-top: 1rem;
+}
+
+.dropdown-content a {
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    background-color: var(--light-text);
+    text-decoration: none;
+    display: block;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
+.mobile-main-page{
+    color: var(--dark-green);
+    border-bottom: 1px solid #C1BBAC;
+    padding-inline: 2.4rem;
+    font-size: 1.4rem;
+}
+
+.mobile-sub-page{
+    color: var(--light-green);
+    padding-inline: 5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.top-border {
+    border-top: #C1BBAC 1px solid;
+}
+
+.arrow-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subnavbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #47694848;
+    border: 0;
+    width: 60px;
+    height: 30px;
+}
+
+.dropdown-content p {
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+    background-color: var(--light-text);
+    text-align: center;
+    margin-inline: 0;
+    padding-block: 1rem;
+}
+
+.dropdown-phone{
+    display: flex;
+    background-color: var(--light-text);
+    justify-content: center;
+    align-items: center;
+    border-top: #C1BBAC 1px solid;
+}
+
+.dropdown-phone img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+    
+.show {display: block;}
+
+/* Web Nav-Bar */
 
 .web-nav {
     overflow: hidden;
@@ -120,7 +247,7 @@ li {
 }
 
 .top-bar-flag{
-    margin: 1rem;
+    margin: 0.4rem;
     width: 2.2rem;
     height: auto;
 }
@@ -134,16 +261,20 @@ li {
 
 /* Footer */
 
+.whitespace{
+    margin-top: 20rem;
+}
+
 footer{
     background-color: var(--dark-green);
     height: 38rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20rem;
+    margin-top: 20rem;
     color: var(--light-text);
-    font-family: var(--sans-serif);
-    font-style: normal;
+    font-family: parisplus-clair, sans-serif;
     font-weight: 400;
+    font-style: normal;
 }
 
 .footer-contact{
@@ -203,6 +334,12 @@ footer p{
 }
 
 @media only screen and (min-width: 960px) {
+    .nav-logo{
+        width: 10rem;
+        height: auto;
+        align-items: center;
+    }
+    
     .web-nav {
         display: flex;
     }
@@ -215,6 +352,12 @@ footer p{
         width: 17rem;
         height: auto;
         align-items: center;
+    }
+
+    .top-bar-flag{
+        margin: 1rem;
+        width: 2.2rem;
+        height: auto;
     }
         
     /* Footer */
@@ -231,42 +374,4 @@ footer p{
         margin-left: 1rem;
         margin-right: 1rem;
     }
-
-    /* .adress {
-        margin-left: 5rem;
-    }
-
-    .footer-time{
-        height: 12rem;
-        margin-top: 0.5rem;
-        margin-left: -1.4rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .footer-some-icons{
-        height: 12rem;
-        margin-top: 1rem;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .footer-opening{
-        margin-top: 2.4rem;
-        margin-inline: 1rem;
-    }
-
-    .footer-underscore{
-        border-bottom: 1px solid;
-    }
-
-    footer h2{
-        padding-block: 0.5rem;
-    }
-
-    footer p{
-        font-size: 1.1rem;
-        line-height: 2.4;
-        font-style: italic;
-} */
 }
