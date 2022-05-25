@@ -15,30 +15,32 @@
 
 <body>
     <!-- Mobile Navigation Bar-->
-    <ul class="mobile-nav">
+    <nav class="mobile-nav">
         <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
         <div class="flags-and-burger">
             <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
             <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
         </div>
-            <button class="burger-menu" onclick="myFunction()">
+            <button class="burger-menu" onclick="showBugerMenu()">
                 <div class="burger-linje"></div><div class="burger-linje"></div><div class="burger-linje"></div>
             </button>
-            <div id="myDropdown" class="dropdown-content">
-                <a class="mobile-main-page" href="index.html">Forside</a>
-                <a class="mobile-main-page arrow-div" href="restaurant.html">Restaurant<div><img class="arrow" src="img/arrow.png" alt="en pil ned som åbner undersiderne"></div></a>
-                <a class="mobile-sub-page" href="menukort.html">Menukort</a>
-                <a class="mobile-sub-page" href="vinkort.html">Vinkort</a>
-                <a class="mobile-main-page top-border" href="vaerelser.html">Værelser</a>
-                <a class="mobile-main-page" href="kro-ophold.html">Kro-Ophold</a>
-                <a class="mobile-main-page" href="selskaber.html">Selskaber</a>
-                <a class="mobile-main-page arrow-button" href="">Om Os<button class="subnavbtn"><img class="arrow" src="img/arrow.png" alt="en pil ned som åbner undersiderne"><i class="fa fa-caret-down"></i></button></a>
-                <a class="mobile-sub-page" href="praktiske-oplysninger.html">Praktiske Oplysninger</a>
-                <a class="mobile-sub-page" href="lokale-seværdigheder.html">Lokale Seværdigheder</a>
-                <a class="mobile-sub-page" href="faq.html">FAQ</a>
-                <div class="dropdown-phone"><img src="img/icon-phone.png" alt=""><p> Tlf: +45 12 34 56 78</p></div>
-            </div>
-    </ul>
+            <div id="dropdownMenu" class="dropdown-content">
+                <li><a class="mobile-main-page" href="index.html">Forside</a></li>
+                <ul><a class="mobile-main-page" href="restaurant.html">Restaurant</a>
+                    <li><a class="mobile-sub-page" href="menukort.html">Menukort</a></li>
+                    <li><a class="mobile-sub-page" href="vinkort.html">Vinkort</a></li>
+                </ul>
+                <li><a class="mobile-main-page top-border" href="vaerelser.html">Værelser</a></li>
+                <li><a class="mobile-main-page" href="kro-ophold.html">Kro-Ophold</a></li>
+                <li><a class="mobile-main-page" href="selskaber.html">Selskaber</a></li>
+                <ul><a class="mobile-main-page" href="">Hjælp</a>
+                    <li><a class="mobile-sub-omos" href="praktiske-oplysninger.html">Praktiske Oplysninger</a></li>
+                    <li><a class="mobile-sub-omos" href="lokale-seværdigheder.html">Lokale Seværdigheder</a></li>
+                    <li><a class="mobile-sub-omos" href="faq.html">FAQ</a></li>
+                </ul>
+            <div class="dropdown-phone"><img src="img/icon-phone.png" alt=""><p> Tlf: +45 12 34 56 78</p></div>
+        </div>
+    </nav>
     <!-- Web Navigation Bar-->
     <ul class="web-nav"> 
         <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
@@ -52,7 +54,7 @@
         <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
         <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
         <ul class="subnav">
-            <button class="subnavbtn">Om Os <i class="fa fa-caret-down"></i></button>
+            <button class="subnavbtn">Hjælp<i class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
               <a href="menukort.html">Praktiske Oplysninger</a>
               <a href="vinkort.html">Lokale Seværdigheder</a>

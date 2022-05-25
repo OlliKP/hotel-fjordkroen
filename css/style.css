@@ -15,8 +15,12 @@
 
 /* Nav-Bar */
 
-li {
+li{
     display: inline;
+}
+
+ul{
+    padding-inline-start: 0px;
 }
 
 .nav-logo{
@@ -70,8 +74,9 @@ li {
     width: 100vw;
     height: 100%;
     z-index: 1;
-    margin-top: 7rem;
     padding-top: 1rem;
+    /* Denne margin fikser nav/menu clash */
+    margin-top: 8rem;
 }
 
 .dropdown-content a {
@@ -93,6 +98,10 @@ li {
     font-size: 1.4rem;
 }
 
+.top-border {
+    border-top: #C1BBAC 1px solid;
+}
+
 .mobile-sub-page{
     color: var(--light-green);
     padding-inline: 5rem;
@@ -100,24 +109,11 @@ li {
     font-style: italic;
 }
 
-.top-border {
-    border-top: #C1BBAC 1px solid;
-}
-
-.arrow-button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.subnavbtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #47694848;
-    border: 0;
-    width: 60px;
-    height: 30px;
+.mobile-sub-omos{
+    color: var(--light-green);
+    padding-inline: 5rem;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .dropdown-content p {
@@ -146,8 +142,8 @@ li {
     
 .show {display: block;}
 
-/* Web Nav-Bar */
 
+/* Web Nav-Bar */
 .web-nav {
     overflow: hidden;
     background-color: #F0F0EB;
@@ -261,16 +257,11 @@ li {
 
 /* Footer */
 
-.whitespace{
-    margin-top: 20rem;
-}
-
 footer{
     background-color: var(--dark-green);
     height: 38rem;
     display: flex;
     flex-direction: column;
-    margin-top: 20rem;
     color: var(--light-text);
     font-family: parisplus-clair, sans-serif;
     font-weight: 400;
@@ -322,17 +313,107 @@ footer p{
 
 /* ------ MEDIA QUERY ------ */
 
-@media only screen and (min-width: 1650px) {
-    /* Aktiverer Top-bar med telefon-nummer og sprog */
-    .top-bar {
-        display: flex;
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px) {
+    
+    /* ------ Tablet-Nav ------ */
+    .mobile-nav{
+        height: 6rem;
     }
-    /* Skjuler only-flags div */
-    .only-flags {
-        display: none;
+    
+    .nav-logo{
+        width: 12.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .top-bar-flag{
+        margin-right: 2rem;
+        width: 3rem;
+    }
+    
+    .burger-linje{
+        width: 45px;
+        height: 4px;
+        margin: 0.5rem;
+        margin-right: 1.5rem;
+    }
+
+    /* ---- Tablet-Burger-Dropdown ---- */
+    
+    .dropdown-content {
+        /* Denne margin fikser nav/menu clash */
+        margin-top: 12.9rem;
+    }
+    
+    .dropdown-content a {
+        padding-block: 1.5rem;
+    }
+    
+    .mobile-main-page{
+        padding-inline: 4rem;
+        font-size: 1.8rem;
+    }
+    
+    
+    .mobile-sub-page{
+        padding-inline: 8rem;
+        font-size: 1.4rem;
+    }
+    
+    .mobile-sub-omos{
+        padding-inline: 8rem;
+        font-size: 1.4rem;
+    }
+    
+    .dropdown-content p {
+        font-size: 1.4rem;
+    }
+
+    /* Tablet-Footer */
+
+    footer{
+        height: 45rem;
+    }
+
+    .footer-contact{
+        font-size: 1.4rem;
+        margin-top: 4rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .footer-time{
+        height: 12rem;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        margin-right: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-some-icons{
+        margin-top: 3rem;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .footer-opening{
+        font-size: 1.8rem;
+        margin-inline: 9rem;
+    }
+
+    footer h2{
+        padding-block: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    footer p{
+        font-size: 1.3rem;
     }
 }
 
+/* Media Query for Web */
 @media only screen and (min-width: 960px) {
     .nav-logo{
         width: 10rem;
@@ -373,5 +454,17 @@ footer p{
         margin-top: 4rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+}
+
+/* Her retter vi i navbaren så den ikke presser tingene sammen */
+@media only screen and (min-width: 1650px) {
+    /* Aktiverer Top-bar med telefon-nummer og sprog */
+    .top-bar {
+        display: flex;
+    }
+    /* Skjuler only-flags div */
+    .only-flags {
+        display: none;
     }
 }
