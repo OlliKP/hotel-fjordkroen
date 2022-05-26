@@ -8,9 +8,28 @@
     --dark-green: #476948;
     --light-text: #F0F0EB;
     --light-green: #889B7F;
+    --grey: #d8d5cd;
     --script: gioviale, sans-serif;
     --sans-serif: parisplus-std, sans-serif;
     --sans-serif-regular: parisplus-std, sans-serif;
+}
+/*Font-styling mobile*/
+h3{
+    color: var(--light-green);
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+h4{
+    color: var(--dark-green);
+    font-size: 1.2em;
+    font-style: italic;
+    margin-left: 1.4em;
+}
+p{
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 /* Nav-Bar */
@@ -41,6 +60,7 @@ ul{
     height: 3.5rem;
     width: 100vw;
     position: fixed;
+    z-index: 1;
 }
 
 .flags-and-burger{
@@ -201,7 +221,7 @@ ul{
   /* Style the subnav links */
   .subnav-content a {
     float: left;
-    color: white;x½
+    color: white;
     text-decoration: none;
   }
   

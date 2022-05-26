@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/kro-ophold.css">
+        <title>Kro-ophold</title>
+        <!--SEO-->
+        <meta name="keywords" content="Restaurant, Hotel, Præstø Fjord, Service, Kvalitet, Tappernøje, Selskabslokaler, Konfirmation, Bryllyp, Vordingborg, Næstved">
+        <meta name="description" content="indsæt description her">
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
+    </head>
+<body>
+      <!-- Mobile Navigation Bar-->
+      <nav class="mobile-nav">
+        <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
+        <div class="flags-and-burger">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+            <button class="burger-menu" onclick="showBugerMenu()">
+                <div class="burger-linje"></div><div class="burger-linje"></div><div class="burger-linje"></div>
+            </button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <li><a class="mobile-main-page" href="index.html">Forside</a></li>
+                <ul><a class="mobile-main-page" href="restaurant.html">Restaurant</a>
+                    <li><a class="mobile-sub-page" href="menukort.html">Menukort</a></li>
+                    <li><a class="mobile-sub-page" href="vinkort.html">Vinkort</a></li>
+                </ul>
+                <li><a class="mobile-main-page top-border" href="vaerelser.html">Værelser</a></li>
+                <li><a class="mobile-main-page" href="kro-ophold.html">Kro-Ophold</a></li>
+                <li><a class="mobile-main-page" href="selskaber.html">Selskaber</a></li>
+                <ul><a class="mobile-main-page" href="">Hjælp</a>
+                    <li><a class="mobile-sub-omos" href="praktiske-oplysninger.html">Praktiske Oplysninger</a></li>
+                    <li><a class="mobile-sub-omos" href="lokale-seværdigheder.html">Lokale Seværdigheder</a></li>
+                    <li><a class="mobile-sub-omos" href="faq.html">FAQ</a></li>
+                </ul>
+            <div class="dropdown-phone"><img src="img/icon-phone.png" alt=""><p> Tlf: +45 12 34 56 78</p></div>
+        </div>
+    </nav>
+    <!-- Web Navigation Bar-->
+    <ul class="web-nav"> 
+        <li><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></li>
+        <ul class="subnav">
+            <button class="subnavbtn">Restaurant<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="menukort.html">Menukort</a>
+              <a href="vinkort.html">Vinkort</a>
+        </ul>
+        <li class="web-nav-li"><a href="vaerelser.html">Værelser</a></li>
+        <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
+        <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
+        <ul class="subnav">
+            <button class="subnavbtn">Hjælp<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="menukort.html">Praktiske Oplysninger</a>
+              <a href="vinkort.html">Lokale Seværdigheder</a>
+              <a href="vinkort.html">FAQ</a>
+        </ul>
+        <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
+        <div class="only-flags">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+        <!-- Top-Bar med telefon nummer og Valg af sprog-->
+        <div class="top-bar">
+            <img src="img/icon-phone.png" class="top-bar-phone" alt="Et icon af en telefon" width="37" height="37">
+            <p>+45 12 34 56 78</p>
+            <div></div>
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+    </ul>
+
+    <header>
+        <img src="img/testbillede.JPG" alt="Billede af Fjordkroens facade">
+        <div class="header-overlay"></div>
+        <h1 class="header-big">Kro-ophold</h1>
+        <h2 class="header-small">Se hvilke kro-ophold vi tilbyder her</h2>
+    </header>
+
+    <div class="gridcontainer">
+            <div class="one">
+                <img class="section-img" src="img/testbillede.JPG" alt="">
+            </div>
+
+            <section class="two">
+                <h3>Én overnatning</h3>
+                <hr>
+                <div class="text-box">
+                    <p>På én overnatning på vores Kro ophold indeholder følgende;</p>
+                    <ul class="facilities">
+                        <li>Velkomst</li>
+                        <li>Morgenmad</li>
+                        <li>3-retters menu (årstidsbaseret)</li>
+                        <li>Værelse med fulde faciliteter</li>
+                        <li>Kaffe og kage</li>
+                    </ul>
+                    <p>Kontakt os på +45 12 34 56 78 for at booke én overnatning på vores kro-ophold.</p>
+                </div>
+            </section>
+
+            <div class="three">
+                <img class="section-img" src="img/testbillede.JPG" alt="">
+            </div>
+
+            <section class="four">
+                <h3>To overnatninger</h3>
+                <hr>
+                <div class="text-box">
+                    <p>Vores 2 overnatninger på Kro ophold indeholder følgende;</p>
+                    <ul class="facilities">
+                        <p class="facilities-day">Dag 1</p>
+                        <li>Velkomst</li>
+                        <li>Morgenmad</li>
+                        <li>3-retters menu (årstidsbaseret)</li>
+                        <li>Værelse med fulde faciliteter</li>
+                        <li>Kaffe og kage</li>
+                        <li>Cognac</li>
+                    </ul>
+                    <ul class="facilities">
+                        <p class="facilities-day">Dag 2</p>
+                        <li>Morgenmad</li>
+                        <li>3-retters menu (årstidsbaseret)</li>
+                        <li>Værelse med fulde faciliteter</li>
+                    </ul>
+                    <p>Kontakt os på +45 12 34 56 78 for at booke én overnatning på vores kro-ophold.</p>
+                </div>
+            </section>
+    </div>
+    <footer>
+        <div class="footer-contact">
+            <div>
+                <h2 class="footer-underscore">Kontakt</h2>
+                <p>Tlf.:</p>
+                <p>+45 12 34 56 78</p>
+                <p>E-Mail:</p>
+                <p>mail@fjordkroen.com</p>
+            </div>
+            <div>
+                <h2 class="footer-underscore adress">Adresse</h2>
+                <p>Bækkeskov Stræde 23</p>
+                <p>4733, Tappernøje</p>
+            </div>
+        </div>
+
+        <h2 class="footer-underscore footer-opening">Åbningstider</h2>
+
+        <div class="footer-time">
+            <div>
+                <h2>Reception</h2>
+                <p>Man-Fre: 14-??</p>
+                <p>Lør-Søn: ??-??</p>
+            </div>
+            <div>
+                <h2>Restaurant</h2>
+                <p>Man-Fre: 17-21</p>
+                <p>Lør-Søn: 12-21</p>
+            </div>
+        </div>
+
+        <div class="footer-some-icons">
+            <img src="img/fb-icon.png" alt="Et ikon der henviser til Facebook" width="53" height="53">
+            <img src="img/insta-icon.png" alt="Et ikon der henviser til Facebook" width="53" height="53">
+            <img src="img/elite-smiley.png" alt="Et ikon der henviser til Facebook" width="66" height="60">
+        </div>
+
+    </footer>
+
+<script src="javascript/main.js"></script>
+</body>
+</html>
