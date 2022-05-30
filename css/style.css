@@ -189,6 +189,8 @@ ul{
   .subnav {
     float: left;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   
   /* Subnav button */
@@ -205,48 +207,39 @@ ul{
   
   /* Add a red background color to navigation links on hover */
   .web-nav a:hover, .subnav:hover .subnavbtn {
-    background-color: #889B7F;
-  }
+    transform: scale(1.05)  
+}
   
   /* Style the subnav content - positioned absolute */
   .subnav-content {
     display: none;
     position: absolute;
-    left: 0;
-    background-color: #889B7F;
-    width: 100%;
+    margin-top: 3.9rem;
+    background-color: var(--light-text);
     z-index: 1;
+    flex-direction: column;
+    justify-content: center;
   }
   
   /* Style the subnav links */
   .subnav-content a {
-    float: left;
-    color: white;
+    justify-content: center;
+    color: var(--dark-brown);
     text-decoration: none;
+    padding-inline: 2rem;
   }
   
   /* Add a grey background color on hover */
   .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+    background-color: var(--light-green);
+    color: rgb(255, 255, 255);
   }
   
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
-
-.top-bar {
-    width: 20rem;
-    height: 2rem;
-    margin-top: -2.4rem;
-    border-bottom-left-radius: 60px;
-    border: solid 1px var(--dark-brown);
-    border-top: 0px;
-    border-right: 0px;
-    display: none;
-    align-items: center;
-}
 
 .top-bar-phone{
     margin-left: 1rem;
@@ -254,6 +247,7 @@ ul{
     width: 1.2rem;
     height: auto;
 }
+
 .top-bar div{
     height: 1rem;
     width: 1px;
@@ -430,6 +424,7 @@ footer p{
 
     footer p{
         font-size: 1.3rem;
+        color: var(--light-text);
     }
 }
 
@@ -443,6 +438,19 @@ footer p{
     
     .web-nav {
         display: flex;
+        height: 7rem;
+    }
+
+    .web-nav a{
+        font-size: 1.8rem;
+        font-family: var(--sans-serif-regular);
+        font-style: italic;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 1.8rem;
+        font-family: var(--sans-serif-regular);
+        font-style: italic;
     }
 
     .mobile-nav {
@@ -455,12 +463,41 @@ footer p{
         align-items: center;
     }
 
+    .top-bar {
+        width: 22rem;
+        height: 3.5rem;
+        margin-top: -3.5rem;
+        border-bottom-left-radius: 60px;
+        border: solid 1px var(--dark-brown);
+        border-top: 0px;
+        border-right: 0px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
     .top-bar-flag{
-        margin: 1rem;
+        margin: 0.9rem;
         width: 2.2rem;
         height: auto;
     }
-        
+
+    .top-bar p{
+        font-family: var(--sans-serif);
+        color: var(--dark-brown);
+        font-size: 1.2rem;
+    }
+    
+    .top-bar div{
+        height: 1.5rem;
+        width: 1px;
+        background-color: black;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+    }
+
+
+
     /* Footer */
 
     footer{
@@ -476,6 +513,7 @@ footer p{
         margin-right: 1rem;
     }
 }
+
 
 /* Her retter vi i navbaren så den ikke presser tingene sammen */
 @media only screen and (min-width: 1650px) {
