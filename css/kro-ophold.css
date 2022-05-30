@@ -1,0 +1,150 @@
+/*Styling af header med titel*/
+header img{
+    width: 100vw;
+    height: 50vh;
+    margin-top: 3.5rem;
+    object-fit: cover;
+}
+
+.header-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 0em;
+    margin-top: 3.5rem;
+    background-color: rgba(46, 52, 45, 0.557);
+}
+header{
+    margin-bottom: -4px;
+}
+
+.header-big{
+    font-family: var(--script);
+    font-size: 15vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 3.2vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer p{
+    color: var(--light-text);
+}
+
+/*Styling af sectioner*/
+.section-img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.two{
+    background-color: var(--light-text);
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 3em;
+}
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.text-box{
+    margin-left: 4em;
+    margin-right: 1.5em;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+}
+.facilities{
+    list-style-type: circle;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.facilities li{
+    display: list-item;
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+.facilities-day{
+    margin-left: -1em;
+    margin-bottom: 0.5em;
+}
+.four{
+    background-color: var(--grey);
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 5em;
+}
+.four h3{
+    color: var(--dark-green);
+}
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px){
+header img, .header-overlay{
+    margin-top: 6rem;
+    height: 45vh;
+}
+.header-big{
+    top: 30%;
+}
+.header-small{
+    top: 38%;
+}
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 960px) {
+    header img{
+        margin-top:auto;
+    }
+    .header-overlay{
+        margin-top: 5.5rem;
+    }
+    .header-big{
+        font-size: 10vw;
+        top: 30%;
+    }
+    .header-small{
+        top: 45%;
+        font-size: 1.8vw;
+    }
+    .gridcontainer img{
+        width: 50vw;
+        height: 70vh;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70vh 70vh;
+    }
+    .one{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .two{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .three{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .four{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
