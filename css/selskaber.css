@@ -72,7 +72,12 @@ hr{
     padding-bottom: 2em;
 }
 .aftmde{
-    padding-top: 2.125rem;
+    padding-top: 8.063rem;
+}
+.selsbillede{
+    width: 18.938rem;
+    height: auto;
+    padding: 2rem;
 }
 .facilities{
     list-style-type: circle;
@@ -91,8 +96,14 @@ hr{
     margin-left: -1em;
     margin-bottom: 0.5em;
 }
+.three{
+    margin-left: 1.875rem;
+}
 .four{
-    background-color: var(--grey);
+    margin-left: 1.875rem;
+}
+.five{
+    margin-left: 1.875rem;
 }
 
 /* Media Query for Tablet */
@@ -128,6 +139,11 @@ header img, .header-overlay{
     .aftmde{
         padding-top: 5.875rem;
     }
+    .selsbillede{
+        width: 29.938rem;
+        height: auto;
+        padding: 2rem;
+    }
     .gridcontainer img{
         width: 50vw;
         height: 70vh;
@@ -138,8 +154,8 @@ header img, .header-overlay{
         grid-template-rows: 70vh 70vh;
     }
     .phoneicon{
-        width: 50vw;
-        height: 50vh;
+        width: 2.063rem;
+        height: auto;
     }
     .one{
         grid-column: 1/2;
@@ -155,7 +171,11 @@ header img, .header-overlay{
         grid-row: 2/3;
     }
     .four{
-        grid-column: 2/3;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .five{
+        grid-column: 5/6;
         grid-row: 2/3;
     }
     .section-img{
