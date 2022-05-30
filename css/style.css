@@ -170,7 +170,6 @@ ul{
     display: none;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
     padding: 0;
     width: 100%;
   }
@@ -323,6 +322,7 @@ footer p{
     font-size: 1.1rem;
     line-height: 2.4;
     font-style: italic;
+    color: var(--light-text);
 }
 
 /* ------ MEDIA QUERY ------ */
@@ -424,12 +424,11 @@ footer p{
 
     footer p{
         font-size: 1.3rem;
-        color: var(--light-text);
     }
 }
 
 /* Media Query for Web */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1150px) {
     .nav-logo{
         width: 10rem;
         height: auto;
@@ -442,13 +441,13 @@ footer p{
     }
 
     .web-nav a{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: var(--sans-serif-regular);
         font-style: italic;
     }
 
     .subnav .subnavbtn {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: var(--sans-serif-regular);
         font-style: italic;
     }
@@ -517,6 +516,14 @@ footer p{
 
 /* Her retter vi i navbaren så den ikke presser tingene sammen */
 @media only screen and (min-width: 1650px) {
+    
+    .web-nav a{
+        font-size: 1.8rem;
+    }
+
+    .subnav .subnavbtn {
+        font-size: 1.8rem;
+    }
     /* Aktiverer Top-bar med telefon-nummer og sprog */
     .top-bar {
         display: flex;
