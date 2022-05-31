@@ -13,6 +13,13 @@
     --sans-serif: parisplus-std, sans-serif;
     --sans-serif-regular: parisplus-std, sans-serif;
 }
+
+.fas{
+    font-size: 2rem;
+
+}
+
+
 /*Font-styling mobile*/
 h3{
     color: var(--light-green);
@@ -41,6 +48,21 @@ li{
 ul{
     padding-inline-start: 0px;
 }
+/* Fas fa-bar svg'ets (burgermenu ikonet) indstillinger */
+.fas{
+    font-size: 2.2rem;
+    line-height: 45px;
+    float: right;
+    padding: 0.4rem;
+    width: 2rem;
+
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
 
 .nav-logo{
     width: 8.5rem;
@@ -49,109 +71,82 @@ ul{
     margin-top: 0.4rem;
 }
 
-/* Mobile Nav-Bar */
-
-.mobile-nav{
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--light-text);
-    margin-bottom: 2rem;
-    height: 3.5rem;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-}
-
 .flags-and-burger{
     display: flex;
     vertical-align: center;
-    justify-content: flex-end;
+    justify-content:flex-start;
     gap: 0.4rem;
     position: relative;
     margin-left: auto;
+    float: right;
+    color: var(--dark-brown);
 }
 
-.burger-linje{
-    background-color: var(--dark-brown);
-    width: 35px;
-    height: 3px;
-    margin: 0.4rem;
-    margin-right: 0.5rem;
-    border-radius: 0.4rem;
-}
-
-.burger-menu {
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--light-text);
+/* UL indstillinger, bl.a. gør at vi har en transition på vores menu */
+nav ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
     width: 100vw;
     height: 100%;
     z-index: 1;
-    padding-top: 1rem;
-    /* Denne margin fikser nav/menu clash */
-    margin-top: 8rem;
+}
+
+.under-menu{
+    text-decoration: none;
+    background-color: pink;
+
+}
+
+#underline{
+    border-bottom: #C1BBAC 1px solid;
+}
+
+.under-menu li > a{
+    color: var(--light-green);
+    border-top: none;
+    padding-left: 4rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.mobile-nav {
+    background-color: var(--light-text);
+    margin-inline: 0;
 }
 
 .dropdown-content a {
     font-family: var(--sans-serif-regular);
     font-weight: 400;
     background-color: var(--light-text);
+    color: var(--dark-green);
+    font-size: 1.2rem;
     text-decoration: none;
-    display: block;
     padding-block: 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.mobile-main-page{
-    color: var(--dark-green);
-    border-bottom: 1px solid #C1BBAC;
-    padding-inline: 2.4rem;
-    font-size: 1.4rem;
-}
-
-.top-border {
+    overflow: hidden;
     border-top: #C1BBAC 1px solid;
-}
+    padding-left: 2rem;
 
-.mobile-sub-page{
-    color: var(--light-green);
-    padding-inline: 5rem;
-    font-size: 1.2rem;
-    font-style: italic;
-}
 
-.mobile-sub-omos{
-    color: var(--light-green);
-    padding-inline: 5rem;
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-.dropdown-content p {
-    font-family: var(--sans-serif);
-    font-weight: 400;
-    color: var(--dark-green);
-    background-color: var(--light-text);
-    text-align: center;
-    margin-inline: 0;
-    padding-block: 1rem;
 }
 
 .dropdown-phone{
     display: flex;
     background-color: var(--light-text);
+    color: var(--dark-green);
     justify-content: center;
     align-items: center;
     border-top: #C1BBAC 1px solid;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+.dropdown-phone p{
+    color: var(--dark-green);
+    font-family: var(--sans-serif-regular);
+    font-weight: 200;
 }
 
 .dropdown-phone img{
@@ -159,9 +154,17 @@ ul{
     height: 20px;
     margin-right: 1rem;
 }
-    
-.show {display: block;}
 
+/* Checkbox, som er burgermenu'ens indstillinger der gør at vores menu kommer ned når man klikker */
+#checkbox{
+    display: none;
+}
+
+#checkbox:checked ~ nav ul{
+    max-height: 100%;
+    transition: all 0.5s;
+}
+/* ------------------- Mobile navbar slutter ------------------- */
 
 /* Web Nav-Bar */
 .web-nav {
@@ -432,7 +435,7 @@ footer p{
     
     /* ------ Tablet-Nav ------ */
     .mobile-nav{
-        height: 6rem;
+
     }
     
     .nav-logo{
@@ -440,44 +443,22 @@ footer p{
         margin-left: 1rem;
         margin-top: 1rem;
     }
-
     .top-bar-flag{
         margin-right: 2rem;
         width: 3rem;
     }
     
-    .burger-linje{
-        width: 45px;
-        height: 4px;
-        margin: 0.5rem;
-        margin-right: 1.5rem;
+    .fas{
+        font-size: 2.6rem;
+        line-height: 45px;
+        float: right;
+        padding-right: 1rem;    
     }
 
     /* ---- Tablet-Burger-Dropdown ---- */
     
-    .dropdown-content {
-        /* Denne margin fikser nav/menu clash */
-        margin-top: 12.9rem;
-    }
-    
     .dropdown-content a {
         padding-block: 1.5rem;
-    }
-    
-    .mobile-main-page{
-        padding-inline: 4rem;
-        font-size: 1.8rem;
-    }
-    
-    
-    .mobile-sub-page{
-        padding-inline: 8rem;
-        font-size: 1.4rem;
-    }
-    
-    .mobile-sub-omos{
-        padding-inline: 8rem;
-        font-size: 1.4rem;
     }
     
     .dropdown-content p {
@@ -653,7 +634,6 @@ footer p{
         height: 38rem;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-bottom: 20rem;
     }
 
     .footer-contact{

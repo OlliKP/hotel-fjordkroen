@@ -52,13 +52,13 @@ footer p{
 .one{
     background-color: var(--light-text);
     padding-top: 2em;
-    padding-left: 5em;
+    padding-left: 4em;
     padding-right: 3em;
 }
 .two{
     background-color: var(--light-text);
     padding-top: 2em;
-    padding-left: 5em;
+    padding-left: 4em;
     padding-right: 3em;
 }
 hr{
@@ -72,7 +72,12 @@ hr{
     padding-bottom: 2em;
 }
 .aftmde{
-    padding-top: 2.125rem;
+    padding-top: 8.063rem;
+}
+.selsbillede{
+    width: 18.938rem;
+    height: auto;
+    padding: 2rem;
 }
 .facilities{
     list-style-type: circle;
@@ -91,9 +96,10 @@ hr{
     margin-left: -1em;
     margin-bottom: 0.5em;
 }
-.four{
-    background-color: var(--grey);
+.three{
+    margin-left: 0rem;
 }
+
 
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px){
@@ -125,12 +131,33 @@ header img, .header-overlay{
         top: 45%;
         font-size: 1.8vw;
     }
+    .gridone-h3{
+        padding-top: 3.875rem;
+    }
     .aftmde{
         padding-top: 5.875rem;
     }
-    .gridcontainer img{
-        width: 50vw;
-        height: 70vh;
+    .sels1{
+        width: 25rem;
+        height: auto;
+        margin-left: 5.563rem;
+        margin-top: 11.938rem;
+        padding: 0;
+    }
+    .sels2{
+        width: 25rem;
+        height: auto;
+        margin-top: 11.938rem;
+        padding: 0;
+        margin-right: 5.625rem;
+        margin-left: 5.625rem;
+    }
+    .sels3{
+        width: 25rem;
+        height: auto;
+        margin-right: 5.563rem;
+        margin-top: 11.938rem;
+        padding: 0;
     }
     .gridcontainer{
         display: grid;
@@ -138,25 +165,24 @@ header img, .header-overlay{
         grid-template-rows: 70vh 70vh;
     }
     .phoneicon{
-        width: 50vw;
-        height: 50vh;
+        width: 2.063rem;
+        height: auto;
     }
     .one{
         grid-column: 1/2;
         grid-row: 1/2;
+        padding-bottom: 4.625rem;
     }
     .two{
         grid-column: 2/3;
         grid-row: 1/2;
+        padding-bottom: 4.625rem;
     }
     
     .three{
-        grid-column: 1/2;
+        grid-column: 1/5;
         grid-row: 2/3;
-    }
-    .four{
-        grid-column: 2/3;
-        grid-row: 2/3;
+        margin-left: 0;
     }
     .section-img{
         width: 100vw;
