@@ -412,6 +412,19 @@ header{
     height: auto;
 }
 
+/*Hvem er vi - Billede*/
+    .index-three{
+        height: 14rem;
+        width: 100vw;
+        background-color: #476948;
+    }
+
+    .index-three img{
+        width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+    }
+/*Hvem er vi - Tekst*/
 .text-box{
     margin-left: 4em;
     margin-right: 1.5em;
