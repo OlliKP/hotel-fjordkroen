@@ -14,11 +14,6 @@
     --sans-serif-regular: parisplus-std, sans-serif;
 }
 
-.fas{
-    font-size: 2rem;
-
-}
-
 
 /*Font-styling mobile*/
 h3{
@@ -54,8 +49,6 @@ ul{
     line-height: 45px;
     float: right;
     padding: 0.4rem;
-    width: 2rem;
-
 }
 
 nav{
@@ -67,8 +60,8 @@ nav{
 .nav-logo{
     width: 8.5rem;
     height: auto;
-    margin-left: 0.8rem;
-    margin-top: 1rem;
+    margin-left: 0.7rem;
+    margin-top: 0.8rem;
 }
 
 .flags-and-burger{
@@ -87,7 +80,7 @@ nav ul{
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s;
-    width: 100vw;
+
     height: 100%;
     z-index: 1;
 }
@@ -139,6 +132,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     border-top: #C1BBAC 1px solid;
+    border-bottom: #C1BBAC 1px solid;
     font-size: 1rem;
     padding: 1em;
 }
@@ -167,6 +161,7 @@ nav ul{
 /* ------------------- Mobile navbar slutter ------------------- */
 
 /* Web Nav-Bar */
+
 .web-nav {
     overflow: hidden;
     background-color: #F0F0EB;
@@ -546,6 +541,10 @@ footer p{
         font-size: 1.5rem;
         font-family: var(--sans-serif-regular);
         font-style: italic;
+    }
+
+    .subnav{
+        max-height: none;
     }
 
     .subnav .subnavbtn {
