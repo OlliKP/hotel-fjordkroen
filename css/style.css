@@ -315,7 +315,28 @@ header{
     display: flex;
 }
 
+.index-one{
+    background-color: var(--grey);
+    height: 200px;
+    margin-inline: 3rem;
+}
 
+.index-one h3{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--dark-green);
+    font-size: 1.3rem;
+    padding-top: 2.8rem;
+}
+
+.index-one h4{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--light-green);
+    font-size: 1rem;
+    padding-top: 0.8rem;
+    border-bottom: 1px solid var(--light-green);
+}
 
 .section-img{
     width: 100vw;
@@ -460,17 +481,6 @@ footer p{
         font-size: 1.4rem;
     }
 
-    header img, .header-overlay{
-        margin-top: 6rem;
-        height: 45vh;
-    }
-    .header-big{
-        top: 30%;
-    }
-    .header-small{
-        top: 38%;
-    }
-
     /* Tablet-Footer */
 
     footer{
@@ -514,7 +524,7 @@ footer p{
     }
 }
 
-/* ----- Media Query for Web ----- */
+/* Media Query for Web */
 @media only screen and (min-width: 1150px) {
     .nav-logo{
         width: 10rem;
@@ -612,7 +622,6 @@ footer p{
     .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
-        
     }
     .index-two{
         grid-column: 1/2;
@@ -644,7 +653,7 @@ footer p{
 }
 
 
-/* ----- Her tilføjes Topbar med telefon nummer ----- */
+/* Her retter vi i navbaren så den ikke presser tingene sammen */
 @media only screen and (min-width: 1650px) {
     
     .web-nav a{
