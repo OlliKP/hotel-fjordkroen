@@ -203,7 +203,7 @@ nav ul{
   .subnav-content {
     display: none;
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 7rem;
     background-color: var(--light-text);
     z-index: 1;
     flex-direction: column;
@@ -217,6 +217,7 @@ nav ul{
     text-decoration: none;
     padding-inline: 2rem;
     z-index: 1;
+    text-align: start;
   }
   
   /* Add a grey background color on hover */
