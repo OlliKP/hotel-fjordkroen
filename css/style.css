@@ -113,6 +113,7 @@ nav ul{
 .mobile-nav {
     background-color: var(--light-text);
     margin-inline: 0;
+    z-index: +5;
 }
 
 .dropdown-content a {
@@ -270,6 +271,106 @@ nav ul{
     height: auto;
 }
 
+/* ----- Her begynder Content -----*/
+
+/*Styling af header med titel*/
+header img{
+    width: 100vw;
+    height: 50vh;
+    margin-top: 3.5rem;
+    object-fit: cover;
+}
+
+.header-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 0em;
+    margin-top: 3.5rem;
+    background-color: rgba(46, 52, 45, 0.557);
+}
+
+header{
+    margin-bottom: -4px;
+}
+
+.header-big{
+    font-family: var(--script);
+    font-size: 4rem;
+    color: var(--light-text);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 4vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Styling af sectioner*/
+.opening-flex {
+    display: flex;
+}
+
+
+
+.section-img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+.two{
+    background-color: var(--light-text);
+    padding-top: 2em;
+    padding-left: 5em;
+    padding-right: 3em;
+}
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.text-box{
+    margin-left: 4em;
+    margin-right: 1.5em;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+}
+.facilities{
+    list-style-type: circle;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.facilities li{
+    display: list-item;
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+.facilities-day{
+    margin-left: -1em;
+    margin-bottom: 0.5em;
+}
+.four{
+    background-color: var(--grey);
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 5em;
+}
+.four h3{
+    color: var(--dark-green);
+}
+
 /* Footer */
 
 footer{
@@ -364,6 +465,17 @@ footer p{
         font-size: 1.4rem;
     }
 
+    header img, .header-overlay{
+        margin-top: 6rem;
+        height: 45vh;
+    }
+    .header-big{
+        top: 30%;
+    }
+    .header-small{
+        top: 38%;
+    }
+
     /* Tablet-Footer */
 
     footer{
@@ -407,7 +519,7 @@ footer p{
     }
 }
 
-/* Media Query for Web */
+/* ----- Media Query for Web ----- */
 @media only screen and (min-width: 1150px) {
     .nav-logo{
         width: 10rem;
@@ -475,7 +587,47 @@ footer p{
         margin-right: 0.8rem;
     }
 
-
+    header img{
+        margin-top:auto;
+    }
+    .header-overlay{
+        margin-top: 5.5rem;
+    }
+    .header-big{
+        font-size: 10vw;
+        top: 30%;
+    }
+    .header-small{
+        top: 45%;
+        font-size: 1.8vw;
+    }
+    .index-gridcontainer img{
+        width: 50vw;
+        height: 70vh;
+    }
+    .index-gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70vh 70vh;
+    }
+    .index-one{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+    }
+    .index-two{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .index-three{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .index-four{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 
     /* Footer */
 
@@ -493,7 +645,7 @@ footer p{
 }
 
 
-/* Her retter vi i navbaren så den ikke presser tingene sammen */
+/* ----- Her tilføjes Topbar med telefon nummer ----- */
 @media only screen and (min-width: 1650px) {
     
     .web-nav a{
