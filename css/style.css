@@ -113,6 +113,7 @@ nav ul{
 .mobile-nav {
     background-color: var(--light-text);
     margin-inline: 0;
+    z-index: +5;
 }
 
 .dropdown-content a {
@@ -162,7 +163,7 @@ nav ul{
 
 #checkbox:checked ~ nav ul{
     max-height: 100%;
-    transition: all 0.5s;
+    transition: all 10s;
 }
 /* ------------------- Mobile navbar slutter ------------------- */
 
@@ -601,29 +602,30 @@ footer p{
         top: 45%;
         font-size: 1.8vw;
     }
-    .gridcontainer img{
+    .index-gridcontainer img{
         width: 50vw;
         height: 70vh;
     }
-    .gridcontainer{
+    .index-gridcontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 70vh 70vh;
     }
-    .one{
+    .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
+        
     }
-    .two{
+    .index-two{
         grid-column: 1/2;
         grid-row: 1/2;
     }
     
-    .three{
+    .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .four{
+    .index-four{
         grid-column: 2/3;
         grid-row: 2/3;
     }
