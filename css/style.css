@@ -164,7 +164,7 @@ nav ul{
     max-height: 100%;
     transition: all 0.5s;
 }
-/* Mobile navbar slutter */
+/* ------------------- Mobile navbar slutter ------------------- */
 
 /* Web Nav-Bar */
 .web-nav {
@@ -335,7 +335,7 @@ footer p{
     
     /* ------ Tablet-Nav ------ */
     .mobile-nav{
-        height: 6rem;
+
     }
     
     .nav-logo{
@@ -343,44 +343,22 @@ footer p{
         margin-left: 1rem;
         margin-top: 1rem;
     }
-
     .top-bar-flag{
         margin-right: 2rem;
         width: 3rem;
     }
     
-    .burger-linje{
-        width: 45px;
-        height: 4px;
-        margin: 0.5rem;
-        margin-right: 1.5rem;
+    .fas{
+        font-size: 2.6rem;
+        line-height: 45px;
+        float: right;
+        padding-right: 1rem;    
     }
 
     /* ---- Tablet-Burger-Dropdown ---- */
     
-    .dropdown-content {
-        /* Denne margin fikser nav/menu clash */
-        margin-top: 12.9rem;
-    }
-    
     .dropdown-content a {
         padding-block: 1.5rem;
-    }
-    
-    .mobile-main-page{
-        padding-inline: 4rem;
-        font-size: 1.8rem;
-    }
-    
-    
-    .mobile-sub-page{
-        padding-inline: 8rem;
-        font-size: 1.4rem;
-    }
-    
-    .mobile-sub-omos{
-        padding-inline: 8rem;
-        font-size: 1.4rem;
     }
     
     .dropdown-content p {
