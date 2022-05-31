@@ -67,8 +67,8 @@ nav{
 .nav-logo{
     width: 8.5rem;
     height: auto;
-    margin-left: 0.3rem;
-    margin-top: 0.4rem;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
 }
 
 .flags-and-burger{
@@ -129,7 +129,6 @@ nav ul{
     border-top: #C1BBAC 1px solid;
     padding-left: 2rem;
 
-
 }
 
 .dropdown-phone{
@@ -162,7 +161,7 @@ nav ul{
 
 #checkbox:checked ~ nav ul{
     max-height: 100%;
-    transition: all 0.5s;
+    transition: all 10s;
 }
 /* ------------------- Mobile navbar slutter ------------------- */
 
