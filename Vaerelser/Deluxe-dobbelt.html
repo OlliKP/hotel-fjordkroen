@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/vaerelser.css" type="text/css">
     <title>Deluxe Dobbeltvaerelse</title>
     <!--Navbar/checkbox-->
     <script src="https://kit.fontawesome.com/b5a42e777e.js" crossorigin="anonymous"></script>
@@ -11,9 +12,7 @@
     <meta name="keywords" content="Restaurant, Hotel, Præstø Fjord, Service, Kvalitet, Tappernøje, Selskabslokaler, Konfirmation, Bryllyp, Vordingborg, Næstved">
     <meta name="description" content="indsæt description her">
     <!--Fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
-</head>
-
+    <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css"></head>
 <body>
         <!-- Mobile Navigation Bar--> 
         <input type="checkbox" id="checkbox">   
@@ -85,9 +84,61 @@
             </li>
         </nav>
     
-        <header>
-            <img src="../img/Header-Pic.png">
-            <h1 class="vaerelse-navn-h1">Deluxe Dobbeltværelse</h1>
+
+        <header class="header-ensemble">
+            <img src="../img/Header-Pic.png" alt="headerbillede">
+            <h1 class="header-h1">Deluxe Dobbeltværelse</h1>
         </header>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+
+            <div class="slides">
+                <img src="#" alt="Billede">
+            </div>
+
+            <div class="slides">
+                <img src="#" alt="Billede">
+            </div>
+
+            <div class="slides">
+                <img src="#" alt="Billede">
+            </div>
+
+            <div class="slides">
+                <img src="#" alt="Billede">
+            </div>
+
+            <!-- Knapperne til at gå frem og tilbage -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Thumbnails (af billederne) -->
+            <div class="thumbnail-row">
+                <div class="thumbnail-column">
+                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(1)" alt="vaerelse-billede">
+                </div>
+            </div>
+
+            <div class="thumbnail-row">
+                <div class="thumbnail-column">
+                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(2)" alt="vaerelse-billede">
+                </div>
+            </div>
+
+            <div class="thumbnail-row">
+                <div class="thumbnail-column">
+                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(3)" alt="vaerelse-billede">
+                </div>
+            </div>
+
+            <div class="thumbnail-row">
+                <div class="thumbnail-column">
+                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(4)" alt="vaerelse-billede">
+                </div>
+            </div>
+
+        </div>
 </body>
+
 </html>
