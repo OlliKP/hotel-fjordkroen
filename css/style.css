@@ -312,6 +312,32 @@ header{
     align-items: center;
 }
 
+/*Se mere knap*/
+.index-se-mere {
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.1rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.3rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-bottom-left-radius: 60px;
+}
+
+.index-se-mere:hover {
+    background-color: var(--dark-green);
+}
+
+.index-se-mere:focus {
+    background-color: var(--dark-green);
+}
+
 /*Åbningstider*/
 .opening-flex {
     display: flex;
@@ -422,7 +448,6 @@ header{
     .index-three{
     height: 14rem;
     width: 100vw;
-    background-color: #476948;
 }
 
     .index-three img{
@@ -467,7 +492,53 @@ header{
     color: var(--dark-brown);
 }
 
+/*Restaurant - Billede*/
+.index-five{
+    height: 14rem;
+    width: 100vw;
+}
 
+    .index-five img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Restaurant - Tekst*/
+.index-six{
+    background-color: var(--grey);
+    height: 30rem;
+}
+
+.index-six h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-six img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-six hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-six p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
 
 /* Footer */
 
