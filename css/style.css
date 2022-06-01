@@ -304,7 +304,7 @@ header{
     transform: translate(-50%, -50%);
 }
 
-/* ----- Styling af sectioner ----- */
+/* ----- Styling af content ----- */
 
 /*sætter ikon ved siden af tekst*/
 .text-icon-flex{
@@ -317,10 +317,10 @@ header{
     text-decoration: none;
     color: var(--light-text);
     background-color: var(--light-green);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-family: var(--sans-serif);
     font-weight: 400;
-    padding-left: 3.3rem;
+    padding-left: 3.1rem;
     padding-right: 0.8rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -345,7 +345,7 @@ header{
 }
 
 .index-one{
-    background-color: var(--grey);
+    background-color: var(--light-text);
     height: 264px;
     padding-left: 1.6rem;
     padding-right: 1.2rem;
@@ -354,7 +354,7 @@ header{
 .index-one h3{
     font-family: var(--sans-serif-regular);
     font-weight: 400;
-    color: var(--dark-green);
+    color: var(--light-green);
     font-size: 1.3rem;
     padding-top: 2.6rem;
     margin-left: 0;
@@ -363,7 +363,7 @@ header{
 .index-one h4{
     font-family: var(--sans-serif-regular);
     font-weight: 400;
-    color: var(--light-green);
+    color: var(--dark-green);
     font-size: 1rem;
     padding-top: 1.7rem;
     border-bottom: 1px solid var(--dark-green);
@@ -406,7 +406,7 @@ header{
 
 /*Velkommen*/
 .index-two{
-    background-color: var(--light-text);
+    background-color: var(--grey);
     height: 26.2rem;
 }
 
@@ -415,6 +415,7 @@ header{
     font-size: 1.3rem;
     font-family: var(--sans-serif);
     font-weight: 400;
+    color: var(--dark-green);
 }
 
 .index-two hr{
@@ -467,7 +468,7 @@ header{
     font-size: 1.3rem;
     font-family: var(--sans-serif);
     font-weight: 400;
-    color: var(--dark-green);
+    color: var(--light-green);
 }
 
 .index-four img{
@@ -533,6 +534,181 @@ header{
 }
 
 .index-six p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Værelser - Billede*/
+.index-seven{
+    height: 14rem;
+    width: 100vw;
+}
+
+.index-seven img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Værelser - Tekst*/
+.index-eight{
+    background-color: var(--light-text);
+    height: 23rem;
+}
+
+.index-eight h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-eight img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-eight hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-eight p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Selskaber - Billede*/
+.index-nine{
+    height: 14rem;
+    width: 100vw;
+}
+
+.index-nine img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Selskaber - Tekst*/
+.index-ten{
+    background-color: var(--grey);
+    height: 25.5rem;
+}
+
+.index-ten h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-ten img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-ten hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-ten p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Find vej - Tekst*/
+.index-eleven{
+    background-color: var(--light-text);
+    height: 18.5rem;
+}
+
+.index-eleven h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-eleven img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-eleven hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-eleven p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Find Vej - Kort*/
+
+#gmap_canvas {
+    width: 100vw;
+    height: 15rem;
+}
+
+/*Anmeldelser */
+.index-thirteen{
+    background-color: var(--grey);
+    height: 25.7rem;
+}
+
+.index-thirteen h3{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-thirteen img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-thirteen hr{
+    margin-top: 0.7rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-thirteen p{
     padding-left: 4rem;
     padding-right: 1.5rem;
     padding-bottom: 1.3rem;
@@ -650,6 +826,10 @@ footer p{
     .dropdown-content p {
         font-size: 1.4rem;
     }
+    /* ----- Styling af content ----- */
+
+    /*Åbningstider*/
+    
 
     /* Tablet-Footer */
     .footer-some-icons{
