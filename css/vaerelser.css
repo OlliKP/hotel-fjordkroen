@@ -1,6 +1,13 @@
 *{
     margin: 0px;
     font-family: parisplus-clair;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 .header-ensemble{
@@ -17,7 +24,6 @@
     font-size: 3rem;
     white-space: nowrap;
     color: var(--light-text);
-    
 }
 
 .header-ensemble img{
