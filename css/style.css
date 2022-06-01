@@ -392,6 +392,7 @@ header{
 }
 
 .index-two p{
+    color: var(--dark-brown);
     margin-top: 1rem;
     margin-left: 4rem;
     margin-right: 1rem;
@@ -403,7 +404,6 @@ header{
     margin-right: 2rem;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .index-two-awards img {
@@ -414,17 +414,33 @@ header{
 
 /*Hvem er vi - Billede*/
     .index-three{
-        height: 14rem;
-        width: 100vw;
-        background-color: #476948;
+    height: 14rem;
+    width: 100vw;
+    background-color: #476948;
     }
 
     .index-three img{
-        width: 100vw;
+    width: 100vw;
     height: 14rem;
     object-fit: cover;
     }
 /*Hvem er vi - Tekst*/
+.index-four{
+    background-color: var(--light-text);
+    height: 23.4rem;
+}
+
+.about-us-flex{
+    
+}
+
+.index-four h3{
+    padding-top: 2.5rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
 .text-box{
     margin-left: 4em;
     margin-right: 1.5em;
@@ -447,12 +463,6 @@ header{
 .facilities-day{
     margin-left: -1em;
     margin-bottom: 0.5em;
-}
-.four{
-    background-color: var(--grey);
-    padding-top: 2em;
-    padding-left: 3em;
-    padding-right: 5em;
 }
 .four h3{
     color: var(--dark-green);
