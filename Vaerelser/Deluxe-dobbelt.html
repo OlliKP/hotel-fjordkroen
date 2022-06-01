@@ -18,7 +18,7 @@
         <input type="checkbox" id="checkbox">   
         <nav class="mobile-nav">
     
-            <a href="index.html"><img src="../img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a>
+            <a href="../index.html"><img src="../img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" width="632" height="157"></a>
             <div class="flags-and-burger">
                 <img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
                 <img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
@@ -50,7 +50,7 @@
     
         <!-- Web Navigation Bar-->
         <nav class="web-nav"> 
-            <li><a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a></li>
+            <li><a href="index.html"><img src="../img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a></li>
             <ul class="subnav">
                 <button class="subnavbtn">Restaurant<i class="fa fa-caret-down"></i></button>
                 <li class="subnav-content">
@@ -71,16 +71,16 @@
             </ul>
             <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
             <div class="only-flags">
-                <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
-                <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+                <img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+                <img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
             </div>
             <!-- Top-Bar med telefon nummer og Valg af sprog-->
             <li class="top-bar">
                 <img src="img/icon-phone.png" class="top-bar-phone" alt="Et icon af en telefon" width="37" height="37">
                 <p>+45 12 34 56 78</p>
                 <div></div>
-                <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
-                <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+                <img src="../img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+                <img src="../img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
             </li>
         </nav>
     
@@ -90,55 +90,58 @@
             <h1 class="header-h1">Deluxe Dobbeltværelse</h1>
         </header>
 
-        <!-- Slideshow -->
+        <!-- Slideshow/Galleri -->
         <div class="slideshow">
 
-            <div class="slides">
-                <img src="#" alt="Billede">
+            <div class="mySlides">
+                <img src="../img/værelser/dobbeltdeluxe1.jpg" alt="Billede" style="width:100%">
             </div>
 
-            <div class="slides">
-                <img src="#" alt="Billede">
+            <div class="mySlides">
+                <img src="../img/værelser/dobbeltdeluxe2.jpg" alt="Billede" style="width:100%">
             </div>
 
-            <div class="slides">
-                <img src="#" alt="Billede">
+            <div class="mySlides">
+                <img src="../img/værelser/dobbeltdeluxeglas.jpg" alt="Billede" style="width:100%">
             </div>
 
-            <div class="slides">
-                <img src="#" alt="Billede">
+            <div class="mySlides">
+                <img src="../img/værelser/dobbeltdeluxeterasse.jpg" alt="Billede" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="../img/værelser/dobbeltdeluxetoilet.jpg" alt="Billede" style="width:100%">
             </div>
 
             <!-- Knapperne til at gå frem og tilbage -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
 
             <!-- Thumbnails (af billederne) -->
-            <div class="thumbnail-row">
-                <div class="thumbnail-column">
-                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(1)" alt="vaerelse-billede">
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="../img/værelser/dobbeltdeluxe1.jpg" style="width:100%" onclick="currentSlide(1)" alt="vaerelse-billede">
                 </div>
-            </div>
 
-            <div class="thumbnail-row">
-                <div class="thumbnail-column">
-                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(2)" alt="vaerelse-billede">
+                <div class="column">
+                    <img class="demo cursor" src="../img/værelser/dobbeltdeluxe2.jpg" style="width:100%" onclick="currentSlide(2)" alt="vaerelse-billede">
                 </div>
-            </div>
 
-            <div class="thumbnail-row">
-                <div class="thumbnail-column">
-                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(3)" alt="vaerelse-billede">
+                <div class="column">
+                    <img class="demo cursor" src="../img/værelser/dobbeltdeluxeglas.jpg" style="width:100%" onclick="currentSlide(3)" alt="vaerelse-billede">
                 </div>
-            </div>
 
-            <div class="thumbnail-row">
-                <div class="thumbnail-column">
-                    <img class="demo cursor" src="#" style="width:100%" onclick="currentSlide(4)" alt="vaerelse-billede">
+                <div class="column">
+                    <img class="demo cursor" src="../img/værelser/dobbeltdeluxeterasse.jpg" style="width:100%" onclick="currentSlide(4)" alt="vaerelse-billede">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="../img/værelser/dobbeltdeluxetoilet.jpg" style="width:100%" onclick="currentSlide(5)" alt="vaerelse-billede">
                 </div>
             </div>
 
         </div>
+    <script src="../javascript/vaerelser.js"></script>
 </body>
 
 </html>
