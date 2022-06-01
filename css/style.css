@@ -255,11 +255,6 @@ nav ul{
 
 /* ------ her stopper Navigation styling ------ */
 
-.referencer {
-    width: 100%;
-    height: auto;
-}
-
 /* ----- Her begynder Content -----*/
 
 /*Styling af header med titel*/
@@ -853,6 +848,8 @@ footer p{
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
+    
+    /* ------ Web Nav ------ */
     .nav-logo{
         width: 10rem;
         height: auto;
@@ -923,9 +920,13 @@ footer p{
         margin-right: 0.8rem;
     }
 
+    /* ----- Her begynder Content -----*/
+
+/*Styling af header med titel*/
     header img{
         margin-top:auto;
         height: 59.5vh;
+        object-fit: cover;
     }
    
     .header-overlay{
@@ -946,25 +947,107 @@ footer p{
     }
     .index-gridcontainer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50vw 50vw;
         grid-template-rows: 70vh 70vh;
     }
+    
+    /* Åbningstider Grid-Box */
     .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
     }
+
+    /* Velkommen Grid-Box */
     .index-two{
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    
+
+    /* [Image] Hvem er vi Grid-Box */
     .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
+    /* [Text] Hvem er vi Grid-Box */
     .index-four{
         grid-column: 2/3;
         grid-row: 2/3;
+    }
+
+    /* [Image] Restaurant Grid-Box */
+    .index-five{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    /* [Text] Restaurant Grid-Box */
+    .index-six{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    /* [Image] Værelser Grid-Box */
+    .index-seven{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /* [Text] Værelser Grid-Box */
+    .index-eight{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    /* [Image] Selskaber Grid-Box */
+    .index-nine{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    /* [Text] Selskaber Grid-Box */
+    .index-ten{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    /* Find Vej + Flag Grid-Box */
+    .index-web-paralax{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        display: flex;
+    }
+
+    /* [Text] Selskaber Grid-Box */
+    .index-thirteen{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+
+    /*Find Vej - Kort*/
+    #gmap_canvas {
+    width: 50vw;
+    height: 35rem;
+    align-items: flex-end;
+}
+
+    .index-four img, .index-six img, .index-eight img, .index-ten img, .index-eleven img {
+        width: 3rem;
+        height: auto;
+    }
+
+    
+
+    .opening-phone img {
+        height: 1.2rem;
+        width: auto;
+        margin-right: 0.3rem;
+    }
+
+    .index-two-awards img {
+        margin-top: 1.6rem;
+        width: 3rem;
+        height: auto;
     }
 
     /* Footer */
