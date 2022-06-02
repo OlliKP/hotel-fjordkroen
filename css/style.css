@@ -29,7 +29,7 @@ h4{
 }
 p{
     color: var(--dark-brown);
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     line-height: 1.6em;
 }
@@ -1159,7 +1159,7 @@ footer p{
         display: grid;
         grid-template-columns: 20vw 20vw auto 10vw;
         grid-template-rows: 20vw;
-        column-gap: 10rem;
+        column-gap: 7rem;
         height: fit-content;
     }
     .footer-time{
