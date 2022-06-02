@@ -62,8 +62,12 @@ hr{
 .note{
     float: right;
     margin-right: -9rem;
-    margin-top: 4em;
+    margin-top: 0em;
 }
+.pris{
+    margin-top: 2em;
+}
+
 .donticon{
     width: 3em;
     height: 3em;
@@ -116,15 +120,30 @@ hr{
     .openerleft, .openerright{
         height: 20vh;
     }
+    .note{
+        margin-top: 1em;
+    }
+    .pris{
+        margin-top: 3em;
+    }
 }
 
 /* Media Query for Web */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1150px) {
     .section-img{
         width: 50vw;
         height: 70vh;
     }
-    
+    .note{
+        float: right;
+        margin-right: -17rem;
+        margin-top: 1em;
+    }
+    .pris{
+        margin-top: 1.5em;
+        margin-right: 0em;
+    }
+
     .gridcontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
