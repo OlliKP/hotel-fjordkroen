@@ -1,0 +1,288 @@
+/*Styling af header med titel*/
+.header-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 59vh;
+    top: 0em;
+    margin-top: 3.5rem;
+    background-color: rgba(46, 52, 45, 0.557);
+}
+header{
+    margin-bottom: -4px;
+}
+.header-big{
+    font-family: var(--script);
+    font-size: 20vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 3.2vw;
+    color: var(--light-text);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.restaurant-gridcontainer{
+    background-color: #F0F0EB;
+    padding-bottom: 3rem
+}
+.restaurant-one{
+    height: 264px;
+    padding-left: 1.6rem;
+    padding-right: 1.2rem;
+}
+.textbox1{
+    padding-top: 3.2rem;
+}
+.textbox2{
+    margin-top: 3rem;
+}
+.p1{
+    margin-left: 4rem;
+}
+.phone-tab{
+    display: flex;
+    justify-content: flex-end;
+}
+.phone-tab p{
+    font-size: 0.9rem;
+    text-align-last: right;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    margin-right: 1.7rem;
+}
+.phone-tab img{
+    height: 1.2rem;
+    width: auto;
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.info-tab {
+    text-align: end;
+    font-size: 0.8rem;
+    color: var(--light-green);
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    margin-right: 1.7rem;
+}
+h3{
+    font-style: normal;
+    font-weight: bolder;
+    color: var(--dark-green);
+}
+.infoline{
+    margin: 1rem 3rem;
+}
+.infobar{
+    background-color: var(--grey);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-right: 1.2em;
+}
+.h3info{
+    margin-left: 2em;
+    color: var(--dark-green);
+}
+.p-box{
+    margin-left: 4em;
+    margin-right: 1.5em;
+    margin-top: 0.5em;
+}
+.infotext2{
+    margin-top: 2.5rem;
+}
+p{
+    font-size: 1.7ch
+}
+.three{
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--grey);
+}
+.img-global{
+    position: relative;
+    width: 75vw;
+    height: 35vh;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+
+.pic1 {
+    background-image: url(../img/restaurant/forretter/laks1.jpg);
+    background-size: 150%;
+    background-position: 50% 70%;
+}
+
+.pic2 {
+    background-image: url(../img/restaurant/hovedretter/schnitzel.jpg);
+    background-size: 150%;
+    background-position: 50% 95%;
+}
+
+.pic3 {
+    background-image: url(../img/restaurant/desserter/dessert4.jpg);
+    background-size: 128%;
+    background-position: 50% 70%;
+}
+.three img{
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+footer p{
+    color: var(--light-text);
+}
+
+/*Styling af sectioner*/
+.section-img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.text-box{
+    margin-left: 4em;
+    margin-right: 1.5em;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+}
+.three{
+    margin-left: 0rem;
+    background-color: var(--grey);
+}
+
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px){
+
+.img-global{
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+.header-big{
+    top: 35%;
+}
+.header-small{
+    top: 50%;
+}
+.restaurant-gridcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.textbox1{
+    width: 50%;
+    float: left;
+}
+.textbox2{
+    float: right;
+}
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 960px) {
+
+    .img-global{
+        position: relative;
+        width: 28rem;
+        margin: 2rem auto;
+        height: 19rem;
+        background-repeat: no-repeat;
+    }
+    header img{
+        margin-top:auto;
+        height: 59.5vh;
+    }
+    .header-overlay{
+        margin-top: 4.3rem;
+        height: 51vh;
+    }
+    .header-big{
+        font-size: 10vw;
+        top: 30%;
+    }
+    .header-small{
+        top: 45%;
+        font-size: 1.8vw;
+    }
+    .restaurant-one{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 5.5rem;
+    }
+    .infobar{
+        padding-bottom: 7em;
+    }
+    .h3info{
+        margin-left: 15vw;
+    }
+    .linep1{
+        margin-right: 10vw;
+    }
+    .infoline{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .infoflexer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .infotext1{
+        height: 100px;
+    }
+    h3{
+        font-size: 170%;
+        font-weight: bolder;
+        margin: 1rem 1.5rem;
+    }
+    p{
+        line-height: 2.2;
+        font-size: 110%;
+    }
+    .infotext2{
+        height: 100px;
+        margin-top: 0%;
+    }
+    .textbox2{
+
+    }
+    .phoneicon{
+        width: 2.063rem;
+        height: auto;
+    } 
+    .three{
+        grid-column: 1/5;
+        background-color: var(--grey);
+        grid-row: 2/3;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section-img{
+        width: 100vw;
+        height: 40vh;
+        object-fit: cover;
+        margin-bottom: -4px;
+    }
+}
