@@ -52,6 +52,10 @@ body {
   display: none;
 }
 
+div.mySlides{
+    margin: -0.2rem;
+}
+
 /* Cursoren bliver til en pointer når man hover over billederne */
 .cursor {
   cursor: pointer;
@@ -66,7 +70,9 @@ body {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
+  background-color: var(--light-text);
+  opacity: 0.5;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -83,7 +89,7 @@ body {
 /* Der er hover på knapperne */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--light-green);
 }
 
 .row:after {
@@ -97,10 +103,4 @@ body {
   float: left;
   width: 20%;
 }
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
 /* Her slutter CSS koden fra w3school*/

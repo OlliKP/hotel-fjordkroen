@@ -731,14 +731,6 @@ header{
     padding: 2rem;
 }
 
-/*.footer-contact{
-    margin-top: 4rem;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    height: 18rem;
-    justify-content: space-around;
-}*/
-
 .first{
     grid-row-start: 1;
     grid-row-end:  1;
@@ -970,15 +962,19 @@ footer p{
     /* Footer */
 
     footer{
-        height: 38rem;
-        flex-direction: row;
-        justify-content: space-evenly;
+        width: 100vw;
     }
 
     .footer-contact{
-        margin-top: 4rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        background-color: var(--dark-green);
+        color: var(--light-text);
+        font-family: parisplus-clair, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2; 
+        padding: 2rem;
     }
 }
 
