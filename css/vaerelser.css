@@ -1,6 +1,13 @@
 *{
     margin: 0px;
     font-family: parisplus-clair;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 .header-ensemble{
@@ -10,14 +17,13 @@
 
 .header-h1{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: var(--script);
     font-size: 3rem;
     white-space: nowrap;
     color: var(--light-text);
-    
 }
 
 .header-ensemble img{
@@ -26,5 +32,75 @@
 }
 
 header img{
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Taget fra w3school - Link:https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+/* Positionerer slideshowet (Skal bruges til at positionere højre/venstre arrows) */
+.slideshow {
+  position: relative;
+}
+
+/* Gemmer billederne som der vises */
+.mySlides {
+  display: none;
+}
+
+div.mySlides{
+    margin: -0.2rem;
+}
+
+/* Cursoren bliver til en pointer når man hover over billederne */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous knapperne */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  background-color: var(--light-text);
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Next knappen til højre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Der er hover på knapperne */
+.prev:hover,
+.next:hover {
+  background-color: var(--light-green);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Columns er side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+/* Her slutter CSS koden fra w3school*/

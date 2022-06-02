@@ -255,11 +255,6 @@ nav ul{
 
 /* ------ her stopper Navigation styling ------ */
 
-.referencer {
-    width: 100%;
-    height: auto;
-}
-
 /* ----- Her begynder Content -----*/
 
 /*Styling af header med titel*/
@@ -268,15 +263,6 @@ header img{
     height: 59vh;
     margin-top: 3.5rem;
     object-fit: cover;
-}
-
-.header-overlay{
-    position: absolute;
-    width: 100vw;
-    height: 59vh;
-    top: 0em;
-    margin-top: 3.5rem;
-    background-color: rgba(46, 52, 45, 0.557);
 }
 
 header{
@@ -304,7 +290,7 @@ header{
     transform: translate(-50%, -50%);
 }
 
-/* ----- Styling af sectioner ----- */
+/* ----- Styling af content ----- */
 
 /*sætter ikon ved siden af tekst*/
 .text-icon-flex{
@@ -317,10 +303,10 @@ header{
     text-decoration: none;
     color: var(--light-text);
     background-color: var(--light-green);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-family: var(--sans-serif);
     font-weight: 400;
-    padding-left: 3.3rem;
+    padding-left: 3.1rem;
     padding-right: 0.8rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -345,7 +331,7 @@ header{
 }
 
 .index-one{
-    background-color: var(--grey);
+    background-color: var(--light-text);
     height: 264px;
     padding-left: 1.6rem;
     padding-right: 1.2rem;
@@ -354,7 +340,7 @@ header{
 .index-one h3{
     font-family: var(--sans-serif-regular);
     font-weight: 400;
-    color: var(--dark-green);
+    color: var(--light-green);
     font-size: 1.3rem;
     padding-top: 2.6rem;
     margin-left: 0;
@@ -363,7 +349,7 @@ header{
 .index-one h4{
     font-family: var(--sans-serif-regular);
     font-weight: 400;
-    color: var(--light-green);
+    color: var(--dark-green);
     font-size: 1rem;
     padding-top: 1.7rem;
     border-bottom: 1px solid var(--dark-green);
@@ -406,7 +392,7 @@ header{
 
 /*Velkommen*/
 .index-two{
-    background-color: var(--light-text);
+    background-color: var(--grey);
     height: 26.2rem;
 }
 
@@ -415,6 +401,7 @@ header{
     font-size: 1.3rem;
     font-family: var(--sans-serif);
     font-weight: 400;
+    color: var(--dark-green);
 }
 
 .index-two hr{
@@ -467,7 +454,7 @@ header{
     font-size: 1.3rem;
     font-family: var(--sans-serif);
     font-weight: 400;
-    color: var(--dark-green);
+    color: var(--light-green);
 }
 
 .index-four img{
@@ -495,7 +482,7 @@ header{
 /*Restaurant - Billede*/
 .index-five{
     height: 14rem;
-    width: 100vw;
+    width: 100%;
 }
 
     .index-five img{
@@ -540,50 +527,238 @@ header{
     color: var(--dark-brown);
 }
 
+/*Værelser - Billede*/
+.index-seven{
+    height: 14rem;
+    width: 100vw;
+}
+
+.index-seven img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Værelser - Tekst*/
+.index-eight{
+    background-color: var(--light-text);
+    height: 23rem;
+}
+
+.index-eight h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-eight img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-eight hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-eight p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Selskaber - Billede*/
+.index-nine{
+    height: 14rem;
+    width: 100%;
+}
+
+.index-nine img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Selskaber - Tekst*/
+.index-ten{
+    background-color: var(--grey);
+    height: 25.5rem;
+}
+
+.index-ten h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-ten img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-ten hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-ten p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Find vej - Tekst*/
+.index-eleven{
+    background-color: var(--light-text);
+    height: 18.5rem;
+}
+
+.index-eleven h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.index-eleven img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-eleven hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-eleven p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Find Vej - Kort*/
+
+#gmap_canvas {
+    width: 100vw;
+    height: 15rem;
+}
+
+/*Anmeldelser */
+.index-thirteen{
+    background-color: var(--grey);
+    height: 25.7rem;
+}
+
+.index-thirteen h3{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.index-thirteen img{
+    padding-top: 0.8rem;
+    padding-left: 0.4rem;
+    width: 3.8rem;
+    height: auto;
+}
+
+.index-thirteen hr{
+    margin-top: 0.7rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.index-thirteen p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
 /* Footer */
 
-footer{
+.footer-contact{
     background-color: var(--dark-green);
     height: 38rem;
-    display: flex;
-    flex-direction: column;
     color: var(--light-text);
     font-family: parisplus-clair, sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2; 
+    padding: 2rem;
+    column-gap: 1rem;
 }
 
-.footer-contact{
-    margin-top: 4rem;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    height: 18rem;
-    display: flex;
-    justify-content: space-around;
+.first{
+    grid-row-start: 1;
+    grid-row-end:  1;
+}
+
+.first h2{
+    border-bottom: 1px solid;
+}
+
+.second h2{
+    border-bottom: 1px solid;
 }
 
 .footer-time{
-    height: 12rem;
-    margin-top: 0.5rem;
-    margin-left: -1.4rem;
-    display: flex;
-    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
 }
 
-.footer-some-icons{
-    height: 12rem;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-evenly;
+.footer-time .third{
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .footer-opening{
     margin-top: 2.4rem;
-    margin-inline: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 1px solid;
+
 }
 
-.footer-underscore{
-    border-bottom: 1px solid;
+.footer-some-icons{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer-some-icons img{
+    margin: 1.3rem;
 }
 
 footer h2{
@@ -603,9 +778,6 @@ footer p{
 @media only screen and (min-width: 700px) {
     
     /* ------ Tablet-Nav ------ */
-    .mobile-nav{
-
-    }
     
     .nav-logo{
         width: 12.5rem;
@@ -633,42 +805,24 @@ footer p{
     .dropdown-content p {
         font-size: 1.4rem;
     }
+    /* ----- Styling af content ----- */
+
+    /*Åbningstider*/
+    
 
     /* Tablet-Footer */
-
-    footer{
-        height: 45rem;
-    }
-
-    .footer-contact{
-        font-size: 1.4rem;
-        margin-top: 4rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
-    }
-
-    .footer-time{
-        height: 12rem;
-        margin-top: 0.5rem;
-        margin-left: 2rem;
-        margin-right: 4rem;
-        display: flex;
-        justify-content: space-around;
-    }
-
     .footer-some-icons{
-        margin-top: 3rem;
-        justify-content: center;
-        gap: 5rem;
+        display: flex;
+        place-self: center;
+        column-gap: 3rem;
+        padding-top: 0rem;
     }
 
     .footer-opening{
-        font-size: 1.8rem;
-        margin-inline: 9rem;
+        font-size: 1.6rem;
     }
 
     footer h2{
-        padding-block: 0.5rem;
         font-size: 1.6rem;
     }
 
@@ -679,6 +833,8 @@ footer p{
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
+    
+    /* ------ Web Nav ------ */
     .nav-logo{
         width: 10rem;
         height: auto;
@@ -749,21 +905,30 @@ footer p{
         margin-right: 0.8rem;
     }
 
+    /* ----- Her begynder Content -----*/
+
+    .referencer {
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        top: 0;
+        margin-top: 10rem;
+        opacity: 0.5;
+    }
+
+    /*Styling af header med titel*/
     header img{
         margin-top:auto;
-        height: 59.5vh;
+        height: 55vh;
+        object-fit: cover;
     }
    
-    .header-overlay{
-        margin-top: 5.5rem;
-        height: 50vh;
-    }
     .header-big{
         font-size: 10vw;
-        top: 30%;
+        top: 33%;
     }
     .header-small{
-        top: 45%;
+        top: 44%;
         font-size: 1.8vw;
     }
     .index-gridcontainer img{
@@ -772,40 +937,281 @@ footer p{
     }
     .index-gridcontainer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70vh 70vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35rem 50rem;
     }
+    
+    /* Åbningstider Grid-Box */
     .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
+        background-color: var(--grey);
+        height: 100%;
+        padding-left: 1.6rem;
+        padding-right: 1.2rem;
     }
+
+    .index-one h3{
+        color: var(--dark-green);
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 2.5rem;
+    }
+    
+    .index-one h4{
+        color: var(--light-green);
+        font-size: 1.6rem;
+        padding-top: 4.4rem;
+        margin-left: 2.7rem;
+        margin-bottom: 1.9rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .opening-flex{
+        justify-content: space-between;
+        padding-right: 6.5rem;
+    }
+
+    .opening-flex p{
+        font-size: 1.3rem;
+        line-height: 38px;
+        padding-left: 7.8rem;
+        white-space: nowrap;
+    }
+    
+    .opening-phone {
+        margin-top: 3.2rem;
+        margin-right: 7.5rem;
+    }
+    
+    .opening-phone p{
+        font-size: 1.6rem;
+    }
+    
+    .opening-phone img {
+        height: 2rem;
+        width: auto;
+        margin-right: 0.3rem;
+    }
+    
+    .phone-info {
+        font-size: 1.3rem;
+        margin-right: 7.5rem;
+    }
+
+    /* Velkommen Grid-Box */
     .index-two{
         grid-column: 1/2;
         grid-row: 1/2;
+        background-color: var(--light-text);
+        height: 100%;
+    }
+
+    .index-two h3{
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 8.7rem;
+        color: var(--light-green);
     }
     
+    .index-two hr{
+        margin-top: 1.1rem;
+        margin-left: 8.75rem;
+        margin-right: 4rem;
+    }
+    
+    .index-two p{
+        margin-top: 1.6rem;
+        margin-left: 12.5rem;
+        margin-right: 2rem;
+        font-size: 1.4rem;
+    }
+    
+    .index-two-awards{
+        margin-left: 14rem;
+        margin-right: 11rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .index-two-awards img {
+        margin-top: 1.6rem;
+        width: 7rem;
+        height: auto;
+    }
+
+    /* [Image] Hvem er vi Grid-Box */
     .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
+        height: 100%;
     }
+
+    .index-three img{
+        height: 100%;
+        width: auto;
+    }
+
+    /* [Text] Hvem er vi Grid-Box */
     .index-four{
         grid-column: 2/3;
         grid-row: 2/3;
+        height: 100%;
+    }
+    
+    .index-four h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    
+    .index-four img{
+        padding-top: 7.4rem;
+        padding-left: 2.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-four hr{
+        margin-top: -0.9rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 0.3rem;
+    }
+    
+    .index-four p{
+        padding-left: 9rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.3rem;
+        font-size: 1.3rem;
+    }
+
+    /* [Image] Restaurant Grid-Box */
+    .index-five{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 100%;
+    }
+
+    /* [Text] Restaurant Grid-Box */
+    .index-six{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100%;
+    }
+
+    /* [Image] Værelser Grid-Box */
+    .index-seven{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 100%;
+    }
+
+    /* [Text] Værelser Grid-Box */
+    .index-eight{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        height: 100%;
+    }
+
+    /* [Image] Selskaber Grid-Box */
+    .index-nine{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        height: 100%;
+    }
+
+    /* [Text] Selskaber Grid-Box */
+    .index-ten{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        height: 100%;
+    }
+
+    /* Find Vej + Flag Grid-Box */
+    .index-web-paralax{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        display: flex;
+        height: 100%;
+    }
+
+    /* [Text] Selskaber Grid-Box */
+    .index-thirteen{
+        grid-column: 1/3;
+        grid-row: 7/8;
+    }
+
+    /*Find Vej - Kort*/
+    #gmap_canvas {
+    width: 50vw;
+    height: 35rem;
+    align-items: flex-end;
+    }
+
+    .index-six img, .index-eight img, .index-ten img, .index-eleven img {
+        width: 3rem;
+        height: auto;
     }
 
     /* Footer */
-
-    footer{
-        height: 38rem;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
     .footer-contact{
-        margin-top: 4rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        display: grid;
+        grid-template-columns: 20vw 20vw auto 10vw;
+        grid-template-rows: 20vw;
+        column-gap: 10rem;
+        height: fit-content;
     }
+    .footer-time{
+        grid-template-rows: 2.4rem;
+    }
+
+    .first{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .second{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .footer-contact .footer-time{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        margin-top: 2rem;
+    }
+
+    .footer-opening{
+        margin: 0;
+    }
+    .footer-underscore{
+        padding: 0;
+    }
+
+    .third{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    div.footer-some-icons{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 4;
+        grid-column-end: 4;
+        display: grid;
+
+    }
+
+    .third-rest{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    footer h2{
+        margin-top: 2rem;
+    }
+
+
 }
 
 
