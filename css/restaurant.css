@@ -161,6 +161,13 @@ h3{
 p{
     font-size: 1.7ch
 }
+.callnumber{
+    font-size: 1rem;
+    margin: 7px 25px;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
 .three{
     align-items: center;
     padding-left: 0%;
