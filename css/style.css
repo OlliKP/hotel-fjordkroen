@@ -922,7 +922,7 @@ footer p{
 
     /* ----- Her begynder Content -----*/
 
-/*Styling af header med titel*/
+    /*Styling af header med titel*/
     header img{
         margin-top:auto;
         height: 59.5vh;
@@ -955,60 +955,70 @@ footer p{
     .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
+        height: 100%;
     }
 
     /* Velkommen Grid-Box */
     .index-two{
         grid-column: 1/2;
         grid-row: 1/2;
+        
     }
 
     /* [Image] Hvem er vi Grid-Box */
     .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
+        
     }
 
     /* [Text] Hvem er vi Grid-Box */
     .index-four{
         grid-column: 2/3;
         grid-row: 2/3;
+        height: 100%;
     }
 
     /* [Image] Restaurant Grid-Box */
     .index-five{
         grid-column: 2/3;
         grid-row: 3/4;
+        height: 100%;
     }
 
     /* [Text] Restaurant Grid-Box */
     .index-six{
         grid-column: 1/2;
         grid-row: 3/4;
+        height: 100%;
     }
 
     /* [Image] Værelser Grid-Box */
     .index-seven{
         grid-column: 1/2;
         grid-row: 4/5;
+        height: 100%;
     }
 
     /* [Text] Værelser Grid-Box */
     .index-eight{
         grid-column: 2/3;
         grid-row: 4/5;
+        height: 100%;
     }
 
     /* [Image] Selskaber Grid-Box */
     .index-nine{
         grid-column: 2/3;
         grid-row: 5/6;
+        height: 100%;
     }
 
     /* [Text] Selskaber Grid-Box */
     .index-ten{
         grid-column: 1/2;
         grid-row: 5/6;
+        height: 100%;
     }
 
     /* Find Vej + Flag Grid-Box */
@@ -1016,6 +1026,7 @@ footer p{
         grid-column: 1/3;
         grid-row: 6/7;
         display: flex;
+        height: 100%;
     }
 
     /* [Text] Selskaber Grid-Box */
@@ -1029,14 +1040,14 @@ footer p{
     width: 50vw;
     height: 35rem;
     align-items: flex-end;
-}
+    }
 
     .index-four img, .index-six img, .index-eight img, .index-ten img, .index-eleven img {
         width: 3rem;
         height: auto;
     }
 
-    
+
 
     .opening-phone img {
         height: 1.2rem;
