@@ -29,7 +29,7 @@ h4{
 }
 p{
     color: var(--dark-brown);
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     line-height: 1.6em;
 }
@@ -772,24 +772,6 @@ footer p{
     color: var(--light-text);
 }
 
-/* Priser "knap" */ 
-.pris {
-    text-decoration: none;
-    color: var(--light-text);
-    background-color: var(--light-green);
-    font-size: 1.15rem;
-    font-family: var(--sans-serif);
-    font-weight: 400;
-    padding-left: 3.1rem;
-    padding-right: 0.8rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    float: right;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    border-bottom-left-radius: 60px;
-}
-
 /* ------ MEDIA QUERY ------ */
 
 /* Media Query for Tablet */
@@ -824,6 +806,14 @@ footer p{
         font-size: 1.4rem;
     }
     /* ----- Styling af content ----- */
+    .header-big{
+        font-size: 7rem;
+        top: 33%;
+    }
+    .header-small{
+        top: 40%;
+        font-size: 2rem;
+    }
 
     /*Åbningstider*/
     
@@ -1123,6 +1113,7 @@ footer p{
 
     .index-five img {
         height: 100%;
+        width: 100%;
     }
 
     /* [Text] Restaurant Grid-Box */
@@ -1260,12 +1251,12 @@ footer p{
         justify-content: space-between;
         height: 100%;
         background-color: var(--light-text);
-        padding-right: 12rem;
+        padding-right: 10rem;
     }
 
     /*Find Vej - Kort*/
     #gmap_canvas {
-        width: 100rem;
+        width: 60rem;
         height: 35rem;
         margin-top: 7rem;
         }
@@ -1292,15 +1283,16 @@ footer p{
     .index-eleven hr{
         margin-top: -0.5rem;
         margin-left: 8.8em;
-        margin-right: 23.7em;
+        margin-right: 16em;
         margin-bottom: 2rem;
     }
     
     .index-eleven p{
         padding-left: 12.5rem;
-        padding-right: 47rem;
-        padding-bottom: 1.3rem;
+        padding-right: 15rem;
+        padding-bottom: 9rem;
         font-size: 1.3rem;
+        line-height: 2;
         color: var(--dark-brown);
     }
 
@@ -1309,12 +1301,16 @@ footer p{
         grid-row: 7/8;
     }
 
+    .vis-vej-knap {
+        margin-right: 16rem;
+    }
+
     /* Footer */
     .footer-contact{
         display: grid;
         grid-template-columns: 20vw 20vw auto 10vw;
         grid-template-rows: 20vw;
-        column-gap: 10rem;
+        column-gap: 7rem;
         height: fit-content;
     }
     .footer-time{
