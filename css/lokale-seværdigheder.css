@@ -1,7 +1,7 @@
 /*Styling af header med titel*/
 header img{
     width: 100vw;
-    height: 59vh;
+    height: 10.5vh;
     margin-top: 3.5rem;
     object-fit: cover;
 }
@@ -9,7 +9,7 @@ header img{
 .header-overlay{
     position: absolute;
     width: 100vw;
-    height: 59vh;
+    height: 10.5vh;
     top: 0em;
     margin-top: 3.5rem;
     background-color: rgba(46, 52, 45, 0.557);
@@ -23,17 +23,7 @@ header{
     font-size: 15vw;
     color: var(--light-text);
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header-small{
-    font-style: italic;
-    font-size: 3.2vw;
-    color: var(--light-text);
-    position: absolute;
-    top: 32%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -53,6 +43,26 @@ footer p{
     background-color: var(--light-text);
     padding-top: 2em;
     padding-right: 3em;
+}
+.one img{
+  width: 23.438rem;
+  height: 16.991rem;  
+}
+.three img{
+    width: 23.438rem;
+    height: 16.991rem;  
+  }
+.five img{
+    width: 23.438rem;
+    height: 16.991rem;  
+}
+.seven img{
+    width: 23.438rem;
+    height: 16.991rem;  
+}
+.nine img{
+    width: 23.438rem;
+    height: 16.991rem;  
 }
 .section{
     font-size: 1.25rem;
@@ -158,6 +168,26 @@ header img, .header-overlay{
         grid-column: 1/2;
         grid-row: 1/2;
         padding-right: 0rem;
+    }
+    .one img{
+        width: auto;
+        height: 28.188rem;  
+      }
+      .three img{
+        width: auto;
+        height: 28.188rem;  
+      }
+    .five img{
+        width: auto;
+        height: 28.188rem;  
+    }
+    .seven img{
+        width: auto;
+        height: 28.188rem;  
+    }
+    .nine img{
+        width: auto;
+        height: 28.188rem;  
     }
     .two{
         grid-column: 2/3;

@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-*,
+/**,
 *::before,
 *::after {
     box-sizing: border-box;
+}*/
+body{
+    background-color: var(--light-text);
 }
 
 .header-ensemble{
@@ -45,6 +48,7 @@ body {
 /* Positionerer slideshowet (Skal bruges til at positionere højre/venstre arrows) */
 .slideshow {
   position: relative;
+  background-color: var(--light-text);
 }
 
 /* Gemmer billederne som der vises */
@@ -66,10 +70,9 @@ div.mySlides{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -150px;
   color: black;
   background-color: var(--light-text);
   opacity: 0.5;
@@ -104,3 +107,195 @@ div.mySlides{
   width: 20%;
 }
 /* Her slutter CSS koden fra w3school*/
+
+/* Her begynder styling til første section: værelses-info */
+.vaerelses-info{
+    background-color: var(--light-text);
+}
+
+.vaerelses-info h4{
+    font-size: 1rem;
+    font-family: var(--sans-serif-regular);
+    font-style: italic;
+    font-weight: 20;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.vaerelses-info h3{
+    padding-top: 1.8rem;
+    color: var(--light-green);
+    font-size: 1.5em;
+    font-family: var(--sans-serif);
+    font-weight: 20;
+}
+
+.vaerelses-info hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.vaerelses-info p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+.under-knap-info{
+    float: right;
+}
+
+.Faciliteter{
+    margin-top: 3rem;
+}
+
+.Faciliteter h3{
+    padding-top: 1.8rem;
+    color: var(--light-green);
+    font-size: 1.5em;
+    font-family: var(--sans-serif);
+    font-weight: 20;
+}
+
+.Faciliteter hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.Faciliteter p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/* Grid system til faciliteterne */
+
+.facilitet-grid{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.bad{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.room{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.ekstra{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.udendors{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px) {
+    
+    .facilitet-grid{
+        margin: 2rem;
+    }
+
+
+}
+
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    .header-ensemble img{
+        width: 100%;
+        height: 13vw;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    .slideshow{
+        height: 50vw;
+        width: 50vw;
+        float: left;
+    }
+
+    .prev,
+    .next {
+        padding: 20px;
+        font-size: 50px;
+        margin-top: -290px;
+    }
+
+    div.mySlides{
+        margin-bottom: 5rem;
+    }
+
+    .row img{
+        padding: 10px;
+    }
+
+    .vaerelses-info{
+        height: 20vw;
+        width: 50vw;
+        float: right;
+        padding: 2rem;
+    }
+
+    .vaerelses-info h3{
+        font-size: 2em;
+    }
+
+    .vaerelses-info h4{
+        font-size: 1rem;
+    }
+
+    .vaerelses-info p{
+        font-size: 1.2rem;
+        color: var(--dark-brown);
+        padding-right: 8rem;
+    }
+
+    .Faciliteter{
+        height: 27.5vw;
+        width: 50vw;
+        float: right;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .Faciliteter p{
+        font-size: 1.2rem;
+    }
+
+    .pris{
+        padding-left: 3.3rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        float: right;
+        margin-right: 8rem;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .under-knap-info{
+        text-align: right;
+        margin-top: 5rem;
+        float: none;
+    }
+
+
+}
