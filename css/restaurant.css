@@ -20,7 +20,6 @@ header{
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
-
 .header-small{
     font-style: italic;
     font-size: 3.2vw;
@@ -31,6 +30,21 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.headerpics{
+    position: relative;
+}
+.headerimg{
+    position: relative;
+}
+.smileyicon{
+    position: absolute;
+    z-index: +1;
+    width: 3em;
+    height: auto;
+    top: 53.4vh;
+    left: 85vw;
+}
+
 .restaurant-gridcontainer{
     background-color: #F0F0EB;
     padding-bottom: 3rem
@@ -45,6 +59,48 @@ header{
 }
 .textbox2{
     margin-top: 3rem;
+}
+.buttongroup{
+    margin: 2vh;
+    margin-right: 0.4rem;
+}
+.se-mere-menu{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 2.0rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom-left-radius: 60px;
+}
+.se-mere-vin{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 0.3rem;
+    padding-right: 3.4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom-right-radius: 60px;
+}
+.se-mere-menu:hover{
+    background-color: var(--dark-green);
+}
+.se-mere-menu:focus {
+    background-color: var(--dark-green);
+}
+.se-mere-vin:hover{
+    background-color: var(--dark-green);
+}
+.se-mere-vin:focus {
+    background-color: var(--dark-green);
 }
 .p1{
     margin-left: 4rem;
@@ -186,6 +242,14 @@ hr{
 .header-small{
     top: 50%;
 }
+.smileyicon{
+    position:absolute;
+    z-index: +1;
+    width: 3em;
+    height: auto;
+    top: 53.4vh;
+    left: 89vw;
+}
 .restaurant-gridcontainer{
     display: flex;
     flex-direction: column;
@@ -225,6 +289,14 @@ hr{
         top: 45%;
         font-size: 1.8vw;
     }
+    .smileyicon{
+        position:absolute;
+        z-index: +1;
+        width: 3.5em;
+        height: auto;
+        top: 52vh;
+        left: 93vw;
+    }
     .restaurant-one{
         display: flex;
         justify-content: space-around;
@@ -237,7 +309,7 @@ hr{
         margin-left: 15vw;
     }
     .linep1{
-        margin-right: 10vw;
+        margin-right: 20vw;
     }
     .infoline{
         margin-left: 10vw;
@@ -262,9 +334,6 @@ hr{
     .infotext2{
         height: 100px;
         margin-top: 0%;
-    }
-    .textbox2{
-
     }
     .phoneicon{
         width: 2.063rem;
