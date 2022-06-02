@@ -938,9 +938,20 @@ footer p{
     .index-gridcontainer{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 35rem 50rem;
+        grid-template-rows: 35rem 50rem 50rem;
     }
     
+    /*Se mere knap*/
+    .index-se-mere {
+        font-size: 1.9rem;
+        padding-left: 7rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-right: 4.3rem;
+        margin-top: 0rem;
+        }    
+
     /* Åbningstider Grid-Box */
     .index-one{
         grid-column: 2/3;
@@ -1049,7 +1060,6 @@ footer p{
 
     .index-three img{
         height: 100%;
-        width: auto;
     }
 
     /* [Text] Hvem er vi Grid-Box */
@@ -1076,13 +1086,13 @@ footer p{
         margin-top: -0.9rem;
         margin-left: 4.2em;
         margin-right: 9em;
-        margin-bottom: 0.3rem;
+        margin-bottom: 1.3rem;
     }
     
     .index-four p{
         padding-left: 9rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1.3rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
         font-size: 1.3rem;
     }
 
@@ -1093,11 +1103,41 @@ footer p{
         height: 100%;
     }
 
+    .index-five img {
+        height: 100%;
+    }
+
     /* [Text] Restaurant Grid-Box */
     .index-six{
         grid-column: 1/2;
         grid-row: 3/4;
         height: 100%;
+    }
+    
+    .index-six h3{
+        padding-top: 9.5rem;
+        font-size: 1.9rem;
+        margin-left: 8.9rem;
+    }
+    
+    .index-six img{
+        padding-top: 8.5rem;
+        padding-left: 1.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-six hr{
+        margin-left: 9em;
+        margin-right: 4.2em;
+        margin-bottom: 1.4rem;
+    }
+    
+    .index-six p{
+        padding-left: 12.5rem;
+        padding-right: 5rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
     }
 
     /* [Image] Værelser Grid-Box */
@@ -1106,6 +1146,12 @@ footer p{
         grid-row: 4/5;
         height: 100%;
     }
+
+    /* .index-seven img{
+        height: 100%;
+        width: auto;
+        margin-right: -10rem;
+    } */
 
     /* [Text] Værelser Grid-Box */
     .index-eight{
@@ -1149,7 +1195,7 @@ footer p{
     align-items: flex-end;
     }
 
-    .index-six img, .index-eight img, .index-ten img, .index-eleven img {
+    .index-eight img, .index-ten img, .index-eleven img {
         width: 3rem;
         height: auto;
     }
