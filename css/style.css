@@ -1055,11 +1055,19 @@ footer p{
 
     /* Footer */
 
+    
     .footer-contact{
-        margin: 0;
+        background-color: var(--dark-green);
+        height: 38rem;
+        color: var(--light-text);
+        font-family: parisplus-clair, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: grid;
         grid-template-columns: 2;
         grid-template-rows: 2; 
-    }
+        padding: 2rem;
+}
 
 }
 
