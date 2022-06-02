@@ -265,15 +265,6 @@ header img{
     object-fit: cover;
 }
 
-.header-overlay{
-    position: absolute;
-    width: 100vw;
-    height: 59vh;
-    top: 0em;
-    margin-top: 3.5rem;
-    background-color: rgba(46, 52, 45, 0.557);
-}
-
 header{
     margin-bottom: -4px;
 }
@@ -914,23 +905,28 @@ footer p{
 
     /* ----- Her begynder Content -----*/
 
+    .referencer {
+        width: 100vw;
+        height: auto;
+        position: fixed;
+        top: 0;
+        margin-top: 10rem;
+        opacity: 0.5;
+    }
+
     /*Styling af header med titel*/
     header img{
         margin-top:auto;
-        height: 59.5vh;
+        height: 55vh;
         object-fit: cover;
     }
    
-    .header-overlay{
-        margin-top: 5.5rem;
-        height: 50vh;
-    }
     .header-big{
         font-size: 10vw;
-        top: 30%;
+        top: 33%;
     }
     .header-small{
-        top: 45%;
+        top: 44%;
         font-size: 1.8vw;
     }
     .index-gridcontainer img{
@@ -939,29 +935,119 @@ footer p{
     }
     .index-gridcontainer{
         display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 70vh 70vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35rem 50rem;
     }
     
     /* Åbningstider Grid-Box */
     .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
+        background-color: var(--grey);
         height: 100%;
+        padding-left: 1.6rem;
+        padding-right: 1.2rem;
+    }
+
+    .index-one h3{
+        color: var(--dark-green);
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 2.5rem;
+    }
+    
+    .index-one h4{
+        color: var(--light-green);
+        font-size: 1.6rem;
+        padding-top: 4.4rem;
+        margin-left: 2.7rem;
+        margin-bottom: 1.9rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .opening-flex{
+        justify-content: space-between;
+        padding-right: 6.5rem;
+    }
+
+    .opening-flex p{
+        font-size: 1.3rem;
+        line-height: 38px;
+        padding-left: 7.8rem;
+        white-space: nowrap;
+    }
+    
+    .opening-phone {
+        margin-top: 3.2rem;
+        margin-right: 7.5rem;
+    }
+    
+    .opening-phone p{
+        font-size: 1.6rem;
+    }
+    
+    .opening-phone img {
+        height: 2rem;
+        width: auto;
+        margin-right: 0.3rem;
+    }
+    
+    .phone-info {
+        font-size: 1.3rem;
+        margin-right: 7.5rem;
     }
 
     /* Velkommen Grid-Box */
     .index-two{
         grid-column: 1/2;
         grid-row: 1/2;
-        
+        background-color: var(--light-text);
+        height: 100%;
+    }
+
+    .index-two h3{
+        font-size: 1.9rem;
+        padding-top: 2.5rem;
+        margin-left: 8.7rem;
+        color: var(--light-green);
+    }
+    
+    .index-two hr{
+        margin-top: 1.1rem;
+        margin-left: 8.75rem;
+        margin-right: 4rem;
+    }
+    
+    .index-two p{
+        margin-top: 1.6rem;
+        margin-left: 12.5rem;
+        margin-right: 2rem;
+        font-size: 1.4rem;
+    }
+    
+    .index-two-awards{
+        margin-left: 14rem;
+        margin-right: 11rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .index-two-awards img {
+        margin-top: 1.6rem;
+        width: 7rem;
+        height: auto;
     }
 
     /* [Image] Hvem er vi Grid-Box */
     .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
-        
+        height: 100%;
+    }
+
+    .index-three img{
+        height: 100%;
+        width: auto;
     }
 
     /* [Text] Hvem er vi Grid-Box */
@@ -969,6 +1055,33 @@ footer p{
         grid-column: 2/3;
         grid-row: 2/3;
         height: 100%;
+    }
+    
+    .index-four h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    
+    .index-four img{
+        padding-top: 7.4rem;
+        padding-left: 2.4rem;
+        width: 6rem;
+        height: auto;
+    }
+    
+    .index-four hr{
+        margin-top: -0.9rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 0.3rem;
+    }
+    
+    .index-four p{
+        padding-left: 9rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.3rem;
+        font-size: 1.3rem;
     }
 
     /* [Image] Restaurant Grid-Box */
@@ -1034,21 +1147,7 @@ footer p{
     align-items: flex-end;
     }
 
-    .index-four img, .index-six img, .index-eight img, .index-ten img, .index-eleven img {
-        width: 3rem;
-        height: auto;
-    }
-
-
-
-    .opening-phone img {
-        height: 1.2rem;
-        width: auto;
-        margin-right: 0.3rem;
-    }
-
-    .index-two-awards img {
-        margin-top: 1.6rem;
+    .index-six img, .index-eight img, .index-ten img, .index-eleven img {
         width: 3rem;
         height: auto;
     }
