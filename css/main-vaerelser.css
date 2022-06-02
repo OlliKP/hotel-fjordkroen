@@ -33,12 +33,75 @@ body {
     color: var(--dark-green);
     font-size: 0.8rem;
     padding-bottom: 1.3rem;
+    margin-right: 1.5rem;
 }
 
-/* Grid systemet til rooms 1-7 */
+/* Styling til room 1-7 */
 
 .ikon-saet-rooms{
-    display: flex;
     margin: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.ikon-saet-rooms div{
+    text-align: center;
 }
 
+.room-info h2{
+    color: var(--light-green);
+    font-style: normal;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 20;
+    font-family: var(--sans-serif);
+}
+
+.room-info p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    line-height: 1.6em;
+}
+
+hr{
+    margin-top: 0.9rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.3rem;
+}
+
+.ikon-saet-info{
+    padding-left: 4rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.ikon-saet-info div{
+    text-align: center;
+}
+
+.ikon-p p{
+    font-size: 0.8rem;
+    color: var(--dark-green);
+    font-style: var(--sans-serif-regular);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.vaerelser-knapper{
+    margin-bottom: 5rem;
+    margin-right: 1.5rem;
+    justify-content: center;
+}
+
+.vaerelser-knapper p{
+    padding-bottom: 0rem;
+    text-align: right;
+    margin-right: 7.6rem;
+    margin-top: 1.5rem;
+}

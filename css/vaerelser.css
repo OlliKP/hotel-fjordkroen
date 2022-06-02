@@ -215,11 +215,10 @@ div.mySlides{
     font-weight: 400;
     padding-left: 3.1rem;
     padding-right: 0.8rem;
-    padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
     float: right;
-    margin-right: 2rem;
-    margin-top: 2rem;
+    margin-right: 0.5rem;
     border-bottom-left-radius: 60px;
 }
 
@@ -232,11 +231,10 @@ div.mySlides{
     font-weight: 400;
     padding-left: 0.8rem;
     padding-right: 3.1rem;
-    padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
     float: right;
-    margin-right: 2rem;
-    margin-top: 2rem;
+    margin-right: 0.5rem;
     border-bottom-right-radius: 60px;
 }
 
@@ -245,30 +243,7 @@ div.mySlides{
     height: 35vh;
 }
 
-.room-img{
-    width: 100vw;
-    height: 35vh;
-}
-.room-img{
-    width: 100vw;
-    height: 35vh;
-}
-.room-img{
-    width: 100vw;
-    height: 35vh;
-}
-.room-img{
-    width: 100vw;
-    height: 35vh;
-}
-.room-img{
-    width: 100vw;
-    height: 35vh;
-}
-.room-7 img{
-    width: 100vw;
-    height: 35vh;
-}
+
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px) {
     
@@ -278,7 +253,6 @@ div.mySlides{
 
 
 }
-
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
