@@ -1,9 +1,9 @@
-/*Styling af header med titel*/
 footer p{
     color: var(--light-text);
 }
 
 /*Styling af sectioner*/
+/*Første sektion på siden er en lille info om åbningstider og tlf-nummer*/
 .opener-phone {
     margin-top: 1rem;
     margin-left: 4em;
@@ -11,7 +11,6 @@ footer p{
     justify-content: flex-start;
     align-items: center;
 }
-
 .opener-phone p{
     font-size: 0.9rem;
     color: var(--dark-brown);
@@ -25,6 +24,27 @@ footer p{
     margin-right: 0.3rem;
 }
 
+.openerright{
+    background-color: var(--light-text);
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    height: fit-content;
+}
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.openerleft{
+    background-color: var(--grey);
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: fit-content;
+}
+/*Sektion med én overnatning*/
 .section-img{
     width: 100vw;
     height: 50vh;
@@ -38,18 +58,6 @@ footer p{
     padding-right: 1em;
     padding-bottom: 5em;
     height: fit-content;
-}
-.openerright{
-    background-color: var(--light-text);
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 2em;
-    height: fit-content;
-}
-hr{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
 }
 .text-box{
     margin-left: 4em;
@@ -91,6 +99,8 @@ hr{
     margin-left: -1em;
     margin-bottom: 0.5em;
 }
+
+/*Sektion med 2 overnatninger*/
 .twonighttext{
     background-color: var(--grey);
     padding-top: 2em;
@@ -100,13 +110,6 @@ hr{
     height: fit-content;
 }
 
-.openerleft{
-    background-color: var(--grey);
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: fit-content;
-}
 .twonighttext h3, .openerleft h3{
     color: var(--dark-green);
 }
@@ -143,7 +146,7 @@ hr{
         margin-top: 1.5em;
         margin-right: 0em;
     }
-
+    /*Her placeres de forskllige billeder og tekstfelter i griddet, så de skifter på kryds*/
     .gridcontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
