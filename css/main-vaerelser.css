@@ -39,7 +39,10 @@ body {
 /* Styling til room 1-7 */
 
 .ikon-saet-rooms{
-    margin: 2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -74,13 +77,18 @@ hr{
 }
 
 .ikon-saet-info{
-    padding-left: 4rem;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ikon-saet-info div{
     text-align: center;
+    justify-content: center;
+}
+
+.ikon{
+    font-weight: 200;
 }
 
 .ikon-p p{
@@ -91,6 +99,11 @@ hr{
     padding-right: 0;
     margin-left: 2rem;
     margin-right: 2rem;
+    padding-top: 0.5vh;
+}
+
+.pers{
+    margin-bottom: 0.3rem;
 }
 
 .vaerelser-knapper{
@@ -108,6 +121,14 @@ hr{
 
 .free-wifi{
     margin-top: 0.5rem;
+}
+
+.room-2, .room-4, .room-6{
+    background-color: var(--grey);
+}
+
+.grey{
+    background-color: var(--light-text);
 }
 
 /* Styling til room 1-7 slutter her */
@@ -167,7 +188,7 @@ hr{
 
     /* Værelserne grids + styling */
 
-    .room-1{
+    .room-1, .room-2, .room-3, .room-4, .room-5, .room-6, .room-7{
         grid-column-start: 1;
         grid-column-end: 2;
         display: grid;
@@ -242,47 +263,67 @@ hr{
         padding: 0;
     }
 
+    p.to-personer{
+        margin-top: 0.38rem;
+    }
+
     /* Knapperne justeres til web */
     .vaerelser-knapper p{
         margin: 0;
         padding: 0;
-        padding-right: 7.9em;
+        padding-right: 9.8em;
         color: var(--light-green);
         font-size: 1.2rem;
     }
     .vaerelser-knapper{
         text-align: right;
-        padding-left: 18rem;
-        padding-top: 4rem;
+        padding-left: 15rem;
+        padding-top: 3rem;
+    }
+
+    .room-se-mere, .room-pris{
+        padding-left: 2rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+        padding-top: 0.5rem;
     }
 
 
-
-
+    /* Værelserne sættes ind i grid systemet */
     .room-2{
         grid-column-start: 1;
-        grid-column-end: 3;
+        /*grid-column-end: 3;*/
     }
     .room-3{
         grid-column-start: 1;
-        grid-column-end: 4;
+        /*grid-column-end: 4;*/
     }
     .room-4{
         grid-column-start: 1;
-        grid-column-end: 5;
+        /*grid-column-end: 5;*/
     }
     .room-5{
         grid-column-start: 1;
-        grid-column-end: 6;
+        /*grid-column-end: 6;*/
     }
 
     .room-6{
         grid-column-start: 1;
-        grid-column-end: 7;
+        /*grid-column-end: 7;*/
     }
     .room-7{
         grid-column-start: 1;
-        grid-column-end: 8;
+        /*grid-column-end: 8;*/
+    }
+    /* Værelserne sættes ind i grid systemet - SLUT */
+
+    .room-2, .room-4, .room-6{
+        background-color: var(--grey);
+    }
+
+    .grey{
+        background-color: var(--light-text);
     }
 
 }
