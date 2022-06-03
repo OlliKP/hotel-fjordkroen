@@ -29,7 +29,7 @@ h4{
 }
 p{
     color: var(--dark-brown);
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     line-height: 1.6em;
 }
@@ -139,6 +139,9 @@ nav ul{
     width: 20px;
     height: 20px;
     margin-right: 1rem;
+}
+.dropdown-phone a{
+    border: 0px;
 }
 
 /* Checkbox, som er burgermenu'ens indstillinger der gør at vores menu kommer ned når man klikker */
@@ -288,6 +291,7 @@ header{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* ----- Styling af content ----- */
@@ -387,6 +391,15 @@ header{
     font-size: 0.8rem;
     color: var(--light-green);
     font-family: var(--sans-serif-regular);
+    font-weight: 400;
+}
+
+.callerlink{
+    font-size: 1rem;
+    margin: 7px 0px;
+    border: none;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
     font-weight: 400;
 }
 
@@ -1033,6 +1046,14 @@ footer p{
     .phone-info {
         font-size: 1.3rem;
         margin-right: 7.5rem;
+    }
+
+    .callerlink{
+        font-size: 1.7rem;
+        margin: 7px 0px;
+        color: var(--dark-green);
+        font-family: var(--sans-serif);
+        font-weight: 400;
     }
 
     /* Velkommen Grid-Box */

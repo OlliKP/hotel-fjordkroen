@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    font-family: parisplus-clair;
+}
+
+:root{
+    --dark-brown: #5C3F16;
+    --dark-green: #476948;
+    --light-text: #F0F0EB;
+    --light-green: #889B7F;
+    --grey: #d8d5cd;
+    --script: gioviale, sans-serif;
+    --sans-serif: parisplus-std, sans-serif;
+    --sans-serif-regular: parisplus-std, sans-serif;
+}
+
+/*Styling af header med titel*/
+header img{
+    width: 100vw;
+    height: 10.5vh;
+    margin-top: 3.5rem;
+    object-fit: cover;
+}
+
+.header-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 10.5vh;
+    top: 0em;
+    margin-top: 3.5rem;
+    background-color: rgba(46, 52, 45, 0.557);
+}
+header{
+    margin-bottom: -4px;
+}
+
+.header-big{
+    font-family: var(--script);
+    font-size: 15vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 3.2vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer p{
+    color: var(--light-text);
+}
+
+/*Styling af sectioner*/
+.section-img{
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+/*Koden på 'One', 'one h3' & 'one h4' er den samme som inde på index siden, da det er den samme section*/
+.one{
+    background-color: var(--light-text);
+    height: 264px;
+    padding-left: 1.6rem;
+    padding-right: 1.2rem;
+}
+.one h3{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--light-green);
+    font-size: 1.3rem;
+    padding-top: 2.6rem;
+    margin-left: 0;
+}
+.one h4{
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    color: var(--dark-green);
+    font-size: 1rem;
+    padding-top: 1.7rem;
+    border-bottom: 1px solid var(--dark-green);
+    margin-left: 0;
+    margin-bottom: 0.6rem;
+}
+.two{
+    background-color: var(--light-text);
+    padding-top: 2em;
+}
+#gmap_canvas {
+    width: 23.438rem;
+    height: 12.813rem;
+    padding-bottom: 0rem;
+}
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.stemningsbillede{
+    width: 18.938rem;
+    height: auto;
+    padding: 2rem;
+}
+.three{
+    margin-left: 0rem;
+    background-color: var(--light-text);
+}
+.txtbx{
+    padding-left: 1.5rem;
+    padding-right: 2.688rem;
+}
+.section{
+    font-size: 1.25rem;
+    padding-top: 1.063rem;
+}
+.psection{
+    font-size: 0.75rem;
+    padding-left: 2.938rem;
+}
+.adrsection{
+    font-size: 0.75rem;
+    padding-top: 1.875rem;
+    padding-left: 2.938rem;
+    padding-bottom: 1.875rem;
+}
+.four{
+    margin-left: 0rem;
+    background-color: var(--grey);
+}
+.gpsec{
+    padding-top: 1.375rem;
+    padding-bottom: 2.813rem;
+}
+.five{
+    margin-left: 0rem;
+    background-color: var(--grey);
+}
+.five img{
+    width: 23.438rem;
+    height: auto;
+}
+.six{
+    margin-left: 0rem;
+    background-color: var(--grey);
+}
+.psec1{
+    padding-top: 1.375rem;
+}
+.seven{
+    margin-left: 0rem;
+    background-color: var(--light-text);
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px){
+header img, .header-overlay{
+    margin-top: 6rem;
+    height: 45vh;
+}
+.header-big{
+    top: 30%;
+}
+.header-small{
+    top: 38%;
+}
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 960px) {
+    header img{
+        margin-top:auto;
+        height: 50vh;
+    }
+    .header-overlay{
+        margin-top: 5.5rem;
+        height: 40.65vh;
+    }
+    .header-big{
+        font-size: 10vw;
+        top: 30%;
+    }
+    .header-small{
+        top: 45%;
+        font-size: 1.8vw;
+    }
+    .gridone-h3{
+        font-size: 30px;
+        padding-top: 3.875rem;
+    }
+    .gridone-p{
+        font-size: 20px;
+    }
+    .gridtwo-p{
+        font-size: 20px;
+        padding-top: 3.875rem;
+    }
+    .stem1{
+        width: 29.938rem;
+        height: 22.688rem;
+        padding: 0;
+        object-fit: cover;
+    }
+    .stem2{
+        width: 29.938rem;
+        height: 22.688rem;
+        padding: 0;
+        object-fit: cover;
+    }
+    .stem3{
+        width: 29.938rem;
+        height: 22.688rem;
+        padding: 0;
+        object-fit: cover;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70vh 70vh;
+    }
+    .one{
+        margin-top: 4.063rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 0rem;
+    }
+    .two{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-bottom: 4.625rem;
+    }
+    #gmap_canvas {
+        margin-left: 0rem;
+        width: 51vw;
+        height: 28.188rem;
+    }
+    .three{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 0;
+    }
+    .txtbx{
+        padding-left: 1.5rem;
+        padding-right: 2.688rem;
+    }
+    .section{
+        font-size: 1.875rem;
+        padding-top: 3.188rem;
+    }
+    .psection{
+        font-size: 1.25rem;
+        padding-left: 2.938rem;
+    }
+    .adrsection{
+        font-size: 1.25rem;
+        padding-top: 1.875rem;
+        padding-left: 2.938rem;
+        padding-bottom: 1.875rem;
+    }
+    .four{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .five{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .five img{
+        width: 60.063rem;
+        height: auto;
+    }
+    .six{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .seven{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin-left: 0;
+        padding-top: 9rem;
+        padding-bottom: 7.563rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section-img{
+        width: 100vw;
+        height: 40vh;
+        object-fit: cover;
+        margin-bottom: -4px;
+    }
+}
