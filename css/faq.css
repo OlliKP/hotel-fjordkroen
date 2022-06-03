@@ -1,0 +1,92 @@
+/*Styling af header*/
+.header-big{
+    font-size: 3rem;
+    margin-top: -4.5em;
+}
+header img{
+    height: 7em;
+    margin-top: 3em;
+}
+/*Styling af første sektion med praktiske spørgsmål*/
+.practical{
+    background-color: var(--light-text);
+    padding-bottom: 2em;
+}
+.practical h3{
+    text-align: center;
+    margin-left: 0;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.readmore{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+.arrow{
+    height: max-content;
+}
+
+/*For at svaret på spørgsmålet er skjult eller "lukket" som standard, når siden refreshes eller åbnes*/
+span{
+    display: none;
+}
+
+/*Anden sektion med værelsesfaciliteter*/
+.rooms{
+    background-color: var(--grey);
+    padding-bottom: 2em;
+}
+.rooms h3{
+    color: var(--dark-green);
+    text-align: center;
+    margin-left: 0;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+
+/*Trejde sektion med gebyrer og politikker*/
+.fees{
+    background-color: var(--light-text);
+    padding-bottom: 2em;
+}
+.fees h3{
+    text-align: center;
+    margin-left: 0;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+
+@media only screen and (min-width: 700px){
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .readmore{
+        width: 38vw;
+    }
+    .header-big{
+        font-size: 4em;
+        margin-top: -3em;
+    }
+}
+
+@media only screen and (min-width: 1150px){
+    header img{
+        height: 14em;
+    }
+    .header-big{
+        font-size: 6em;
+        margin-top: -1.2em;
+    }
+    .flex{
+        padding-right: 7em;
+        padding-left: 7em;
+    }
+}
