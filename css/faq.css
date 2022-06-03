@@ -1,7 +1,13 @@
 /*Styling af header*/
+header{
+    position: relative;
+    text-align: center;
+}
 .header-big{
-    font-size: 3rem;
-    margin-top: -4.5em;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 header img{
     height: 7em;
@@ -73,7 +79,7 @@ span{
     }
     .header-big{
         font-size: 4em;
-        margin-top: -3em;
+        top: 2em;
     }
 }
 
@@ -84,6 +90,7 @@ span{
     .header-big{
         font-size: 6em;
         margin-top: -1.2em;
+        top: 3.3em;
     }
     .flex{
         padding-right: 7em;
