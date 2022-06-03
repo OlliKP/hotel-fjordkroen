@@ -784,6 +784,23 @@ footer p{
     color: var(--light-text);
 }
 
+.pris{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-bottom-left-radius: 60px;
+}
+
 /* ------ MEDIA QUERY ------ */
 
 /* Media Query for Tablet */

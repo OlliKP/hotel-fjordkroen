@@ -204,6 +204,46 @@ div.mySlides{
     grid-column-end: 2;
 }
 
+/* ---------- her begynder kodning til main-værelse (vaerelser.html) --------- */
+
+.room-pris{
+    text-decoration: none;
+    color: var(--dark-brown);
+    background-color: var(--grey);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 3.1rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    float: right;
+    margin-right: 0.5rem;
+    border-bottom-left-radius: 60px;
+}
+
+.room-se-mere{
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 0.8rem;
+    padding-right: 3.1rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    float: right;
+    margin-right: 0.5rem;
+    border-bottom-right-radius: 60px;
+}
+
+.room-img{
+    width: 100vw;
+    height: 35vh;
+}
+
+
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px) {
     
@@ -213,7 +253,6 @@ div.mySlides{
 
 
 }
-
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
