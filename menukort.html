@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vinkort.css">
+    <title>Hotel Fjordkroen / Menukort</title>
+    <!--Navbar/checkbox-->
+    <script src="https://kit.fontawesome.com/b5a42e777e.js" crossorigin="anonymous"></script>
+    <!--SEO-->
+    <meta name="keywords" content="Restaurant, Hotel, Præstø Fjord, Service, Kvalitet, Tappernøje, Selskabslokaler, Konfirmation, Bryllyp, Vordingborg, Næstved">
+    <meta name="description" content="indsæt description her">
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xko4pqh.css">
+</head>
+
+<body>
+    <!-- Mobile Navigation Bar--> 
+    <input type="checkbox" id="checkbox">   
+    <nav class="mobile-nav">
+
+        <a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a>
+        <div class="flags-and-burger">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+            <label for="checkbox">
+                <i class="fas fa-bars fa-x2"></i>
+            </label>
+        </div>
+        
+            <ul class="dropdown-content">
+                <li><a href="index.html">Forside</a></li>
+                <ul class="under-menu"><a href="restaurant.html" id="underline">Restaurant</a>
+                    <li><a href="menukort.html">Menukort</a></li>
+                    <li><a href="vinkort.html">Vinkort</a></li>
+                </ul>
+                <li><a href="vaerelser.html">Værelser</a></li>
+                <li><a href="kro-ophold.html">Kro-ophold</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <ul class="under-menu"><a href="#" id="underline">Info</a>
+                    <li><a href="praktiske-oplysninger.html">Praktiske Oplysninger</a></li>
+                    <li><a href="lokale-seværdigheder.html">Lokale seværdigheder</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="dropdown-phone"><img src="img/icon-phone.png" alt=""><p> Tlf: +45 55 96 58 10</p></div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Web Navigation Bar-->
+    <nav class="web-nav"> 
+        <li><a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a></li>
+        <ul class="subnav">
+            <button class="subnavbtn"><a href="restaurant.html">Restaurant<i class="fa fa-caret-down"></i></a></button>
+            <li class="subnav-content">
+              <a href="menukort.html">Menukort</a>
+              <a href="vinkort.html">Vinkort</a>
+            </li>
+        </ul>
+        <li class="web-nav-li"><a href="vaerelser.html">Værelser</a></li>
+        <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
+        <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
+        <ul class="subnav">
+            <button class="subnavbtn">Info<i class="fa fa-caret-down"></i></button>
+            <li class="subnav-content">
+              <a href="menukort.html">Praktiske Oplysninger</a>
+              <a href="lokale-seværdigheder.html">Lokale Seværdigheder</a>
+              <a href="faq.html">FAQ</a>
+            </li>
+        </ul>
+        <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
+        <div class="only-flags">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+        <!-- Top-Bar med telefon nummer og Valg af sprog-->
+        <li class="top-bar">
+            <img src="img/icon-phone.png" class="top-bar-phone" alt="Et icon af en telefon" width="37" height="37">
+            <p>+45 55 96 58 10</p>
+            <div></div>
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </li>
+    </nav>
+
+    <header>
+        <img src="img/menukort/headerweb.jpg" alt="Billede af Fjordkroens facade">
+        <h1 class="header-big">Menukort</h1>
+        <h2 class="header-small">Book bord via tlf. +45 55 96 58 10</h2>
+    </header>
+
+    <!-- Reference billede // Skal fjernes igen-->
+    <!-- <img class="referencer" src="img/referencer/Champagne.png" alt=""> -->
+
+    <!---------------Forretter--------------->
+    <section class="cocktail-section">
+        <div class="flex-knap"><a href="menukort.html">Se vinkort</a></div>
+        <h2>Forretter</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas</p>
+        
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Glass Mousserende vin</h3>
+                    <p class="price">kr. 75,-</p>
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Aperol Spritz</h3>
+                    <p class="price">kr. 75,-</p>
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Gin Hass</h3>
+                    <p class="price">kr. 75,-</p>
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Dry Martini Cocktail</h3>
+                    <p class="price">kr. 85,-</p>
+                </div>
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas</p>
+    
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Manhatten</h3>
+                    <p class="price">kr. 85,-</p>
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">GT Second Class</h3>
+                    <p class="price">kr. 75,-</p>
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">GT First Class</h3>
+                    <p class="price">kr. 125,-</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!---------------Champagne og andre bobler--------------->
+    <section class="champagne-section">
+        <h2 class="h2-dark-green">Champagne og andre bobler</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas / Flaske</p>
+            
+                <div>
+                    <h3 class="menu-h3">Henri Giraud, Esprit Nature</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Champagne, Aÿ, Frankrig</p>
+                        <p class="price">kr. --- /800,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Nicolas Feuillatte, Reserve Exclusive Brut - Rosé</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Champagne, Chouilly, Frankrig</p>
+                        <p class="price">kr. --- /1.000,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Champagne Ruinart Brut</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frankrig</p>
+                        <p class="price">kr. --- /1.200,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Maison Albert Sound, Crémant de Bourgogne Châtaignier Brut - Rosé</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Bourgogne, Côte Chalonnaise, Frankrig</p>
+                        <p class="price">kr. --- /600,-</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas / Flaske</p>
+                <div>
+                    <h3 class="menu-h3">Henriot, Blande de Blancs Champagne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frisk, dyb og raffineret</p>
+                        <p class="price">kr. --- /795,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Haut Côtes, Cremant Bourgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frugtigt og delikat</p>
+                        <p class="price">kr. --- /495,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Contatini, Prosecco Veneto</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Tør og insisterende</p>
+                        <p class="price">kr. 75,- /800,-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Hvidvin--------------->
+    <section class="hvidvin-section">
+        <h2>Hvidvin</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas / Flaske</p>
+            
+                <div>
+                    <h3 class="menu-h3">D´Arenberg, Riesling McLaren Vale</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Fuld Blomst og æble</p>
+                        <p class="price">kr. 85,- /395,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Tramin, Pinor Grigio Alto Adige</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Rund og elegant</p>
+                        <p class="price">kr. 95,- /425,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Mourchon, “La Source” Rhône</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Eksotisk og frisk</p>
+                        <p class="price">kr. 75,- /375,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Hubert Brochard, Sancerre Loire</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Mineralsk, rank og rund</p>
+                        <p class="price">kr. 115,- /550,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Chevy Chouet, Blanc Bourgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Tør og elegant</p>
+                        <p class="price">kr. 135,- /595,-</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas / Flaske</p>
+                <div>
+                    <h3 class="menu-h3">Servin, Montée de Tonnere Chablis 1. Cru</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Rank, frisk og mineralsk</p>
+                        <p class="price">kr. --- /795,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Bouchard P&F, Meursault Bourgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Rund og frugtig</p>
+                        <p class="price">kr. --- /995,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Costeres del Segre, Petit Sios Costers del Segre</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Prikkende, dyb oog eksotisk</p>
+                        <p class="price">kr. 65,- /295,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Oak Valley, Sauvignon Bl. Elgin</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frisk og dyb</p>
+                        <p class="price">kr. 95,- /425,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Brutocao, Chardonnay Mendocino</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Fyldig og elegant</p>
+                        <p class="price">kr. 125,- /595,-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Rosévin--------------->
+    <section class="rosevin-section">
+        <h2 class="h2-dark-green">Rosévin</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas / Flaske</p>
+            
+                <div>
+                    <h3 class="menu-h3">Plaimont, Colombelle Côtes de Gasgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Afrundet og elegant</p>
+                        <p class="price">kr. 75,- /295,-</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas / Flaske</p>
+                <div>
+                    <h3 class="menu-h3">Mourchon, “Loubie” Côtes du Rhône</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Saftig og læskende</p>
+                        <p class="price">kr. 95,- /395,-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Rødvin--------------->
+    <section class="rodvin-section">
+        <h2>Rødvin</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas / Flaske</p>
+            
+                <div>
+                    <h3 class="menu-h3">Jeff Carrel, “Les Darons” Languedoc</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frugtig og krydret</p>
+                        <p class="price">kr. 75,- /345,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Mourchon, Tradition Rhône</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Saftig og elegant</p>
+                        <p class="price">kr. 85,- /395,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">P. Amadieu, Chateaneuf Rhône</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Dybt, krydret og flot</p>
+                        <p class="price">kr. --- /795,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Chateau Fonplegade St. Emillon Grand Cru</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Mild og elegant</p>
+                        <p class="price">kr. --- /995,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Chavy Chouet, Rouge Bourgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Fyldt med elegant frugt</p>
+                        <p class="price">kr. 135,- /595,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Bouchard P&F, Gevrey Ch. Bourgogne</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Krydret og frisk</p>
+                        <p class="price">kr. --- /895,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Bodegas Obalo, Crianza Rioja</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Frugtig og tør</p>
+                        <p class="price">kr. 85,- /395,-</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas / Flaske</p>
+                <div>
+                    <h3 class="menu-h3">Bliss, Cabernet Sauvignon Mendocino</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Fyldig og velafrundet</p>
+                        <p class="price">kr. 95,- /435,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Lucas&Lewellen Pinot Noir Santa Barbera</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Spækket med noter af jordbær</p>
+                        <p class="price">kr. 125,- /595,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">D’Arenberg, Shiraz McLaren Vale</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Krydret og saftig</p>
+                        <p class="price">kr. --- /425,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Conti Primitivo Di Mand. Puglia</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Sødmefyldt og rank</p>
+                        <p class="price">kr. --- /335,-</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="menu-h3">Celestino Pecci, Brunello Montalcino</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Tør, dyb og vedholdende</p>
+                        <p class="price">kr. --- /895,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Tenuta Reverdito, Barolo Piemonte</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Elegant og tør</p>
+                        <p class="price">kr. 125,- /595,-</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="menu-h3">Dal Cero, Ripasso Veneto</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Flot og elegant sødme</p>
+                        <p class="price">kr. 135,- /625,-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Dessertvin--------------->
+    <section class="dessertvin-section">
+        <h2 class="h2-dark-green">Dessertvin</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Glas / Flaske</p>
+            
+                <div>
+                    <h3 class="menu-h3">Krohn, Late Bottled Vintage</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Fyldig og mørk sødme</p>
+                        <p class="price">kr. 75,- /495,-</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Glas / Flaske</p>
+                <div>
+                    <h3 class="menu-h3">Ch. Eyssards, Cuv. Moelleux</h3>
+                    <div class="menu-item">
+                        <p class="product-undertitle">Dyb med noter af honning</p>
+                        <p class="price">kr. 55,- /325,-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Øl og Sodavand--------------->
+    <section class="sodavand-section">
+        <h2>Øl og Sodavand</h2>
+
+        <div class="web-columns">
+
+            <!-- De her items kommer i venstre kolonne på web -->
+            <div class="cocktail-left">
+                <p class="menu-item-size">Lille / Mellem / Stor</p>
+            
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Sodavand</h3>
+                    <p class="price">kr. 40,- / 55,- / 75,-</p>
+                </div>
+            </div>
+
+            <!-- De her items kommer i højre kolonne på web -->
+            <div class="cocktail-right">
+                <p class="menu-item-size show-on-web">Lille / Mellem / Stor</p>
+                
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Tuborg Classic</h3>
+                    <p class="price">kr. 40,- / 55,- / 75,-</p>
+                </div>
+
+                <div class="menu-item">
+                    <h3 class="menu-h3-fix">Heineken</h3>
+                    <p class="price">kr. 40,- / 55,- / 75,-</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Vin Kort - Billeder--------------->
+    <div class="billede-section show-on-web">
+        <img src="img/vinkort/nr1.jpg" alt="Champagne der er lagt i isterninger" width="4032" height="3024">
+        <img src="img/vinkort/nr2.jpg" alt="Champagne der er lagt i isterninger" width="4032" height="3024">
+        <img src="img/vinkort/nr3.jpg" alt="Champagne der er lagt i isterninger" width="6048" height="4024">
+    </div>
+
+    <footer>
+        <div class="footer-contact">
+            <div class="first">
+                <h2 class="footer-underscore">Kontakt</h2>
+                <p>Tlf.:</p>
+                <p>+45 12 34 56 78</p>
+                <p>E-Mail:</p>
+                <p>mail@fjordkroen.com</p>
+            </div>
+            <div class="second">
+                <h2 class="footer-underscore">Adresse</h2>
+                <p>Bækkeskov Stræde 23</p>
+                <p>4733, Tappernøje</p>
+            </div>
+            
+            <div class="footer-time">
+                <h2 class="footer-opening footer-underscore">Åbningstider</h2>
+                <section class="third">
+                    <h2>Reception</h2>
+                    <p>Man-Fre: 14-21</p>
+                    <p>Lør-Søn: 14-21</p>
+                </section>
+                <section class="third third-rest">
+                    <h2>Restaurant</h2>
+                    <p>Man-Fre: 17-21</p>
+                    <p>Lør-Søn: 12-21</p>
+                </section>
+            </div>
+
+            <div class="footer-some-icons">
+                <a href="https://www.facebook.com/HotelFjordkroen" target="_blank"><img src="img/fb-icon.png" alt="Et ikon der henviser til Facebook" width="53" height="53"></a>
+                <a href="#" target="_blank"><img src="img/insta-icon.png" alt="Et ikon der henviser til Instagram" width="53" height="53"></a>
+                <a href="https://www.findsmiley.dk/953758" target="_blank"><img src="img/elite-smiley.png" alt="Et ikon der henviser til Fødevare-rapport" width="66" height="60"></a>
+            </div>
+        </div>
+    </footer>
+
+<script src="javascript/main.js"></script>
+</body>
+</html>
