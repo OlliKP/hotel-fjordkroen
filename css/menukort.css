@@ -1,0 +1,400 @@
+.referencer {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    margin-top: 10rem;
+    opacity: 0.5;
+}
+
+/* ----- Header -----*/
+.header-small {
+    white-space: nowrap;
+}
+
+/* ----- Se Menukort knap -----*/
+.flex-knap {
+    display: flex;
+    justify-content: end;
+    padding-top: 1.2rem;
+}
+
+.forretter-section a {
+    text-decoration: none;
+    color: var(--light-text);
+    background-color: var(--light-green);
+    font-size: 1.15rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-left: 2.0rem;
+    padding-right: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom-left-radius: 60px;
+    text-align: center;
+}
+
+.forretter-section a:hover{
+    background-color: var(--dark-green);
+}
+
+.forretter-section a:focus {
+    background-color: var(--dark-green);
+}
+
+/* ----- Forretter -----*/
+.forretter-section {
+    background-color: var(--light-text);
+    padding-bottom: 2rem;
+    width: 100vw;
+}
+
+h2{
+    color: var(--light-green);
+    font-family: var(--sans-serif);
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.menu-item-size {
+    font-style: italic;
+    text-align: end;
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1.5rem;
+    border-bottom: solid #707070 1px;
+    margin-bottom: 1.7rem;
+    align-items: flex-end;
+}
+
+.product{
+    font-size: 0.95rem;
+    color: var(--light-green);
+}
+
+.price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: var(--sans-serif);
+    color: var(--dark-green);
+}
+
+.show-on-web {
+    display: none;
+}
+
+.only-on-mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.only-on-mobile img {
+    width: 85vw;
+    height: auto;
+}
+
+.menu-h3-fix {
+    font-size: 0.9rem;
+    margin-left: 0rem;
+    padding-right: 1rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+/* ----- Hovedretter -----*/
+.hovedretter-section {
+    background-color: var(--grey);
+    padding-bottom: 2rem;
+}
+
+.h2-dark-green {
+    color: var(--dark-green);
+}
+
+.dish-type {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.7rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+.dish-type-whitespace {
+    padding-top: 2rem;
+}
+
+.menu-h3 {
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+    padding-right: 7rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+.product-undertitle {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* ----- Hovedretter -----*/
+.hovedretter-section {
+    background-color: var(--grey);
+    padding-bottom: 2rem;
+}
+
+.hovederetter-billeder {
+    background-color: var(--grey);
+}
+
+/* ----- 2-retters menuer -----*/
+.to-retters-section {
+    background-color: var(--light-text);
+    padding-bottom: 2rem;
+}
+
+.menu-border {
+    border: solid #707070 1px;
+    padding-block: 0.5rem;
+    padding-inline: 0.8em;
+    margin-inline: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.to-retters-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 0.2em;
+}
+
+.to-retters-h3 {
+    font-size: 0.9rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    margin-left: 0;
+    padding-top: 0.7rem;
+}
+
+.to-retters-item {
+    margin: 0;
+}
+
+
+/* ----- Børneretter -----*/
+.borne-retter-section {
+    background-color: var(--grey);
+    padding-bottom: 2rem;
+}
+
+/* ----- Desserter og ost -----*/
+.dessert-section {
+    background-color: var(--light-text);
+    padding-bottom: 2rem;
+}
+
+footer h2{
+    color: var(--light-text);
+}
+
+/* ------ MEDIA QUERY ------ */
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 700px) {
+
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    
+    .web-columns {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    
+    /* ----- Forretter -----*/
+    .forretter-section {
+        padding-bottom: 5rem;
+    }
+
+    .forretter-section a {
+        font-size: 1.9rem;
+        padding-left: 4.5rem;
+        padding-right: 0.8rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-bottom-left-radius: 60px;
+        text-align: center;
+        margin-right: 8.8rem;
+    }
+
+    .forretter-section h2{
+        color: var(--light-green);
+        font-family: var(--sans-serif);
+        text-align: center;
+        margin-top: -0.6rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-item {
+        margin-inline: 2.3rem;
+        width: 32vw;
+        margin-bottom: 1.3rem;
+    }
+
+    .menu-item-size {
+        margin-right: 3.3rem;
+        margin-top: -0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .product{
+        font-size: 1.3rem;
+    }
+    
+    .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-family: var(--sans-serif);
+        color: var(--dark-green);
+    }
+
+    .menu-h3-fix {
+        font-size: 1.25rem;
+    }
+
+    .show-on-web {
+        display: block;
+    }
+
+    .only-on-mobile {
+        display: none;
+    }
+
+    .forretter-billeder {
+        background-color: var(--light-text);
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0rem;
+        padding-top: 3rem;
+    }
+
+    .forretter-billeder img {
+        width: 25vw;
+        height: auto;
+    }
+
+    .h2-dark-green{
+        padding-top: 2.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        color: var(--dark-green);
+    }
+
+    .dish-type-whitespace {
+        padding-top: 2rem;
+    }
+    
+    .menu-h3 {
+        font-size: 1.25rem;
+        margin-left: 2.4rem;
+        padding-right: 12rem;
+    }
+    
+    .product-undertitle {
+        font-size: 1.2rem;
+    }
+
+    /* ----- Hovedretter -----*/
+    .hovedretter-section {
+        padding-bottom: 5rem;
+    }
+
+    .hovederetter-billeder {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0rem;
+        padding-top: 3rem;
+    }
+
+    .hovederetter-billeder img {
+        width: 25vw;
+        height: auto;
+    }
+
+    /* ----- 2-retters menuer -----*/
+    .to-retters-section {
+        padding-bottom: 5rem;
+    }
+
+    .to-retters-section h2 {
+        margin-top: -0.6rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu-border {
+        border: solid #707070 1px;
+        padding-block: 1.5rem;
+        padding-inline: 0.8em;
+        margin-inline: 1.5rem;
+        margin-bottom: 1rem;
+        width: 30vw;
+        min-width: 500px;
+    }
+
+    .to-retters-flex {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 0.2em;
+    }
+
+    .to-retters-h3 {
+        font-size: 1.25rem;
+        padding-top: 1.5rem;
+    }
+
+
+    /* ----- Børneretter -----*/
+    .borne-retter-section {
+        padding-bottom: 5rem;
+    }
+
+    /* ----- Desert og ost -----*/
+    .dessert-section {
+        padding-bottom: 5rem;
+    }
+
+    .dessert-section h2 {
+        margin-top: -0.6rem;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .desert-billeder {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0rem;
+        padding-top: 3rem;
+    }
+
+    .desert-billeder img {
+        width: 25vw;
+        height: auto;
+    }
+}
