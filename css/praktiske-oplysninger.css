@@ -229,6 +229,7 @@ header img, .header-overlay{
         grid-template-rows: 70vh 70vh;
     }
     /* Åbningstider Grid-Box */
+    /*Denne kode for gridboxen 'One', findes også på index siden*/
     .one{
         grid-column: 2/3;
         grid-row: 1/2;
@@ -237,14 +238,12 @@ header img, .header-overlay{
         padding-left: 1.6rem;
         padding-right: 1.2rem;
     }
-
     .one h3{
         color: var(--dark-green);
         font-size: 1.9rem;
         padding-top: 2.5rem;
         margin-left: 2.5rem;
     }
-    
     .one h4{
         color: var(--light-green);
         font-size: 1.6rem;
@@ -253,39 +252,32 @@ header img, .header-overlay{
         margin-bottom: 1.9rem;
         padding-bottom: 1.2rem;
     }
-    
     .opening-flex{
         justify-content: space-between;
         padding-right: 6.5rem;
     }
-
     .opening-flex p{
         font-size: 1.3rem;
         line-height: 38px;
         padding-left: 7.8rem;
         white-space: nowrap;
     }
-    
     .opening-phone {
         margin-top: 3.2rem;
         margin-right: 7.5rem;
     }
-    
     .opening-phone p{
         font-size: 1.6rem;
     }
-    
     .opening-phone img {
         height: 2rem;
         width: auto;
         margin-right: 0.3rem;
     }
-    
     .phone-info {
         font-size: 1.3rem;
         margin-right: 7.5rem;
     }
-
     .callerlink{
         font-size: 1.7rem;
         margin: 7px 0px;
@@ -293,6 +285,8 @@ header img, .header-overlay{
         font-family: var(--sans-serif);
         font-weight: 400;
     }
+    /*Her slutter koden for gridboxen 'One'*/
+
     .two{
         grid-column: 1/2;
         grid-row: 1/2;
