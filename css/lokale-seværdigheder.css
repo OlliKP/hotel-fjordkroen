@@ -129,6 +129,10 @@ header img, .header-overlay{
 
 /* Media Query for Web */
 @media only screen and (min-width: 960px) {
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     header img{
         margin-top:auto;
         height: 59.5vh;
