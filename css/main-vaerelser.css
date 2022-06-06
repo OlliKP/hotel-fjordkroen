@@ -154,14 +154,15 @@ hr{
     /* Room-info-ophold og room-book-tlf laves til et grid så de kan stå ved siden af hinanden*/
     .rooms-before{
         display: grid;
-        grid-template-columns: 60rem 50rem;
+        grid-template-columns: 50% 50%;
         margin-bottom: 1.5rem;
-        padding: 5rem;
+
     }
 
     .room-info-ophold{
         grid-row-start: 1;
         grid-row-end: 1;
+        padding: 2rem;
     }
 
     .room-book-tlf{
@@ -194,11 +195,10 @@ hr{
         display: grid;
         grid-template-columns: auto auto auto;
         background-color: #F0F0EB;
-        padding-left: 5rem;
-        padding-right: 5rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
         border-top: 2px solid var(--grey);
+
     }
 
     .room-img{
@@ -210,7 +210,6 @@ hr{
     }
 
     .ikon-saet-info{
-        padding-left: 5rem;
         flex-wrap: nowrap;
     }
     
@@ -224,6 +223,7 @@ hr{
     .room-info{
         grid-row-start: 1;
         grid-row-end: 1;
+        
     }
 
     .room-info h2{
@@ -242,7 +242,7 @@ hr{
         grid-column-start: 3;
         grid-column-end: 3;
         display: inline-block;
-        padding-right: 5rem;
+        /*padding-right: 5rem;*/
     }
 
     .ikon-saet-rooms img{
@@ -271,19 +271,19 @@ hr{
     .vaerelser-knapper p{
         margin: 0;
         padding: 0;
-        padding-right: 9.8em;
+        padding-right: 5em;
         color: var(--light-green);
         font-size: 1.2rem;
     }
     .vaerelser-knapper{
         text-align: right;
-        padding-left: 15rem;
+        padding-left: 5rem;
         padding-top: 3rem;
     }
 
     .room-se-mere, .room-pris{
         padding-left: 2rem;
-        padding-right: 3rem;
+        /*padding-right: 3rem;*/
         padding-bottom: 1rem;
         font-size: 1.6rem;
         padding-top: 0.5rem;
