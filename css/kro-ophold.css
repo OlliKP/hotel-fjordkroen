@@ -99,6 +99,13 @@ hr{
     margin-left: -1em;
     margin-bottom: 0.5em;
 }
+.callerlinkkro{
+    font-size: 1.2rem;
+    margin: 7px 0px;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
 
 /*Sektion med 2 overnatninger*/
 .twonighttext{
