@@ -50,6 +50,11 @@ header.header-ensemble{
     width: 100%;
 }
 
+.question p{
+    color: var(--light-green);
+    font-style: italic;
+    font-weight: 700;
+}
 
 
 /* Taget fra w3school - Link:https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
