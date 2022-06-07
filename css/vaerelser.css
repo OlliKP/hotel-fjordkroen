@@ -11,11 +11,17 @@
 }*/
 body{
     background-color: var(--light-text);
+    margin: 0;
+}
+
+header{
+    margin-bottom: 0;
 }
 
 .header-ensemble{
-    position: relative;
+    position:relative;
     text-align: center;
+    width: 100%;
 }
 
 .header-h1{
@@ -29,20 +35,22 @@ body{
     color: var(--light-text);
 }
 
+.lang-titel{
+    white-space: pre-line;
+    font-size: 2.4em;
+    height: none;
+    line-height: 1em;
+}
 .header-ensemble img{
-    width: 100%;
-    height: 8rem;
-}
-
-header img{
-    margin-top: 3rem;
-}
-
-body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    height: 50vw;
 }
+
+header.header-ensemble{
+    width: 100%;
+}
+
+
 
 /* Taget fra w3school - Link:https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 /* Positionerer slideshowet (Skal bruges til at positionere højre/venstre arrows) */
@@ -243,6 +251,26 @@ div.mySlides{
     height: 35vh;
 }
 
+.flex-vaerelser{
+    margin: 0;
+}
+
+/* Styling til afbestillingsreglerne */
+.readmore{
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow{
+    height: max-content;
+}
+
 
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px) {
@@ -250,23 +278,26 @@ div.mySlides{
     .facilitet-grid{
         margin: 2rem;
     }
-
-
 }
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
     .header-ensemble img{
         width: 100%;
-        height: 13vw;
+        height: 17vw;
     }
 
     .header-h1{
-        font-size: 8rem;
+        font-size: 7rem;
+    }
+
+    .lang-titel{
+        font-size: 4em;
+        height: none;
+        word-spacing: 1vh;
     }
 
     .slideshow{
-        height: 50vw;
         width: 50vw;
         float: left;
     }
@@ -279,44 +310,56 @@ div.mySlides{
     }
 
     div.mySlides{
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 
     .row img{
-        padding: 10px;
+        padding: 0.4rem;
+    }
+
+    .section-columns{
+        display: flex;
+    }
+
+    .flex-vaerelser{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    div.flex-vaerelser{
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
     }
 
     .vaerelses-info{
-        height: 20vw;
-        width: 50vw;
         float: right;
-        padding: 2rem;
-    }
-
-    .vaerelses-info h3{
-        font-size: 2em;
     }
 
     .vaerelses-info h4{
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .vaerelses-info p{
-        font-size: 1.2rem;
+        font-size: 1em;
         color: var(--dark-brown);
         padding-right: 8rem;
     }
 
     .Faciliteter{
-        height: 27.5vw;
         width: 50vw;
         float: right;
-        padding: 2rem;
-        font-size: 1.5rem;
+        font-size: 1em;
+        margin: 0;
     }
 
     .Faciliteter p{
-        font-size: 1.2rem;
+        font-size: 1em;
+    }
+
+    .Faciliteter h3{
+        padding: 0;
     }
 
     .pris{
@@ -327,13 +370,17 @@ div.mySlides{
         float: right;
         margin-right: 8rem;
         margin-top: 2rem;
-        font-size: 1.6rem;
+        font-size: 1em;
     }
 
     .under-knap-info{
         text-align: right;
         margin-top: 5rem;
         float: none;
+    }
+    /* Styling til afbestillingsreglerne */
+    .readmore{
+        width: 38vw;
     }
 
 
