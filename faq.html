@@ -45,43 +45,93 @@
              </ul>
          </div>
      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <title>Hotel Fjordkroen / FAQ</title>
+    <!--Navbar/checkbox-->
+    <script src="https://kit.fontawesome.com/b5a42e777e.js" crossorigin="anonymous"></script>
+    <!--SEO-->
+    <meta name="keywords" content="Restaurant, Hotel, Præstø Fjord, Service, Kvalitet, Tappernøje, Selskabslokaler, Konfirmation, Bryllyp, Vordingborg, Næstved">
+    <meta name="description" content="indsæt description her">
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/zgy3mli.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xko4pqh.css">
+</head>
 
-     <!-- Web Navigation Bar-->
-     <nav class="web-nav"> 
-         <li><a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a></li>
-         <ul class="subnav">
-             <button class="subnavbtn"><a href="restaurant.html">Restaurant<i class="fa fa-caret-down"></i></a></button>
-             <li class="subnav-content">
-               <a href="menukort.html">Menukort</a>
-               <a href="vinkort.html">Vinkort</a>
-             </li>
-         </ul>
-         <li class="web-nav-li"><a href="vaerelser.html">Værelser</a></li>
-         <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
-         <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
-         <ul class="subnav">
-             <button class="subnavbtn">Info<i class="fa fa-caret-down"></i></button>
-             <li class="subnav-content">
-               <a href="praktiske-oplysninger.html">Praktiske Oplysninger</a>
-               <a href="lokale-seværdigheder.html">Lokale Seværdigheder</a>
-               <a href="faq.html">FAQ</a>
-             </li>
-         </ul>
-         <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
-         <div class="only-flags">
-             <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
-             <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
-         </div>
-         <!-- Top-Bar med telefon nummer og Valg af sprog-->
-         <li class="top-bar">
-             <img src="img/icon-phone.png" class="top-bar-phone" alt="Et icon af en telefon" width="37" height="37">
-             <p>+45 12 34 56 78</p>
-             <div></div>
-             <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
-             <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
-         </li>
-     </nav>
- 
+<body>
+    <!-- Mobile Navigation Bar--> 
+    <input type="checkbox" id="checkbox">   
+    <nav class="mobile-nav">
+
+        <a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a>
+        <div class="flags-and-burger">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+            <label for="checkbox">
+                <i class="fas fa-bars fa-x2"></i>
+            </label>
+        </div>
+        
+            <ul class="dropdown-content">
+                <li><a href="index.html">Forside</a></li>
+                <ul class="under-menu"><a href="restaurant.html" id="underline">Restaurant</a>
+                    <li><a href="menukort.html">Menukort</a></li>
+                    <li><a href="vinkort.html">Vinkort</a></li>
+                </ul>
+                <li><a href="vaerelser.html">Værelser</a></li>
+                <li><a href="kro-ophold.html">Kro-ophold</a></li>
+                <li><a href="selskaber.html">Selskaber</a></li>
+                <ul class="under-menu"><a href="#" id="underline">Info</a>
+                    <li><a href="praktiske-oplysninger.html">Praktiske Oplysninger</a></li>
+                    <li><a href="lokale-seværdigheder.html">Lokale seværdigheder</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="dropdown-phone"><img src="img/icon-phone.png" alt="et telefonrør"><a class="callerlink" href="tel:+4555965810">Tlf +45 55 96 58 10</a></div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Web Navigation Bar-->
+    <nav class="web-nav"> 
+        <li><a href="index.html"><img src="img/logo-dark-brown.png" class="nav-logo" alt="Hotel Fjordkroen Logo" href="index.html" width="632" height="157"></a></li>
+        <ul class="subnav">
+            <button class="subnavbtn"><a href="restaurant.html">Restaurant<i class="fa fa-caret-down"></i></a></button>
+            <li class="subnav-content">
+              <a href="menukort.html">Menukort</a>
+              <a href="vinkort.html">Vinkort</a>
+            </li>
+        </ul>
+        <li class="web-nav-li"><a href="vaerelser.html">Værelser</a></li>
+        <li class="web-nav-li"><a href="kro-ophold.html">Kro-Ophold</a></li>
+        <li class="web-nav-li"><a href="selskaber.html">Selskaber</a></li>
+        <ul class="subnav">
+            <button class="subnavbtn">Info<i class="fa fa-caret-down"></i></button>
+            <li class="subnav-content">
+              <a href="praktiske-oplysninger.html">Praktiske Oplysninger</a>
+              <a href="lokale-seværdigheder.html">Lokale Seværdigheder</a>
+              <a href="faq.html">FAQ</a>
+            </li>
+        </ul>
+        <!-- Only flags er kun aktiv ved en skærmbredde imellem 960px og 1650px-->
+        <div class="only-flags">
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </div>
+        <!-- Top-Bar med telefon nummer og Valg af sprog-->
+        <li class="top-bar">
+            <img src="img/icon-phone.png" class="top-bar-phone" alt="Et icon af en telefon" width="37" height="37">
+            <p>+45 55 96 58 10</p>
+            <div></div>
+            <img src="img/dansk-flag.svg" class="top-bar-flag" alt="Skift til dansk sprog">
+            <img src="img/engelsk-flag.svg" class="top-bar-flag" alt="Skift til engelsk sprog">
+        </li>
+    </nav>
+
     <header>
         <img src="img/headerpic.png" alt="Billede af Fjordkroens facade">
         <h1 class="header-big">Ofte Stillede Spørgsmål</h1>
@@ -98,7 +148,7 @@
                 <div class="disabled-friendly readmore">
                     <div onclick="disabledFriendlyFunction()" class="question">
                         <p>Er Hotel Fjordkroen handicapvenlig?</p>
-                        <img id="disabled-friendly-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="disabled-friendly-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="disabled-friendly-more">
@@ -109,7 +159,7 @@
                 <div class="stairs readmore">
                     <div onclick="stairsFunction()" class="question">
                         <p>Er der trapper og elevator på kroen?</p>
-                        <img id="stairs-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="stairs-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="stairs-more">
@@ -120,7 +170,7 @@
                 <div class="allergy readmore">
                     <div onclick="allergyFunction()" class="question">
                         <p>Er værelserne allergivenlige?</p>
-                        <img id="allergy-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="allergy-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="allergy-more">
@@ -132,7 +182,7 @@
                 <div class="pets readmore">
                     <div onclick="petsFunction()"  class="question">
                         <p>Må man medbringe kæledyr på hotelværelset?</p>
-                        <img id="pets-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="pets-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="pets-more">
@@ -143,7 +193,7 @@
                 <div class="public-transportation readmore">
                     <div onclick="publicTransportationFunction()" class="question">
                         <p>Er der mulighed for offentlig transport til og fra kroen?</p>
-                        <img id="public-transportation-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="public-transportation-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="public-transportation-more">
@@ -163,7 +213,7 @@
                 <div class="kids readmore">
                     <div onclick="kidsFunction()" class="question">
                         <p>Er der børnesenge på værelserne?</p>
-                        <img id="kids-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="kids-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="kids-more">
@@ -174,7 +224,7 @@
                 <div class="minibar readmore">
                     <div onclick="minibarFunction()" class="question">
                         <p>Er der minibar på værelserne?</p>
-                        <img id="minibar-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="minibar-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="minibar-more">
@@ -185,7 +235,7 @@
                 <div class="tv readmore">
                     <div onclick="tvFunction()" class="question">
                         <p>Er der TV på værelserne?</p>
-                        <img id="tv-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="tv-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="tv-more">
@@ -197,7 +247,7 @@
                 <div class="towels readmore">
                     <div onclick="towelsFunction()"  class="question">
                         <p>Skal man selv medbringe linned?</p>
-                        <img id="towels-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="towels-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="towels-more">
@@ -208,7 +258,7 @@
                 <div class="wifi readmore">
                     <div onclick="wifiFunction()" class="question">
                         <p>Er der Wi-Fi på værelserne?</p>
-                        <img id="wifi-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="wifi-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="wifi-more">
@@ -219,7 +269,7 @@
                 <div class="smoking readmore">
                     <div onclick="smokingFunction()" class="question">
                         <p>Er det tilladt at ryge på værelserne?</p>
-                        <img id="smoking-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                        <img id="smoking-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                     </div>
                     <hr>
                     <span id="smoking-more">
@@ -236,7 +286,7 @@
                     <div class="cleaning readmore">
                         <div onclick="cleaningFunction()" class="question">
                             <p>Hvilke rengørings- og hygiejneforanstaltninger er der i øjeblikket indført på Hotel Fjordkroen?</p>
-                            <img id="cleaning-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                            <img id="cleaning-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                         </div>
                         <hr>
                         <span id="cleaning-more">
@@ -249,7 +299,7 @@
                     <div class="cancelling readmore">
                         <div onclick="cancellingFunction()" class="question">
                             <p>Afbestillingsregler</p>
-                            <img id="cancelling-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                            <img id="cancelling-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                         </div>
                         <hr>
                         <span id="cancelling-more">
@@ -261,7 +311,7 @@
                     <div class="extras readmore">
                         <div onclick="extrasFunction()" class="question">
                             <p>Tillæg</p>
-                            <img id="extras-arrow" class="arrow" src="/img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
+                            <img id="extras-arrow" class="arrow" src="img/arrow.png" alt="Pil til at trykke på, for at se mere tekst">
                         </div>
                         <hr>
                         <span id="extras-more">
