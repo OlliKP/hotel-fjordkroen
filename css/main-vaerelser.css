@@ -123,10 +123,6 @@ hr{
     margin-top: 1.5rem;
 }
 
-.free-wifi{
-    margin-top: 0.5rem;
-}
-
 .room-2, .room-4, .room-6{
     background-color: var(--grey);
 }
@@ -225,9 +221,6 @@ hr{
     .ikon-saet-info img{
         width: 60px;
         height: 50px;
-    }
-    #wifi{
-        width: 40px;
     }
     .room-info{
         grid-row-start: 1;
