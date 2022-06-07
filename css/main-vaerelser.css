@@ -4,6 +4,10 @@ body {
 }
 
 /* Her begynder styling til første section: room-info-ophold */
+.room-info a{
+    text-decoration: none;
+}
+
 .room-info-ophold h3, .room-book-tlf h3{
     padding-top: 1.8rem;
     font-size: 1.3rem;
@@ -92,7 +96,7 @@ hr{
 }
 
 .ikon-p p{
-    font-size: 1.4rem;
+    font-size: 1em;
     color: var(--dark-green);
     font-style: var(--sans-serif-regular);
     padding-left: 0;
@@ -132,7 +136,6 @@ hr{
 }
 
 /* Styling til room 1-7 slutter her */
-
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
