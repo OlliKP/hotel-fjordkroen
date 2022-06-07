@@ -381,7 +381,7 @@ header{
 }
 
 .opening-phone img {
-    height: 1.2rem;
+    height: 1.6rem;
     width: auto;
     margin-right: 0.3rem;
 }
@@ -1049,7 +1049,7 @@ footer p{
     }
 
     .callerlink{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         margin: 7px 0px;
         color: var(--dark-green);
         font-family: var(--sans-serif);
