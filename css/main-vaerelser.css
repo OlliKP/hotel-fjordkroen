@@ -137,7 +137,7 @@ hr{
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
     .header-small{
-        top: 37%;
+        top: 35%;
         text-align: center;
         line-height: 3rem;
     }
@@ -203,12 +203,13 @@ hr{
         border-top: 2px solid var(--grey);
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 2rem;
 
     }
 
     .room-img{
-        height: 30vh;
-        width: 46vh;
+        height: 20vw;
+        width: 36vw;
         grid-column-start: 2;
         grid-column-end: 2;
     }
@@ -233,7 +234,7 @@ hr{
 
     .room-info h2{
         font-size: 2rem;
-        padding-top: 3.5rem;
+        padding-top: 1rem;
         color: var(--dark-green);
     }
     .room-info p{
@@ -248,10 +249,11 @@ hr{
         grid-column-end: 3;
         display: inline-block;
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .ikon-saet-rooms img{
-        margin: 1.5rem;
+        margin: 1em;
     }
     .ikon-saet-rooms p{
         color: var(--dark-green);
