@@ -84,11 +84,19 @@ nav ul{
     z-index: 1;
 }
 
-#underline{
+li.underline a{
     border-bottom: #C1BBAC 1px solid;
 }
 
-.under-menu li > a{
+/* .under-menu li > a{
+    color: var(--light-green);
+    border-top: none;
+    padding-left: 4rem;
+    font-style: italic;
+    font-size: 1rem;
+} */
+
+li.mobile-sub-page a {
     color: var(--light-green);
     border-top: none;
     padding-left: 4rem;
