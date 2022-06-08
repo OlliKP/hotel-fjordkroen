@@ -263,6 +263,10 @@ div.mySlides{
 
 span{
     display: none;
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 
