@@ -318,10 +318,11 @@ header img{
     }
 
     .info-stemningsbilleder div {
-        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
         height: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
         position: relative;
     }
     
