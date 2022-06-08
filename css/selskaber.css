@@ -1,43 +1,165 @@
+*{
+    margin: 0;
+}
+
 /*Styling af header med titel*/
 header img{
     width: 100vw;
-    height: 59vh;
-    margin-top: 3.5rem;
+    height: 57vh;
+    margin-top: 3rem;
     object-fit: cover;
 }
 
-.header-overlay{
-    position: absolute;
-    width: 100vw;
-    height: 59vh;
-    top: 0em;
-    margin-top: 3.5rem;
-    background-color: rgba(46, 52, 45, 0.557);
-}
 header{
     margin-bottom: -4px;
 }
 
 .header-big{
     font-family: var(--script);
-    font-size: 15vw;
+    font-size: 4.5rem;
     color: var(--light-text);
     position: absolute;
-    top: 25%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .header-small{
     font-style: italic;
-    font-size: 3.2vw;
+    font-size: 4.5vw;
     color: var(--light-text);
     position: absolute;
-    top: 32%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+.headerpics{
+    position: relative;
+}
+.headerimg{
+    position: relative;
+}
+
+/* Styling til sektionerne */
+.selskaber-container{
+    background-color: #F0F0EB;
+    padding-bottom: 3rem
+}
+
+.textbox1{
+    padding-top: 3.2rem;
+}
+.textbox2{
+    margin-top: 1rem;
+}
+.phone-tab{
+    display: flex;
+    margin-left: 4rem;
+    font-style: italic;
+}
+
+.phone-tab p{
+    font-size: 0.9rem;
+    text-align-last: right;
+    color: var(--dark-green);
+    font-family: var(--sans-serif);
+    font-weight: 400;
+}
+
+.phone-tab img{
+    height: 1.6rem;
+    width: auto;
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.info-tab {
+    font-size: 1em;
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+    margin-right: 1.7rem;
+}
+h3{
+    font-style: normal;
+    font-weight: bolder;
+    color: var(--dark-green);
+    font-family: var(--sans-serif-regular);
+    font-weight: 400;
+}
+
+p{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+}
+
+.p1{
+    margin-left: 4rem;
+}
+
+.selskaber-one h3, .textbox1 h3{
+    color: var(--light-green);
+    font-size: 1.5em;
+    margin-left: 1em;
+    padding-bottom: 0.5rem;
+}
+
+.textbox2 h3{
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--dark-green);
+    font-size: 1.2em;
+}
+
+.punktliste{
+    margin-left: 5rem;
+}
+
+/* Galleriet */
+
+.selskab-galleri{
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--grey);
+}
+.selsbillede{
+    position: relative;
+    width: 75vw;
+    height: 35vh;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+
+.sels1 {
+    background-image: url(../img/selskab1.jpg);
+    background-size: 150%;
+    background-position: 50% 70%;
+}
+
+.sels2 {
+    background-image: url(../img/selskab2.jpg);
+    background-size: 150%;
+    background-position: 50% 95%;
+}
+
+.sels3 {
+    background-image: url(../img/selskab3.jpg);
+    background-size: 128%;
+    background-position: 50% 70%;
+}
+.selskab-galleri img{
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+
+/* footer mobile */
 footer p{
     color: var(--light-text);
 }
@@ -49,69 +171,57 @@ footer p{
     object-fit: cover;
     margin-bottom: -4px;
 }
-.one{
-    background-color: var(--light-text);
-    padding-top: 2em;
-    padding-left: 4em;
-    padding-right: 3em;
-}
-.two{
-    background-color: var(--light-text);
-    padding-top: 2em;
-    padding-left: 4em;
-    padding-right: 3em;
-}
-hr{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
 .text-box{
     margin-left: 4em;
     margin-right: 1.5em;
     margin-top: 0.5em;
     padding-bottom: 2em;
 }
-.aftmde{
-    padding-top: 8.063rem;
+hr{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
-.selsbillede{
-    width: 18.938rem;
-    height: auto;
-    padding: 2rem;
-}
-.facilities{
-    list-style-type: circle;
-    margin-left: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.facilities li{
-    display: list-item;
-    color: var(--dark-brown);
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.8em;
-}
-.facilities-day{
-    margin-left: -1em;
-    margin-bottom: 0.5em;
-}
-.three{
+.selskab-galleri{
     margin-left: 0rem;
+    background-color: var(--grey);
 }
-
 
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px){
-header img, .header-overlay{
-    margin-top: 6rem;
-    height: 45vh;
-}
 .header-big{
-    top: 30%;
+    font-size: 7rem;
+    top: 33%;
 }
 .header-small{
-    top: 38%;
+    top: 43%;
+    font-size: 1.6rem;
+}
+.selsbillede{
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+.selskaber-container{
+    display: flex;
+    flex-direction: row;
+}
+.textbox1{
+    width: 50%;
+    float: left;
+}
+.textbox2{
+    width: 50%;
+    float: right;
+    padding-top: 6.4rem;
+}
+.selsbillede{
+    position: relative;
+    width: 28rem;
+    margin: 2rem auto;
+    height: 19rem;
+    background-repeat: no-repeat;
 }
 }
 
@@ -121,87 +231,44 @@ header img, .header-overlay{
     html, body{
         max-width: 100%;
         overflow-x: hidden;
-    }    
+    }
     header img{
         margin-top:auto;
-        height: 59.5vh;
-    }
-    .header-overlay{
-        margin-top: 5.5rem;
-        height: 50vh;
+        height: 55vh;
+        object-fit: cover;
     }
     .header-big{
         font-size: 10vw;
-        top: 30%;
+        top: 32%;
     }
     .header-small{
-        top: 45%;
+        top: 44%;
         font-size: 1.8vw;
     }
-    .gridone-h3{
-        font-size: 30px;
-        padding-top: 3.875rem;
+
+    .linep1{
+        margin-right: 20vw;
     }
-    .gridone-p{
-        font-size: 20px;
+    h3{
+        font-size: 170%;
+        font-weight: bolder;
+        margin: 1rem 1.5rem;
     }
-    .gridtwo-p{
-        font-size: 20px;
-        padding-top: 3.875rem;
-    }
-    .aftmde{
-        padding-top: 5.875rem;
-    }
-    .sels1{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
-    .sels2{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
-    .sels3{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70vh 70vh;
+    p{
+        line-height: 2.2;
+        font-size: 110%;
     }
     .phoneicon{
         width: 2.063rem;
         height: auto;
-    }
-    .one{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        padding-bottom: 4.625rem;
-    }
-    .two{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        padding-bottom: 4.625rem;
-    }
-    
-    .three{
-        grid-column: 1/5;
-        grid-row: 2/3;
+    } 
+
+    .selskab-galleri{
+        background-color: var(--grey);
         margin-left: 0;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-    .three section:nth-child(1){
-        background-attachment: fixed;
-        background-image: url("img/selskab3.jpg");
-        background-size: cover;
     }
     .section-img{
         width: 100vw;
@@ -209,4 +276,5 @@ header img, .header-overlay{
         object-fit: cover;
         margin-bottom: -4px;
     }
+
 }

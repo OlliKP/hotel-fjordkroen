@@ -14,44 +14,21 @@
     --sans-serif-regular: parisplus-std, sans-serif;
 }
 
-/*Styling af header med titel*/
-header img{
-    width: 100vw;
-    height: 10.5vh;
-    margin-top: 3.5rem;
-    object-fit: cover;
-}
-
-.header-overlay{
-    position: absolute;
-    width: 100vw;
-    height: 10.5vh;
-    top: 0em;
-    margin-top: 3.5rem;
-    background-color: rgba(46, 52, 45, 0.557);
-}
+/*Styling af header*/
 header{
-    margin-bottom: -4px;
+    position: relative;
+    text-align: center;
 }
-
 .header-big{
-    font-family: var(--script);
-    font-size: 15vw;
-    color: var(--light-text);
     position: absolute;
-    top: 13%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 3em;
 }
-
-.header-small{
-    font-style: italic;
-    font-size: 3.2vw;
-    color: var(--light-text);
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+header img{
+    height: 7em;
+    margin-top: 3em;
 }
 
 footer p{
@@ -160,40 +137,26 @@ hr{
 
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px){
-header img, .header-overlay{
-    margin-top: 6rem;
-    height: 45vh;
-}
-.header-big{
-    top: 30%;
-}
-.header-small{
-    top: 38%;
-}
+    .header-big{
+        font-size: 4em;
+        top: 2em;
+    }
 }
 
 /* Media Query for Web */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1150px) {
     /*'html, body' side scroll fix fundet på https://stackoverflow.com/questions/17756649/disable-the-horizontal-scroll */
     html, body{
         max-width: 100%;
         overflow-x: hidden;
     }
     header img{
-        margin-top:auto;
-        height: 50vh;
-    }
-    .header-overlay{
-        margin-top: 5.5rem;
-        height: 40.65vh;
+        height: 14em;
     }
     .header-big{
-        font-size: 10vw;
-        top: 30%;
-    }
-    .header-small{
-        top: 45%;
-        font-size: 1.8vw;
+        font-size: 6em;
+        margin-top: -1.2em;
+        top: 3.3em;
     }
     .gridone-h3{
         font-size: 30px;

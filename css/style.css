@@ -264,7 +264,7 @@ nav ul{
 header img{
     width: 100%;
     height: 59vh;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     object-fit: cover;
 }
 
@@ -447,7 +447,8 @@ header{
 /*Hvem er vi - Billede*/
     .index-three{
     height: 14rem;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
     .index-three img{
@@ -496,6 +497,7 @@ header{
 .index-five{
     height: 14rem;
     width: 100%;
+    height: 100%;
 }
 
     .index-five img{
@@ -543,7 +545,8 @@ header{
 /*Værelser - Billede*/
 .index-seven{
     height: 14rem;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
 .index-seven img{
@@ -592,6 +595,7 @@ header{
 .index-nine{
     height: 14rem;
     width: 100%;
+    height: 100%;
 }
 
 .index-nine img{
@@ -945,15 +949,6 @@ footer p{
 
     /* ----- Her begynder Content -----*/
 
-    .referencer {
-        width: 100vw;
-        height: auto;
-        position: fixed;
-        top: 0;
-        margin-top: 10rem;
-        opacity: 0.5;
-    }
-
     /*Styling af header med titel*/
     header img{
         margin-top:auto;
@@ -1101,6 +1096,7 @@ footer p{
     .index-three{
         grid-column: 1/2;
         grid-row: 2/3;
+        width: 100%;
         height: 100%;
     }
 
@@ -1146,6 +1142,7 @@ footer p{
     .index-five{
         grid-column: 2/3;
         grid-row: 3/4;
+        width: 100%;
         height: 100%;
     }
 
@@ -1191,12 +1188,15 @@ footer p{
     .index-seven{
         grid-column: 1/2;
         grid-row: 4/5;
+        width: 100%;
         height: 100%;
+        position: relative;
     }
 
     .index-seven img{
-        height: 100%;
-        width: auto;
+        height:100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     /* [Text] Værelser Grid-Box */
@@ -1240,13 +1240,18 @@ footer p{
     .index-nine{
         grid-column: 2/3;
         grid-row: 5/6;
+        width: 100%;
         height: 100%;
+        position: relative;
     }
 
     .index-nine img{
-        height: 100%;
-        width: 50vw;
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
     }
+
 
     /* [Text] Selskaber Grid-Box */
     .index-ten{

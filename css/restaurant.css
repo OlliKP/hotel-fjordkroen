@@ -1,34 +1,35 @@
 /*Styling af header med titel*/
-.header-overlay{
-    position: absolute;
-    width: 100vw;
+header img{
+    width: 100%;
     height: 59vh;
-    top: 0em;
-    margin-top: 3.5rem;
-    background-color: rgba(46, 52, 45, 0.557);
+    margin-top: 3rem;
+    object-fit: cover;
 }
+
 header{
     margin-bottom: -4px;
 }
+
 .header-big{
     font-family: var(--script);
-    font-size: 20vw;
+    font-size: 4.5rem;
     color: var(--light-text);
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
+
 .header-small{
     font-style: italic;
-    font-size: 3.2vw;
+    font-size: 4.5vw;
     color: var(--light-text);
     position: absolute;
-    text-align: center;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .headerpics{
     position: relative;
@@ -49,20 +50,26 @@ header{
     background-color: #F0F0EB;
     padding-bottom: 3rem
 }
-.restaurant-one{
-    height: 264px;
-    padding-left: 1.6rem;
-    padding-right: 1.2rem;
-}
+
 .textbox1{
     padding-top: 3.2rem;
 }
 .textbox2{
     margin-top: 3rem;
 }
+
+div.phone-tab{
+    float: right;
+    text-align: right;
+}
+
+.restaurant-flex{
+    display: flex;
+    flex-direction: column;
+}
 .buttongroup{
-    margin: 2vh;
-    margin-right: 0.4rem;
+    text-align: center;
+    margin-top: 2em;
 }
 .se-mere-menu{
     text-decoration: none;
@@ -105,10 +112,7 @@ header{
 .p1{
     margin-left: 4rem;
 }
-.phone-tab{
-    display: flex;
-    justify-content: flex-end;
-}
+
 .phone-tab p{
     font-size: 0.9rem;
     text-align-last: right;
@@ -116,6 +120,8 @@ header{
     font-family: var(--sans-serif);
     font-weight: 400;
     margin-right: 1.7rem;
+    padding: 1vh;
+
 }
 .phone-tab img{
     height: 1.6rem;
@@ -130,12 +136,13 @@ header{
     color: var(--light-green);
     font-family: var(--sans-serif-regular);
     font-weight: 400;
-    margin-right: 1.7rem;
+
 }
 h3{
     font-style: normal;
     font-weight: bolder;
     color: var(--dark-green);
+    font-size: 1.3rem;
 }
 .infoline{
     margin: 1rem 3rem;
@@ -147,19 +154,18 @@ h3{
     padding-right: 1.2em;
 }
 .h3info{
-    margin-left: 2em;
+    /*margin-left: 2em;*/
     color: var(--dark-green);
 }
 .p-box{
-    margin-left: 4em;
-    margin-right: 1.5em;
-    margin-top: 0.5em;
+    margin-left: 4rem;
+    margin-right: 1rem;
 }
 .infotext2{
     margin-top: 2.5rem;
 }
 p{
-    font-size: 1.7ch
+    font-size: 1em;
 }
 .callerlink{
     margin-right: 1.4rem;
@@ -171,6 +177,8 @@ p{
     font-family: var(--sans-serif);
     font-weight: 400;
 }
+
+/* Styling til billederne sidst på siden */
 .three{
     align-items: center;
     padding-left: 0%;
@@ -209,11 +217,14 @@ p{
     display: block;
     overflow: hidden;
 }
+
+/* Styling til billederne sidst på siden slut */
+
 footer p{
     color: var(--light-text);
 }
 
-/*Styling af sectioner*/
+/*Styling af generel sectioner*/
 .section-img{
     width: 100vw;
     height: 40vh;
@@ -247,34 +258,72 @@ hr{
     background-repeat: no-repeat;
 }
 .header-big{
-    top: 35%;
+    font-size: 7rem;
+    top: 33%;
 }
 .header-small{
-    top: 50%;
+    top: 43%;
+    font-size: 1.6rem;
 }
 .smileyicon{
     position:absolute;
     z-index: +1;
-    width: 3em;
+    width: 4em;
     height: auto;
-    top: 53.4vh;
+    top: 50vh;
     left: 89vw;
 }
-.restaurant-gridcontainer{
+.restaurant-one{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.textbox1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.textbox2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+div.phone-tab{
+    float: left;
+    text-align: left;
+    margin-left: 4rem;
+}
+.restaurant-flex{
     display: flex;
     flex-direction: column;
 }
-.textbox1{
-    width: 50%;
-    float: left;
+.buttongroup{
+    text-align: center;
+    margin-top: 2em;
 }
-.textbox2{
-    float: right;
+.phone-tab p{
+    text-align-last: left;
 }
+.se-mere-menu{
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 60px;
+}
+
+.se-mere-vin{
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-right-radius: 60px;
+}
+
 }
 
 /* Media Query for Web */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1150px) {
 
     .img-global{
         position: relative;
@@ -285,61 +334,87 @@ hr{
     }
     header img{
         margin-top:auto;
-        height: 59.5vh;
+        height: 55vh;
+        object-fit: cover;
     }
-    .header-overlay{
-        margin-top: 4.3rem;
-        height: 51vh;
-    }
+   
     .header-big{
         font-size: 10vw;
-        top: 30%;
+        top: 32%;
     }
     .header-small{
-        top: 45%;
+        top: 44%;
         font-size: 1.8vw;
     }
+    .restaurant-one{
+        justify-content: space-evenly;
+    }
+
+    .buttongroup{
+        float: left;
+        text-align: left;
+        margin-top: 2em;
+    }
+
+    .phone-tab p{
+        font-size: 1.4rem;
+    }
+
+    .se-mere-menu{
+        font-size: 1.6rem;
+        font-family: var(--sans-serif);
+        font-weight: 400;
+        margin-right: 0.2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border-bottom-left-radius: 60px;
+    }
+    
+    .se-mere-vin{
+        font-size: 1.6rem;
+        font-family: var(--sans-serif);
+        font-weight: 400;
+        margin-left: 0.2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border-bottom-right-radius: 60px;
+    }
+
     .smileyicon{
         position:absolute;
         z-index: +1;
-        width: 3.5em;
+        width: 5em;
         height: auto;
-        top: 52vh;
-        left: 93vw;
+        top: 47vh;
+        left: 91vw;
     }
-    .restaurant-one{
-        display: flex;
-        justify-content: space-around;
-        margin: 2rem 5.5rem;
-    }
+
     .infobar{
         padding-bottom: 7em;
     }
-    .h3info{
-        margin-left: 15vw;
-    }
-    .linep1{
-        margin-right: 20vw;
-    }
-    .infoline{
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
+
+
     .infoflexer{
         display: flex;
         justify-content: space-evenly;
+        margin-left: 8rem;
+        gap: 2rem;
     }
     .infotext1{
         height: 100px;
     }
+
     h3{
-        font-size: 170%;
+        font-size: 1.9rem;
         font-weight: bolder;
         margin: 1rem 1.5rem;
     }
+    .h3info{
+        padding-left: 2rem;
+    }
     p{
         line-height: 2.2;
-        font-size: 110%;
+        font-size: 1.4rem;
     }
     .infotext2{
         height: 100px;
@@ -350,9 +425,7 @@ hr{
         height: auto;
     } 
     .three{
-        grid-column: 1/5;
         background-color: var(--grey);
-        grid-row: 2/3;
         margin-left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -363,5 +436,10 @@ hr{
         height: 40vh;
         object-fit: cover;
         margin-bottom: -4px;
+    }
+
+    .textbox1, .textbox2{
+        padding: 2rem;
+        margin-top: 0;
     }
 }
