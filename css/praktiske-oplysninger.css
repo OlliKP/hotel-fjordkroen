@@ -31,108 +31,133 @@ header img{
     margin-top: 3em;
 }
 
-footer p{
-    color: var(--light-text);
+/*Styling af '.index-one', 'index-one h3' & 'index-one h4' kommer fra css/style.css*/
+
+
+/* Find vej Interaktivt kort */
+#gmap_canvas {
+    width: 100vw;
+    height: 15rem;
 }
 
-/*Styling af sectioner*/
-.section-img{
-    width: 100vw;
-    height: 40vh;
-    object-fit: cover;
-    margin-bottom: -4px;
-}
-/*Koden på 'One', 'one h3' & 'one h4' er den samme som inde på index siden, da det er den samme section*/
-.one{
-    background-color: var(--light-text);
-    height: 264px;
-    padding-left: 1.6rem;
-    padding-right: 1.2rem;
-}
-.one h3{
-    font-family: var(--sans-serif-regular);
-    font-weight: 400;
-    color: var(--light-green);
-    font-size: 1.3rem;
-    padding-top: 2.6rem;
-    margin-left: 0;
-}
-.one h4{
-    font-family: var(--sans-serif-regular);
-    font-weight: 400;
-    color: var(--dark-green);
-    font-size: 1rem;
-    padding-top: 1.7rem;
-    border-bottom: 1px solid var(--dark-green);
-    margin-left: 0;
-    margin-bottom: 0.6rem;
-}
-.two{
+.info-map{
     background-color: var(--light-text);
     padding-top: 2em;
 }
-#gmap_canvas {
-    width: 23.438rem;
-    height: 12.813rem;
-    padding-bottom: 0rem;
+
+/* Vejvisning */
+.info-where-to{
+    background-color: var(--light-text);
+    padding-bottom: 1rem;
 }
-hr{
+
+.info-where-to h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.info-where-to hr{
+    margin-top: 0rem;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-bottom: 0.5rem;
 }
-.stemningsbillede{
+
+.info-where-to p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/* Indtjekning og udtjekning */
+.info-checkout{
+    background-color: var(--grey);
+    padding-bottom: 1rem;
+}
+
+.info-checkout h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.info-checkout hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.info-checkout p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/* Billede af haven */
+.info-garden {
+    width: 100%;
+    height: 14rem;
+}
+
+.info-garden img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/* For gangbesværet */
+.info-handicap{
+    background-color: var(--light-text);
+    padding-bottom: 1rem;
+}
+
+.info-handicap h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.info-handicap hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.info-handicap p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+.info-stemningsbilleder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--grey);
+}
+
+.info-stemningsbilleder img{
     width: 18.938rem;
     height: auto;
-    padding: 2rem;
-}
-.three{
-    margin-left: 0rem;
-    background-color: var(--light-text);
-}
-.txtbx{
-    padding-left: 1.5rem;
-    padding-right: 2.688rem;
-}
-.section{
-    font-size: 1.25rem;
-    padding-top: 1.063rem;
-}
-.psection{
-    font-size: 0.75rem;
-    padding-left: 2.938rem;
-}
-.adrsection{
-    font-size: 0.75rem;
-    padding-top: 1.875rem;
-    padding-left: 2.938rem;
-    padding-bottom: 1.875rem;
-}
-.four{
-    margin-left: 0rem;
-    background-color: var(--grey);
-}
-.gpsec{
-    padding-top: 1.375rem;
-    padding-bottom: 2.813rem;
-}
-.five{
-    margin-left: 0rem;
-    background-color: var(--grey);
-}
-.five img{
-    width: 23.438rem;
-    height: auto;
-}
-.six{
-    margin-left: 0rem;
-    background-color: var(--grey);
-}
-.psec1{
-    padding-top: 1.375rem;
-}
-.seven{
-    margin-left: 0rem;
-    background-color: var(--light-text);
 }
 
 /* Media Query for Tablet */
@@ -158,156 +183,165 @@ hr{
         margin-top: -1.2em;
         top: 3.3em;
     }
-    .gridone-h3{
-        font-size: 30px;
-        padding-top: 3.875rem;
-    }
-    .gridone-p{
-        font-size: 20px;
-    }
-    .gridtwo-p{
-        font-size: 20px;
-        padding-top: 3.875rem;
-    }
-    .stem1{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
-    .stem2{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
-    .stem3{
-        width: 29.938rem;
-        height: 22.688rem;
-        padding: 0;
-        object-fit: cover;
-    }
+    
     .gridcontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70vh 70vh;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
     }
-    /* Åbningstider Grid-Box */
-    /*Denne kode for gridboxen 'One', findes også på index siden*/
-    .one{
+    
+    /* Find vej Interaktivt kort */
+    .info-map{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    #gmap_canvas {
+        width: 50vw;
+        height: 610px;
+    }
+
+    .index-one{
         grid-column: 2/3;
         grid-row: 1/2;
         background-color: var(--light-text);
+    }
+    
+    /* Vejvisning */
+    .info-where-to{
+        grid-column: 1/2;
+        grid-row: 2/3;
         height: 100%;
-        padding-left: 1.6rem;
-        padding-right: 1.2rem;
     }
-    .one h3{
-        color: var(--dark-green);
+    
+    .info-where-to h3{
         font-size: 1.9rem;
-        padding-top: 2.5rem;
-        margin-left: 2.5rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
     }
-    .one h4{
-        color: var(--light-green);
-        font-size: 1.6rem;
-        padding-top: 4.4rem;
-        margin-left: 2.7rem;
-        margin-bottom: 1.9rem;
-        padding-bottom: 1.2rem;
+    
+    .info-where-to hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
     }
-    .opening-flex{
-        justify-content: space-between;
-        padding-right: 6.5rem;
-    }
-    .opening-flex p{
+    
+    .info-where-to p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
         font-size: 1.3rem;
-        line-height: 38px;
-        padding-left: 7.8rem;
-        white-space: nowrap;
-    }
-    .opening-phone {
-        margin-top: 3.2rem;
-        margin-right: 7.5rem;
-    }
-    .opening-phone p{
-        font-size: 1.6rem;
-    }
-    .opening-phone img {
-        height: 2rem;
-        width: auto;
-        margin-right: 0.3rem;
-    }
-    .phone-info {
-        font-size: 1.3rem;
-        margin-right: 7.5rem;
     }
 
-    /*Her slutter koden for gridboxen 'One'*/
+    /* Indtjekning & Udtjekning */
+    .info-checkout{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 100%;
+    }
+    
+    .info-checkout h3{
+        font-size: 1.9rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
+    }
+    
+    .info-checkout hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .info-checkout p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
 
-    .two{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        padding-bottom: 4.625rem;
-    }
-    #gmap_canvas {
-        margin-left: 0rem;
-        width: 51vw;
-        height: 28.188rem;
-    }
-    .three{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin-left: 0;
-    }
-    .txtbx{
-        padding-left: 1.5rem;
-        padding-right: 2.688rem;
-    }
-    .section{
-        font-size: 1.875rem;
-        padding-top: 3.188rem;
-    }
-    .psection{
-        font-size: 1.25rem;
-        padding-left: 2.938rem;
-    }
-    .adrsection{
-        font-size: 1.25rem;
-        padding-top: 1.875rem;
-        padding-left: 2.938rem;
-        padding-bottom: 1.875rem;
-    }
-    .four{
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .five{
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-    .five img{
-        width: 60.063rem;
-        height: auto;
-    }
-    .six{
+    /* For gangbesværet */
+    .info-handicap{
         grid-column: 1/2;
         grid-row: 3/4;
+        height: 100%;
+        background-color: var(--grey);
     }
-    .seven{
+    
+    .info-handicap h3{
+        font-size: 1.9rem;
+        padding-top: 4rem;
+        margin-left: 4.2rem;
+        color: var(--dark-green);
+    }
+    
+    .info-handicap hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    
+    .info-handicap p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* Billede af haven */
+    .info-garden {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-garden img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .info-stemningsbilleder{
         grid-column: 1/3;
         grid-row: 4/5;
-        margin-left: 0;
-        padding-top: 9rem;
-        padding-bottom: 7.563rem;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        gap: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: var(--light-text);
     }
-    .section-img{
-        width: 100vw;
-        height: 40vh;
+
+    .info-stemningsbilleder div {
+        width: 20vw;
+        height: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+    }
+    
+    .info-stemningsbilleder img{
+        height:100%;
+        width: 100%;
         object-fit: cover;
-        margin-bottom: -4px;
+    }
+
+    .index-seven{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .index-seven img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
