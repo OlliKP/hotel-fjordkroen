@@ -319,7 +319,6 @@ header img{
     .section-klint{
         grid-column: 2/3;
         grid-row: 1/2;
-        background-color: #D8D5CD;
         padding-bottom: 3rem;
     }
     .section-klint h3{
