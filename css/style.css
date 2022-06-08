@@ -191,7 +191,9 @@ li.mobile-sub-page a {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
+  
   
   /* Subnav button */
   .subnav .subnavbtn {
@@ -214,7 +216,7 @@ li.mobile-sub-page a {
   .subnav-content {
     display: none;
     position: absolute;
-    margin-top: 7rem;
+    margin-top: 14rem;
     background-color: var(--light-text);
     z-index: 1;
     flex-direction: column;
