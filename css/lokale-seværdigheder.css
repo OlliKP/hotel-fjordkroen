@@ -15,94 +15,210 @@ header img{
     margin-top: 3em;
 }
 
-footer p{
-    color: var(--light-text);
+/*Stevs Klint Image*/
+.container-klint{
+    height: 14rem;
+    width: 100vw;
 }
 
-/*Styling af sectioner*/
-.section-img{
+.container-klint img{
     width: 100vw;
-    height: 40vh;
+    height: 14rem;
     object-fit: cover;
-    margin-bottom: -4px;
 }
-.one{
+
+/*Stevns Klint Text*/
+.section-klint{
     background-color: var(--light-text);
-    padding-top: 2em;
-    padding-right: 3em;
+    padding-bottom: 8rem;
 }
-.one img{
-  width: 23.438rem;
-  height: 16.991rem;  
+
+.section-klint h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
 }
-.three img{
-    width: 23.438rem;
-    height: 16.991rem;  
-  }
-.five img{
-    width: 23.438rem;
-    height: 16.991rem;  
-}
-.seven img{
-    width: 23.438rem;
-    height: 16.991rem;  
-}
-.nine img{
-    width: 23.438rem;
-    height: 16.991rem;  
-}
-.section{
-    font-size: 1.25rem;
-    padding-top: 0.938rem;
-}
-.psection{
-    font-size: 0.75rem;
-    padding-top: 0.938rem;
-    padding-left: 4em;
-    padding-bottom: 2.875rem;
-}
-.two{
-    background-color: var(--light-text);
-    padding-right: 3em;
-}
-hr{
+
+.section-klint hr{
+    margin-top: 0rem;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-bottom: 0.5rem;
 }
-.text-box{
-    margin-left: 4em;
-    margin-right: 1.5em;
-    margin-top: 0.5em;
-    padding-bottom: 2em;
-}
-.facilities{
-    list-style-type: circle;
-    margin-left: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-.facilities li{
-    display: list-item;
+
+.section-klint p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
     color: var(--dark-brown);
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.8em;
-}
-.facilities-day{
-    margin-left: -1em;
-    margin-bottom: 0.5em;
-}
-.three{
-    margin-left: 0rem;
-}
-.four{
-    margin-left: 0rem;
 }
 
-.index-se-mere {
-    margin: 0;
+/*Rone Klint Image*/
+.container-rone{
+    height: 14rem;
+    width: 100vw;
 }
 
+.container-rone img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Rone Klint text*/
+.section-rone{
+    background-color: var(--grey);
+    padding-bottom: 8rem;
+}
+
+.section-rone h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.section-rone hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-rone p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Camp Adventure Image*/
+.container-adventure{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-adventure img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Camp Adventure Text*/
+.section-adventure{
+    background-color: var(--light-text);
+    padding-bottom: 8rem;
+}
+
+.section-adventure h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.section-adventure hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-adventure p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Feddet Image*/
+.container-feddet{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-feddet img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Feddet text*/
+.section-feddet{
+    background-color: var(--grey);
+    padding-bottom: 8rem;
+}
+
+.section-feddet h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--dark-green);
+}
+
+.section-feddet hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-feddet p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
+
+/*Oremandsgaard Image*/
+.container-oremandsgaard{
+    height: 14rem;
+    width: 100vw;
+}
+
+.container-oremandsgaard img{
+    width: 100vw;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/*Oremandsgaard Text*/
+.section-oremandsgaard{
+    background-color: var(--light-text);
+    padding-bottom: 8rem;
+}
+
+.section-oremandsgaard h3{
+    padding-top: 1.8rem;
+    font-size: 1.3rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+    color: var(--light-green);
+}
+
+.section-oremandsgaard hr{
+    margin-top: 0rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.section-oremandsgaard p{
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    font-size: 0.8rem;
+    color: var(--dark-brown);
+}
 
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px){
@@ -127,89 +243,196 @@ hr{
         margin-top: -1.2em;
         top: 3.3em;
     }
+    
     .gridcontainer{
         display: grid;
         grid-template-columns: 50vw 50vw;
     }
-    .section{
-        padding-top: 6.563rem;
-        padding-left: 5.313rem;
-        font-size: 1.875rem;
-    }
-    .txtdividers{
-      width: 46.875rem;
-      margin-left: 5.313rem;  
-    }
-    .psection{
-        font-size: 1.25rem;
-        padding-right: 8.063rem;
-        padding-left: 9.063rem;
-    }
-    .one{
+    
+    .container-klint {
         grid-column: 1/2;
         grid-row: 1/2;
-        padding-right: 0rem;
-        padding-top: 0;
-    }
-    .one img{
         width: 100%;
         height: 100%;
-        /* height: 28.188rem;   */
+        position: relative;
     }
-    .three img{
+    .container-klint img {
+        height:100%;
         width: 100%;
-        height: 100%; 
+        object-fit: cover;
+        display: block;
     }
-    .five img{
+    .container-rone {
+        grid-column: 2/3;
+        grid-row: 2/3;
         width: 100%;
-        height: 100%; 
+        height: 100%;
+        position: relative;
     }
-    .seven img{
+    .container-rone img {
+        height:100%;
         width: 100%;
-        height: 100%; 
+        object-fit: cover;
+        display: block;
     }
-    .nine img{
+    .container-adventure {
+        grid-column: 1/2;
+        grid-row: 3/4;
         width: 100%;
-        height: 100%; 
+        height: 100%;
+        position: relative;
     }
-    .two{
+    .container-adventure img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-feddet {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container-feddet img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .container-oremandsgaard {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 50vw;
+        height: 100%;
+        position: relative;
+    }
+    .container-oremandsgaard img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* --- Stevns Klint --- */
+    .section-klint{
         grid-column: 2/3;
         grid-row: 1/2;
-        background-color: #D8D5CD;  
+        background-color: #D8D5CD;
+        padding-bottom: 3rem;
     }
-    .three{
-        grid-column: 2/3;
+    .section-klint h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-klint hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-klint p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Rone Klint Strand --- */
+    .section-rone{
+        grid-column: 1/2;
         grid-row: 2/3;
         margin-left: 0;
+        padding-bottom: 3rem; 
     }
-    .four{
-        grid-column: 1/2;
-        grid-row: 2/3;
+    .section-rone h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
     }
-    .five{
-        grid-column: 1/2;
+    .section-rone hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-rone p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Camp Adventure --- */
+    .section-adventure{
+        grid-column:2/3;
         grid-row: 3/4;
+        padding-bottom: 3rem;
     }
-    .six{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        background-color: #D8D5CD;
+    .section-adventure h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
     }
-    .seven{
-        grid-column: 2/3;
-        grid-row: 4/5;
+    .section-adventure hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
     }
-    .eight{
+    .section-adventure p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+    /* --- Camp Adventure --- */
+    .section-feddet{
         grid-column: 1/2;
         grid-row: 4/5;
+        padding-bottom: 3rem;
     }
-    .nine{
-        grid-column: 1/2;
-        grid-row: 5/6;
+    .section-feddet h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
     }
-    .ten{
+    .section-feddet hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-feddet p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
+    }
+
+    /* --- Oremandsgaard Gods --- */
+    .section-oremandsgaard{
         grid-column: 2/3;
         grid-row: 5/6;
-        background-color: #D8D5CD;
+        padding-bottom: 3rem;
+    }
+    .section-oremandsgaard h3{
+        font-size: 1.9rem;
+        padding-top: 6.7rem;
+        margin-left: 4.2rem;
+    }
+    .section-oremandsgaard hr{
+        margin-top: 0rem;
+        margin-left: 4.2em;
+        margin-right: 9em;
+        margin-bottom: 1.3rem;
+    }
+    .section-oremandsgaard p{
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-bottom: 3.4rem;
+        font-size: 1.3rem;
     }
 }
