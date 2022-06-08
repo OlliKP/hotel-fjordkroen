@@ -3,6 +3,39 @@ body {
     background-color: var(--light-text);
 }
 
+header img{
+    width: 100%;
+    height: 59vh;
+    margin-top: 3.5rem;
+    object-fit: cover;
+}
+
+header{
+    margin-bottom: -4px;
+}
+
+.header-big{
+    font-family: var(--script);
+    font-size: 4rem;
+    color: var(--light-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.header-small{
+    font-style: italic;
+    font-size: 4.5vw;
+    color: var(--light-text);
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* Her begynder styling til første section: room-info-ophold */
 .room-info a{
     text-decoration: none;
@@ -134,11 +167,36 @@ hr{
 /* Styling til room 1-7 slutter her */
 
 /* Media Query for Web */
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 700px) {
+
+    /* ----- Styling af content ----- */
+    .header-big{
+        font-size: 7rem;
+        top: 50%;
+    }
     .header-small{
-        top: 35%;
-        text-align: center;
-        line-height: 3rem;
+        top: 65%;
+        font-size: 1.6rem;
+    }
+}
+
+/* Media Query for Web */
+@media only screen and (min-width: 1150px) {
+    
+    /*Styling af header med titel*/
+    header img{
+        margin-top:auto;
+        height: 55vh;
+        object-fit: cover;
+    }
+
+    .header-big{
+        font-size: 10vw;
+        top: 95%;
+    }
+    .header-small{
+        top: 75%;
+        font-size: 1.8vw;
     }
 
     /* Vi begynder med grids */
