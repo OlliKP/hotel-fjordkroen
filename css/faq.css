@@ -43,6 +43,10 @@ header img{
 /*For at svaret på spørgsmålet er skjult eller "lukket" som standard, når siden refreshes eller åbnes*/
 span{
     display: none;
+    color: var(--dark-brown);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.6em;
 }
 
 /*Anden sektion med værelsesfaciliteter*/
