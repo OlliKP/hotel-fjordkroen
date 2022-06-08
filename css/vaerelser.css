@@ -14,46 +14,31 @@ body{
     margin: 0;
 }
 
-header{
-    margin-bottom: 0;
-}
-
-.header-ensemble{
-    position:relative;
-    text-align: center;
-    width: 100%;
-}
-
-.header-h1{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--script);
-    font-size: 3rem;
-    white-space: nowrap;
-    color: var(--light-text);
-}
-
-.lang-titel{
-    white-space: pre-line;
-    font-size: 2.4em;
-    height: none;
-    line-height: 1em;
-}
-.header-ensemble img{
-    margin: 0;
-    height: 50vw;
-}
-
-header.header-ensemble{
-    width: 100%;
-}
-
 .question p{
     color: var(--light-green);
     font-style: italic;
     font-weight: 700;
+}
+
+/*Styling af header*/
+header{
+    position: relative;
+    text-align: center;
+}
+.header-big{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+header img{
+    height: 7em;
+    margin-top: 3em;
+}
+
+h1.lang-titel{
+    font-size: 10vw;
 }
 
 
@@ -280,6 +265,16 @@ div.mySlides{
 /* Media Query for Tablet */
 @media only screen and (min-width: 700px) {
     
+    .header-big{
+        font-size: 4em;
+        top: 2em;
+    }
+
+    h1.lang-titel {
+        top: 120px;
+        font-size: 4rem;
+    }
+
     .facilitet-grid{
         margin: 2rem;
     }
@@ -287,19 +282,19 @@ div.mySlides{
 
 /* Media Query for Web */
 @media only screen and (min-width: 1150px) {
-    .header-ensemble img{
-        width: 100%;
-        height: 17vw;
+    header img{
+        height: 14em;
+    }
+    .header-big{
+        font-size: 6em;
+        margin-top: -1.2em;
+        top: 3.3em;
     }
 
-    .header-h1{
-        font-size: 7rem;
-    }
-
-    .lang-titel{
-        font-size: 4em;
-        height: none;
-        word-spacing: 1vh;
+    h1.lang-titel{
+        height: 0;
+        padding-top: 4rem;
+        font-size: 6rem;
     }
 
     .slideshow{
