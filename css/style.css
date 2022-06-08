@@ -687,6 +687,7 @@ header{
 #gmap_canvas {
     width: 100vw;
     height: 15rem;
+    border: none;
 }
 
 /*Anmeldelser */
