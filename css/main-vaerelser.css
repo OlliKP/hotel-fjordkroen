@@ -106,6 +106,20 @@ header{
     line-height: 1.6em;
 }
 
+/* Alle hovers */
+.room-info h2:hover{
+    transform: scale(1.02);  
+}
+
+.room-se-mere:hover{
+    background-color: var(--dark-green);
+}
+.room-img:hover{
+    transform: scale(0.99);
+    border-bottom: 2px solid var(--dark-green);
+}
+/* Alle hovers slut */
+
 hr{
     margin-top: 0.9rem;
     margin-left: 1.5em;
@@ -220,7 +234,7 @@ hr{
         grid-row-start: 1;
         grid-row-end: 1;
         padding: 2rem;
-    }
+    } 
 
     section.room-book-tlf{
         padding: 2rem;

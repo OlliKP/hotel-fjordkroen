@@ -160,7 +160,7 @@ h3{
     margin-top: 2.5rem;
 }
 p{
-    font-size: 1.7ch
+    font-size: 1.7ch;
 }
 .callerlink{
     margin-right: 1.4rem;
@@ -351,9 +351,7 @@ hr{
         height: auto;
     } 
     .three{
-        grid-column: 1/5;
         background-color: var(--grey);
-        grid-row: 2/3;
         margin-left: 0;
         display: flex;
         justify-content: space-evenly;
