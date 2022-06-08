@@ -447,7 +447,8 @@ header{
 /*Hvem er vi - Billede*/
     .index-three{
     height: 14rem;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
     .index-three img{
@@ -496,6 +497,7 @@ header{
 .index-five{
     height: 14rem;
     width: 100%;
+    height: 100%;
 }
 
     .index-five img{
@@ -543,7 +545,8 @@ header{
 /*Værelser - Billede*/
 .index-seven{
     height: 14rem;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
 .index-seven img{
@@ -592,6 +595,7 @@ header{
 .index-nine{
     height: 14rem;
     width: 100%;
+    height: 100%;
 }
 
 .index-nine img{
